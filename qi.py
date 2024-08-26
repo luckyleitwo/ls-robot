@@ -1,50 +1,43 @@
+from robot import detector, logging
 from server import serverMain
 
-import pvporcupine
-import pyaudio
-import numpy as np
+logger = logging.getLogger(__name__)
+# # 配置 Porcupine
+# keyword_path = "static/huanx_zh_mac_v3_0_0.ppn"  # 预训练的唤醒词模型路径
+# access_key = "KLtEYTJi1zHgUyzuZD0t0juvn1SpFEIYz4DSblInl/kFSeLKOAcuqg=="  # 你的 Picovoice 访问密钥
 
-# if __name__ == "__main__":
-#     serverMain.app.run(host='0.0.0.0', port=2888, debug=True)
+class ls(object):
+    def init(self):
+        self.detector = None
+        print(
+            """
+********************************************************
+*          wukong-robot - 中文语音对话机器人           *
+*          (c) 2019 潘伟洲 <m@hahack.com>              *
+*               当前版本号:  {}                      *
+*     https://github.com/wzpan/wukong-robot.git        *
+********************************************************
 
-# 配置 Porcupine
-keyword_path = "./static/huanx_zh_mac_v3_0_0.ppn"  # 预训练的唤醒词模型路径
-access_key = "KLtEYTJi1zHgUyzuZD0t0juvn1SpFEIYz4DSblInl/kFSeLKOAcuqg=="  # 你的 Picovoice 访问密钥
+            后台管理端：http://{}:{}
+            如需退出，可以按 Ctrl-4 组合键
 
-# 初始化 Porcupine
-porcupine = pvporcupine.create(keywords=[keyword_path], access_key=access_key)
+"""
+        )
 
-# 初始化 PyAudio
-p = pyaudio.PyAudio()
-stream = p.open(
-    format=pyaudio.paInt16,
-    channels=1,
-    rate=porcupine.sample_rate,
-    input=True,
-    frames_per_buffer=porcupine.frame_length
-)
+    def run(self):
+        self.init()
+        print(detector)
+        try:
+            # 初始化离线唤醒
+            detector.initDetector(self)
+        except AttributeError:
+            logger.error("初始化离线唤醒功能失败", stack_info=True)
+            pass
+        serverMain.app.run(host='0.0.0.0', port=2888, debug=True)
 
-print("Listening for wake word...")
 
-try:
-    while True:
-        # 读取音频数据
-        audio_data = stream.read(porcupine.frame_length)
-        audio_data = np.frombuffer(audio_data, dtype=np.int16)
 
-        # 处理音频数据
-        keyword_index = porcupine.process(audio_data)
 
-        # 检测唤醒词
-        if keyword_index >= 0:
-            print(f"Detected keyword: {keyword_index}")
-
-except KeyboardInterrupt:
-    print("Interrupted")
-
-finally:
-    # 清理资源
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
-    porcupine.delete()
+if __name__ == "__main__":
+    ls = ls()
+    ls.run()

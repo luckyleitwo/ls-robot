@@ -1,0 +1,122 @@
+2024-08-26 17:31:05,607 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 40, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:31:05,628 - robot.detector - qi.py - run - line 32 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 38, in <module>
+    if __name__ == "__main__":
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 32, in run
+    detector.initDetector(self)
+2024-08-26 17:32:12,627 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:32:54,485 - robot.detector - qi.py - run - line 35 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 41, in <module>
+    if __name__ == "__main__":
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 35, in run
+    pass
+2024-08-26 17:32:55,024 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1551, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:32:55,463 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1568, in _exec
+    runpy._run_module_as_main(module_name, alter_argv=False)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:33:12,240 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1551, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:33:12,710 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1568, in _exec
+    runpy._run_module_as_main(module_name, alter_argv=False)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:35:19,769 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:35:19,890 - robot.detector - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-26 17:35:55,611 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:37:07,698 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:39:04,783 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:39:08,097 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:39:53,495 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:39:53,506 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:40:04,741 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:40:04,752 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:40:15,998 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:40:16,009 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:41:10,350 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:41:10,361 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:41:17,664 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:41:17,675 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:48:08,779 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:48:08,790 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-26 17:58:38,772 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-26 17:58:38,784 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
