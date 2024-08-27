@@ -1,12 +1,13 @@
-from robot import detector, logging
+from robot import detector, logger, utils
+from robot.Conversation import Conversation
 from server import serverMain
 
-logger = logging.getLogger(__name__)
 # # 配置 Porcupine
 # keyword_path = "static/huanx_zh_mac_v3_0_0.ppn"  # 预训练的唤醒词模型路径
 # access_key = "KLtEYTJi1zHgUyzuZD0t0juvn1SpFEIYz4DSblInl/kFSeLKOAcuqg=="  # 你的 Picovoice 访问密钥
 
 class ls(object):
+    _profiling = False
     def init(self):
         self.detector = None
         print(
@@ -23,7 +24,26 @@ class ls(object):
 
 """
         )
+        self.conversation = Conversation(self._profiling)
 
+    def _detected_callback(self, is_snowboy=True):
+        def _start_record():
+            logger.info("开始录音")
+            self.conversation.isRecording = True
+            utils.setRecordable(True)
+
+        if not utils.is_proper_time():
+            logger.warning("勿扰模式开启中")
+            return
+        if self.conversation.isRecording:
+            logger.warning("正在录音中，跳过")
+            return
+        if is_snowboy:
+            self.conversation.interrupt()
+            utils.setRecordable(False)
+        self.lifeCycleHandler.onWakeup()
+        if is_snowboy:
+            _start_record()
     def run(self):
         self.init()
         print(detector)

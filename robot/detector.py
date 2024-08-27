@@ -56,7 +56,7 @@ def initDetector(wukong):
                             ),
                         )
                     )
-                    # wukong._detected_callback(False)
+                    wukong._detected_callback(False)
                     recorder.stop()
                     # wukong.conversation.interrupt()
                     # query = wukong.conversation.activeListen()

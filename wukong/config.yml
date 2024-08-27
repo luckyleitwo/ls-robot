@@ -110,7 +110,7 @@ tts_engine: edge-tts
 # azure-asr     - 微软语音识别
 # openai        - OpenAI Whisper
 # fun-asr       - 达摩院FunASR语音识别
-asr_engine: baidu-asr
+asr_engine: fun-asr
 
 # 百度语音服务
 # http://yuyin.baidu.com/

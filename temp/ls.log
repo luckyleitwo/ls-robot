@@ -202,3 +202,109 @@ Stack (most recent call last):
     logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
 2024-08-27 11:25:52,043 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
 2024-08-27 11:25:52,065 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:07:25,736 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:07:53,283 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:07:53,292 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:07:53,292 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:08:04,618 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:08:04,653 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:08:04,928 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:08:04,930 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:08:04,930 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:08:23,097 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:08:23,100 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:08:23,100 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:08:42,005 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:08:42,040 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:08:42,305 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:08:42,308 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:08:42,308 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:09:28,435 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:09:28,438 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:09:28,438 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:09:35,641 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:09:35,674 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:09:35,911 - robot.ASR - ASR.py - get_engine_by_slug - line 79 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:09:35,913 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:09:35,913 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:09:44,985 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:09:45,018 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:11:18,282 - robot.ASR - ASR.py - get_engine_by_slug - line 81 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:11:18,285 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:11:18,285 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:12:24,508 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:12:24,545 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:12:24,815 - robot.ASR - ASR.py - get_engine_by_slug - line 81 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:12:24,818 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:12:24,818 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:12:34,127 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:12:34,174 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:13:29,087 - robot.ASR - ASR.py - get_engine_by_slug - line 81 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:13:29,090 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:13:29,090 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:13:32,061 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 14:13:32
+2024-08-27 14:13:42,292 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 14:13:42
+2024-08-27 14:14:07,284 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 14:14:07
+2024-08-27 14:14:09,901 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:14:09,935 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:14:10,185 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:14:10,187 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:14:10,187 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:14:19,773 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:14:19,821 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 63, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 52, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
