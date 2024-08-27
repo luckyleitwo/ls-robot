@@ -37,8 +37,8 @@ porcupine:
         # 支持追加多个唤醒词
         # 自定义唤醒词请放到 $HOME/.wukong 目录中
         # - 'spiderman.ppn'
-        - 'hello-bing_en_raspberry-pi_v3_0_0.ppn'
-    access_key: 'KLtEYTJi1zHgUyzuZD0t0juvn1SpFEIYz4DSblInl/kFSeLKOAcuqg=='
+        - 'hi-siri_en_mac_v3_0_0.ppn'
+    access_key: 'VDk845lYacYIrggNpoHPS8n9BsF80VvzLEmk0X0SyOSZcjkSIA7MiQ=='
 
 # snowboy 离线唤醒
 # 建议使用 snowboy-seasalt (https://github.com/rhasspy/snowboy-seasalt)

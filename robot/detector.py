@@ -24,6 +24,7 @@ def initDetector(wukong):
         access_key = config.get("/porcupine/access_key")
         keyword_paths = config.get("/porcupine/keyword_paths")
         keywords = config.get("/porcupine/keywords", ["porcupine"])
+        print(keyword_paths)
         if keyword_paths:
             porcupine = pvporcupine.create(
                 access_key=access_key,
@@ -55,11 +56,11 @@ def initDetector(wukong):
                             ),
                         )
                     )
-                    wukong._detected_callback(False)
+                    # wukong._detected_callback(False)
                     recorder.stop()
-                    wukong.conversation.interrupt()
-                    query = wukong.conversation.activeListen()
-                    wukong.conversation.doResponse(query)
+                    # wukong.conversation.interrupt()
+                    # query = wukong.conversation.activeListen()
+                    # wukong.conversation.doResponse(query)
                     recorder.start()
         except pvporcupine.PorcupineActivationError as e:
             logger.error("[Porcupine] AccessKey activation error", stack_info=True)

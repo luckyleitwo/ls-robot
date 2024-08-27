@@ -120,3 +120,85 @@ Stack (most recent call last):
 2024-08-26 17:48:08,790 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
 2024-08-26 17:58:38,772 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
 2024-08-26 17:58:38,784 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:45:37,997 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:45:38,008 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:52:15,985 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:52:15,996 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:54:04,471 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:54:04,482 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:56:36,200 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:56:36,211 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:57:03,448 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:57:03,459 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:57:48,382 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:57:48,392 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 10:59:25,248 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 10:59:25,259 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:00:22,731 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:00:22,742 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:00:38,556 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:00:38,567 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:00:48,100 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:00:48,110 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:01:28,206 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:01:28,217 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:01:41,355 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:01:41,366 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:02:12,815 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:02:12,826 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:03:42,488 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:03:42,499 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:04:55,299 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:04:55,310 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:07:02,931 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:07:02,942 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:18:40,806 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:18:40,817 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:18:53,742 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 11:18:53
+2024-08-27 11:18:53,773 - __main__ - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-27 11:18:53,935 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:18:53,945 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:19:03,274 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 11:19:03
+2024-08-27 11:19:03,306 - __main__ - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-27 11:19:15,300 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:19:15,311 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:19:24,425 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 11:19:24
+2024-08-27 11:19:24,461 - __main__ - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-27 11:19:24,619 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:19:24,630 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:19:45,114 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 11:19:45
+2024-08-27 11:19:45,146 - __main__ - qi.py - run - line 34 - ERROR - 初始化离线唤醒功能失败
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 34, in run
+    logger.error("初始化离线唤醒功能失败", stack_info=True)
+2024-08-27 11:25:19,901 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:25:19,913 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 11:25:26,390 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 11:25:26
+2024-08-27 11:25:51,810 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 11:25:51,859 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'ls' object has no attribute '_detected_callback'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 43, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 32, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 11:25:52,043 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 11:25:52,065 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
