@@ -960,3 +960,110 @@ Stack (most recent call last):
 2024-08-27 16:35:49,610 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
 2024-08-27 16:35:49,648 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
 2024-08-27 16:35:49,648 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:42:36,871 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 18:42:36,905 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 18:42:36,905 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:46:54,041 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 18:46:54,079 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 18:46:54,079 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:47:29,265 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 18:47:29,296 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 18:47:29,297 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:47:38,336 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 18:47:38
+2024-08-27 18:47:38,365 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 18:47:38,370 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/lei/ls/ls-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 18:47:38,372 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'U'.
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 18:48:46,786 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 18:48:46,839 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 18:48:46,839 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:48:49,837 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 18:48:49
+2024-08-27 18:48:49,865 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 18:48:49,870 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/lei/ls/ls-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 18:48:49,872 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at '/Users/shenglei/ls/qil-robot/wukong/hi-siri_en_mac_v3_0_0.ppn'.
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 18:49:47,759 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 18:49:47,794 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 18:49:47,794 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 18:49:49,527 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 18:49:49
+2024-08-27 18:49:49,556 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 18:49:49,559 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/lei/ls/ls-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 18:50:25,669 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-27 18:50:25,669 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 18:50:27,669 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav

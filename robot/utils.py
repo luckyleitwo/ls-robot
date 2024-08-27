@@ -83,11 +83,10 @@ def listen_for_hotword():
     #         keyword_paths=["/Users/shenglei/ls/qil-robot/wukong/"+keyword_paths[0]],  # 自定义模型路径
     #         # keywords=keywords  # 默认关键词也可以用
     #     )
-    print("/Users/shenglei/ls/qil-robot/wukong/"+keyword_paths[0])
     # 初始化 Porcupine 实例
     porcupine = pvporcupine.create(
         access_key=access_key,
-        keyword_paths="/Users/shenglei/ls/qil-robot/wukong/"+keyword_paths[0],  # 自定义模型路径
+        keyword_paths=[constants.getConfigData(kw) for kw in keyword_paths],
         keywords=keywords  # 默认关键词也可以用
     )
 
