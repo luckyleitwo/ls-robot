@@ -5,3 +5,11 @@
     2. 语音情感识别 (SenseVoice)
     3. 文字转语音（edge-tts）
     4. 功能鉴权(使用chatGPT)
+
+# 安装方法
+```
+cd ls-robot
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+```
