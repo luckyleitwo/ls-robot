@@ -1,5 +1,8 @@
+import signal
+
 from robot import detector, logger, utils
 from robot.Conversation import Conversation
+from robot.LifeCycleHandler import LifeCycleHandler
 from server import serverMain
 
 # # 配置 Porcupine
@@ -8,15 +11,18 @@ from server import serverMain
 
 class ls(object):
     _profiling = False
+
+    def __init__(self):
+        self.conversation = None
+        self.lifeCycleHandler = None
+
     def init(self):
         self.detector = None
         print(
             """
 ********************************************************
-*          wukong-robot - 中文语音对话机器人           *
-*          (c) 2019 潘伟洲 <m@hahack.com>              *
-*               当前版本号:  {}                      *
-*     https://github.com/wzpan/wukong-robot.git        *
+*          ls-robot - 中文语音对话机器人           *
+*          (c) 小雷的 机器人            *
 ********************************************************
 
             后台管理端：http://{}:{}
@@ -25,6 +31,13 @@ class ls(object):
 """
         )
         self.conversation = Conversation(self._profiling)
+        self.lifeCycleHandler = LifeCycleHandler(self.conversation)
+        self.lifeCycleHandler.onInit()
+
+    def _signal_handler(self, signal, frame):
+        self._interrupted = True
+        utils.clean()
+        self.lifeCycleHandler.onKilled()
 
     def _detected_callback(self, is_snowboy=True):
         def _start_record():
@@ -41,12 +54,12 @@ class ls(object):
         if is_snowboy:
             self.conversation.interrupt()
             utils.setRecordable(False)
-        self.lifeCycleHandler.onWakeup()
+            self.lifeCycleHandler.onWakeup()
         if is_snowboy:
             _start_record()
     def run(self):
         self.init()
-        print(detector)
+        signal.signal(signal.SIGINT, self._signal_handler)
         try:
             # 初始化离线唤醒
             detector.initDetector(self)

@@ -1,11 +1,12 @@
 import threading
+import traceback
 import uuid
-
-from robot import utils, logger, Player, ASR, config
+from robot import utils, logging, Player, ASR, config, statistic
 from robot.LifeCycleHandler import LifeCycleHandler
 from robot.Scheduler import Scheduler
 from robot.sdk import History
 
+logger = logging.getLogger(__name__)
 
 class Conversation(object):
     def __init__(self, profiling=False):
@@ -83,3 +84,88 @@ class Conversation(object):
         msg = "".join(lines)
         self.appendHistory(1, msg, UUID=resp_uuid, plugin="")
         self._after_play(msg, audios, "")
+
+    def interrupt(self):
+        if self.player and self.player.is_playing():
+            self.player.stop()
+        if self.immersiveMode:
+            self.brain.pause()
+
+    def activeListen(self, silent=False):
+        """
+        主动问一个问题(适用于多轮对话)
+        :param silent: 是否不触发唤醒表现（主要用于极客模式）
+        :param
+        """
+        voice = ""
+        if self.immersiveMode:
+            self.player.stop()
+        elif self.player.is_playing():
+            self.player.join()  # 确保所有音频都播完
+        logger.info("进入主动聆听...")
+        try:
+            if not silent:
+                self.lifeCycleHandler.onWakeup()
+                voice = utils.listen_for_hotword()
+            if not silent:
+                self.lifeCycleHandler.onThink()
+            if voice:
+                logger.debug("这里来来")
+                query = self.asr.transcribe(voice)
+                utils.check_and_delete(voice)
+                return query
+            return ""
+        except Exception as e:
+            logger.error(f"主动聆听失败：{e}", stack_info=True)
+            traceback.print_exc()
+            return ""
+
+    def doResponse(self, query, UUID="", onSay=None, onStream=None):
+        """
+        响应指令
+
+        :param query: 指令
+        :UUID: 指令的UUID
+        :onSay: 朗读时的回调
+        :onStream: 流式输出时的回调
+        """
+        statistic.report(1)
+        self.interrupt()
+        self.appendHistory(0, query, UUID)
+
+        if onSay:
+            self.onSay = onSay
+
+        if onStream:
+            self.onStream = onStream
+
+        if query.strip() == "":
+            self.pardon()
+            return
+
+        lastImmersiveMode = self.immersiveMode
+
+        parsed = self.doParse(query)
+        if self._InGossip(query) or not self.brain.query(query, parsed):
+            # 进入闲聊
+            if self.nlu.hasIntent(parsed, "PAUSE") or "闭嘴" in query:
+                # 停止说话
+                self.player.stop()
+            else:
+                # 没命中技能，使用机器人回复
+                if self.ai.SLUG == "openai":
+                    stream = self.ai.stream_chat(query)
+                    self.stream_say(stream, True, onCompleted=self.checkRestore)
+                else:
+                    msg = self.ai.chat(query, parsed)
+                    self.say(msg, True, onCompleted=self.checkRestore)
+        else:
+            # 命中技能
+            if lastImmersiveMode and lastImmersiveMode != self.matchPlugin:
+                if self.player:
+                    if self.player.is_playing():
+                        logger.debug("等说完再checkRestore")
+                        self.player.appendOnCompleted(lambda: self.checkRestore())
+                else:
+                    logger.debug("checkRestore")
+                    self.checkRestore()

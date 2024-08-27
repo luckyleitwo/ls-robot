@@ -1,3 +1,5 @@
+import shutil
+
 import logging
 import multiprocessing
 import os
@@ -9,6 +11,7 @@ import _thread as thread
 from watchdog.observers import Observer
 from robot import config, constants, statistic, Player
 from robot.ConfigMonitor import ConfigMonitor
+
 # from robot.sdk import LED
 
 logger = logging.getLogger(__name__)
@@ -50,8 +53,8 @@ class LifeCycleHandler(object):
 
         # 初始化配置监听器
         config_event_handler = ConfigMonitor(self._conversation)
-        self._observer.schedule(config_event_handler, constants.CONFIG_PATH, False)
-        self._observer.schedule(config_event_handler, constants.DATA_PATH, False)
+        self._observer.schedule(config_event_handler, constants.CONFIG_PATH, recursive=False)
+        self._observer.schedule(config_event_handler, constants.DATA_PATH, recursive=False)
         self._observer.start()
 
         # 加载历史提醒
@@ -62,7 +65,7 @@ class LifeCycleHandler(object):
         # LED 灯
         # self._init_LED()
         # Muse 头环
-        self._init_muse()
+        # self._init_muse()
 
     def _read_reminders(self):
         logger.info("重新加载提醒信息")
@@ -71,7 +74,7 @@ class LifeCycleHandler(object):
                 jobs = pickle.load(f)
                 for job in jobs:
                     if "repeat" in job.remind_time or int(time.time()) < int(
-                        job.job_id
+                            job.job_id
                     ):
                         logger.info(f"加入提醒: {job.describe}, job_id: {job.job_id}")
                         if not (self._conversation.scheduler.has_job(job.job_id)):
@@ -168,7 +171,7 @@ class LifeCycleHandler(object):
         logger.info("onWakeup")
         self._beep_hi(onCompleted=onCompleted)
         # if config.get("/LED/enable", False):
-            # LED.wakeup()
+        # LED.wakeup()
         self._unihiker and self._unihiker.record(1, "我正在聆听...")
         self._unihiker and self._unihiker.wakeup()
 
@@ -204,3 +207,21 @@ class LifeCycleHandler(object):
     def onKilled(self):
         logger.info("onKill")
         self._observer.stop()
+
+    def check_and_delete(fp, wait=0):
+        """
+        检查并删除文件/文件夹
+
+        :param fp: 文件路径
+        """
+
+        def run():
+            if wait > 0:
+                time.sleep(wait)
+            if isinstance(fp, str) and os.path.exists(fp):
+                if os.path.isfile(fp):
+                    os.remove(fp)
+                else:
+                    shutil.rmtree(fp)
+
+        thread.start_new_thread(run, ())

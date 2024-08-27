@@ -1,3 +1,10 @@
 pygame~=2.6.0
 flask~=3.0.3
 PyYAML~=6.0.2
+tornado~=6.4.1
+numpy~=2.0.1
+pvporcupine~=3.0.2
+PyAudio~=0.2.14
+APScheduler~=3.10.4
+requests~=2.32.3
+watchdog~=5.0.0

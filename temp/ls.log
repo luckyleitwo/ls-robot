@@ -308,3 +308,655 @@ Stack (most recent call last):
     detector.initDetector(self)
   File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
     logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:41:38,006 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:41:38,011 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:41:38,011 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:41:54,277 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:41:54,316 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 61, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 50, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:41:54,556 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:41:54,558 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:41:54,559 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 14:41:54,699 - robot.detector - detector.py - initDetector - line 89 - INFO - Stopping ...
+2024-08-27 14:41:54,731 - robot.detector - detector.py - initDetector - line 106 - CRITICAL - 离线唤醒机制初始化失败：'NoneType' object has no attribute 'start'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 61, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 50, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 106, in initDetector
+    logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)
+2024-08-27 14:46:47,996 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:47:32,487 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:48:11,371 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:49:04,087 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:49:53,630 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:51:49,933 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:52:54,908 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:53:40,311 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:54:59,471 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 14:54:59,486 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 14:54:59,486 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:06:14,350 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:06:37,639 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:06:50,457 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:07:10,201 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:07:37,471 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:08:02,040 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:09:01,150 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:09:01,166 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:09:01,166 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:09:50,542 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:09:50
+2024-08-27 15:11:22,565 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:11:22,580 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:11:22,580 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:11:31,862 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:11:31
+2024-08-27 15:13:16,163 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:13:16,177 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:13:16,177 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:13:18,397 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:13:18
+2024-08-27 15:17:41,749 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:17:41,764 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:17:41,764 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:17:48,967 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:17:48
+2024-08-27 15:22:25,711 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:22:25,725 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:22:25,725 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:22:31,044 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:22:31
+2024-08-27 15:23:05,109 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:23:05,123 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:23:05,124 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:23:07,809 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:23:07
+2024-08-27 15:37:04,752 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:37:04,768 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:37:04,769 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:37:10,047 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:37:10
+2024-08-27 15:37:57,239 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:37:57,261 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:37:57,261 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:38:02,943 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:38:02
+2024-08-27 15:38:02,971 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:38:02,979 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:38:02,979 - robot.Conversation - Conversation.py - activeListen - line 118 - ERROR - 主动聆听失败：create() missing 1 required positional argument: 'access_key'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 118, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:45:03,074 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:45:03,089 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:45:03,089 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:45:13,167 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:45:13
+2024-08-27 15:45:13,198 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:45:13,208 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:45:13,208 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：create() missing 1 required positional argument: 'access_key'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:48:53,119 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:48:53,145 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:48:53,145 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:48:55,412 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:48:55
+2024-08-27 15:48:55,441 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:48:55,450 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:48:55,450 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'hi-siri_en_mac_v3_0_0.ppn'.
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:51:21,755 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:51:21,769 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:51:21,769 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:51:24,022 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:51:24
+2024-08-27 15:51:24,049 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:51:24,055 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:51:24,055 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'hi-siri_en_mac_v3_0_0.ppn'.
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:53:38,182 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:53:38,205 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:53:38,205 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:53:40,084 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:53:40
+2024-08-27 15:53:40,112 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:53:40,120 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:53:40,120 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：One or more keywords are not available by default. Available default keywords are:\ngrasshopper, pico clock, picovoice, computer, grapefruit, alexa, porcupine, americano, terminator, bumblebee, ok google, blueberry, hey barista, hey siri, jarvis, hey google
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:58:10,339 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:58:10,355 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:58:10,355 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:58:13,571 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:58:13
+2024-08-27 15:58:13,600 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:58:13,607 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:58:13,608 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：unhashable type: 'list'
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 15:59:39,574 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 15:59:39,588 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 15:59:39,588 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 15:59:53,455 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 15:59:53
+2024-08-27 15:59:53,492 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 15:59:53,499 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 15:59:53,500 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：One or more keywords are not available by default. Available default keywords are:\npicovoice, hey siri, jarvis, porcupine, computer, alexa, americano, terminator, grapefruit, hey google, hey barista, blueberry, pico clock, bumblebee, grasshopper, ok google
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:01:48,787 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:01:48,802 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:01:48,802 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:01:51,395 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:01:51
+2024-08-27 16:01:51,426 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:01:51,432 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:01:51,432 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'hi-siri_en_mac_v3_0_0.ppn'.
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:02:48,640 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:02:48,655 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:02:48,655 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:02:50,937 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:02:50
+2024-08-27 16:02:50,964 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:02:50,970 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:02:50,970 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：can only concatenate str (not "list") to str
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:03:03,443 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:03:03,460 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:03:03,460 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:03:07,350 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:03:07
+2024-08-27 16:03:07,379 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:03:07,389 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:03:07,390 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：can only concatenate str (not "list") to str
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:03:32,568 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:03:32,587 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:03:32,587 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:03:34,786 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:03:34
+2024-08-27 16:03:34,813 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:03:34,818 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:03:34,818 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'U'.
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:03:57,430 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:03:57,457 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:03:57,457 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:04:00,355 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:04:00
+2024-08-27 16:04:00,384 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:04:00,389 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:04:00,389 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：Couldn't find keyword file at 'U'.
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:05:08,928 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:05:08,944 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:05:08,944 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:05:10,985 - robot.detector - detector.py - initDetector - line 51 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-27 16:05:10
+2024-08-27 16:05:11,015 - robot.Conversation - Conversation.py - activeListen - line 105 - INFO - 进入主动聆听...
+2024-08-27 16:05:11,029 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_hi.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 108, in activeListen
+    self.lifeCycleHandler.onWakeup()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 172, in onWakeup
+    self._beep_hi(onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 162, in _beep_hi
+    Player.play(constants.getData("beep_hi.wav"), onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:06:11,295 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/shenglei/ls/qil-robot/static/beep_lo.wav
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 111, in activeListen
+    self.lifeCycleHandler.onThink()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 183, in onThink
+    self._beep_lo()
+  File "/Users/shenglei/ls/qil-robot/robot/LifeCycleHandler.py", line 165, in _beep_lo
+    Player.play(constants.getData("beep_lo.wav"))
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/shenglei/ls/qil-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-27 16:06:11,297 - robot.Conversation - Conversation.py - activeListen - line 119 - ERROR - 主动聆听失败：The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+Stack (most recent call last):
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/shenglei/ls/qil-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/shenglei/ls/qil-robot/robot/detector.py", line 62, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/shenglei/ls/qil-robot/robot/Conversation.py", line 119, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-27 16:06:26,556 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:06:26,581 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:06:26,581 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:07:27,244 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:07:27,259 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:07:27,259 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:08:24,665 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:08:24,680 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:08:24,680 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:08:38,027 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:08:38,048 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:08:38,048 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:10:42,703 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:10:42,722 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:10:42,722 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:11:13,981 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:11:14,006 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:11:14,006 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:12:19,699 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:12:19,725 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:12:19,726 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:12:47,726 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:12:47,741 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:12:47,741 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:12:57,876 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:12:57,907 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:12:57,907 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:13:25,590 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:13:25,608 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:13:25,608 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:13:54,080 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:13:54,099 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:13:54,099 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:14:14,011 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:14:14,045 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:14:14,045 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:14:14,046 - robot.detector - detector.py - initDetector - line 29 - ERROR - 12312312
+2024-08-27 16:14:33,525 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:14:33,538 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:14:33,539 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:14:33,540 - robot.detector - detector.py - initDetector - line 29 - ERROR - 12312312
+2024-08-27 16:14:52,000 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:14:52,021 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:14:52,021 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:14:52,023 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:15:07,429 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:15:07,454 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:15:07,454 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:15:07,455 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:16:27,188 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:16:27,248 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:16:27,251 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:16:27,252 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:16:55,584 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:16:55,601 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:16:55,601 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:16:55,602 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:18:16,400 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:18:16,437 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:18:16,437 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:18:16,444 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:20:43,719 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:20:43,734 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:20:43,734 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:20:43,735 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:20:57,982 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:20:58,029 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:20:58,030 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:21:09,949 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:24:02,843 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:24:02,889 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:24:02,889 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:24:02,894 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:24:47,893 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:24:47,941 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:24:47,941 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:24:47,946 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:25:01,144 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:25:01,158 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:25:01,158 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:25:01,160 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:25:49,595 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:25:49,626 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:25:49,626 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:25:49,627 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:26:51,060 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:26:51,092 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:26:51,092 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:26:51,096 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:27:57,846 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:27:57,867 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:27:57,867 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:28:12,842 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:28:12,868 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:28:12,868 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:28:27,612 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:28:27,649 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:28:27,649 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:29:10,646 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:29:10,661 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:29:10,662 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:29:48,729 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:29:48,746 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:29:48,746 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:30:02,980 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:30:03,000 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:30:03,000 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:30:47,750 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:30:47,768 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:30:47,768 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:31:02,804 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:31:02,835 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:31:02,835 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:31:02,836 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:31:19,000 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:31:19,013 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:31:19,013 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:31:19,015 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:31:31,482 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:31:31,502 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:31:31,502 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:31:31,504 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:32:17,372 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:32:17,386 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:32:17,386 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:32:17,388 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:34:21,035 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:34:21,054 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:34:21,054 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:34:21,056 - robot.detector - detector.py - initDetector - line 29 - ERROR - -----------------
+2024-08-27 16:35:08,343 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:35:08,381 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:35:08,381 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-27 16:35:49,610 - robot.ASR - ASR.py - get_engine_by_slug - line 82 - INFO - 使用 fun-asr ASR 引擎
+2024-08-27 16:35:49,648 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-27 16:35:49,648 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒

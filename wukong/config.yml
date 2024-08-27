@@ -32,7 +32,7 @@ sensitivity: 0.5
 # 可以获取 access_key 和训练自己的唤醒词
 porcupine:
     keywords:
-        - '团子'
+        - 'hi siri'
     keyword_paths:
         # 支持追加多个唤醒词
         # 自定义唤醒词请放到 $HOME/.wukong 目录中
@@ -312,7 +312,7 @@ email:
     enable: true
     address: '你的邮箱地址'
     password: '你的邮箱密码'  # 如果是网易邮箱，须填写应用授权密码而不是登录密码！
-    smtp_server: 'smtp.163.com'
+    smtp_server: 'trustme_lei.163.com'
     smtp_port: '25'  # 这里填写非SSL协议端口号
     imap_server: 'imap.163.com'
     imap_port: '143'  # 这里填写非SSL协议端口号

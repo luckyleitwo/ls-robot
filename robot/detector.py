@@ -37,7 +37,7 @@ def initDetector(wukong):
                 keywords=keywords,
                 sensitivities=[config.get("sensitivity", 0.5)] * len(keywords),
             )
-
+        print(PvRecorder)
         recorder = PvRecorder(device_index=-1, frame_length=porcupine.frame_length)
         recorder.start()
 
@@ -58,9 +58,9 @@ def initDetector(wukong):
                     )
                     wukong._detected_callback(False)
                     recorder.stop()
-                    # wukong.conversation.interrupt()
-                    # query = wukong.conversation.activeListen()
-                    # wukong.conversation.doResponse(query)
+                    wukong.conversation.interrupt()
+                    query = wukong.conversation.activeListen()
+                    wukong.conversation.doResponse(query)
                     recorder.start()
         except pvporcupine.PorcupineActivationError as e:
             logger.error("[Porcupine] AccessKey activation error", stack_info=True)
