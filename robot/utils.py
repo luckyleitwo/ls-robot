@@ -4,17 +4,18 @@ import shutil
 import time
 import wave
 import _thread as thread
-
+import webrtcvad
 import numpy as np
 import pvporcupine
 import pyaudio
 
-from robot import config, constants
+from robot import config, constants,logging
 
 is_recordable = True
 do_not_bother = False
 
 
+logger = logging.getLogger(__name__)
 def getPunctuations():
     return [",", "，", ".", "。", "?", "？", "!", "！", "\n"]
 
@@ -87,11 +88,13 @@ def listen_for_hotword():
     porcupine = pvporcupine.create(
         access_key=access_key,
         keyword_paths=[constants.getConfigData(kw) for kw in keyword_paths],
-        keywords=keywords  # 默认关键词也可以用
+        # keywords=keywords  # 默认关键词也可以用
     )
 
+    
     audio = pyaudio.PyAudio()
-
+    info = audio.get_host_api_info_by_index(0)
+    logger.info(info)
     # 打开麦克风流
     stream = audio.open(
         format=pyaudio.paInt16,
@@ -100,20 +103,51 @@ def listen_for_hotword():
         input=True,
         frames_per_buffer=porcupine.frame_length
     )
-
     voice_data = []
-    timeout = 0
-    while timeout < recording_timeout:
-        # 从麦克风读取数据
-        pcm = np.frombuffer(stream.read(porcupine.frame_length), dtype=np.int16)
-        # 使用 Porcupine 检测热词
-        keyword_index = porcupine.process(pcm)
-        if keyword_index >= 0:
-            print("Hotword detected!")
-            break
+    frames = []
+    flag = False            # 开始录音节点
+    stat = True				#判断是否继续录音
+    stat2 = False			#判断声音小了
+    mindb=2000    #最小声音，大于则开始录音，否则结束
+    delayTime=2  #小声1.3秒后自动终止
+    tempnum = 0				#tempnum、tempnum2、tempnum3为时间
+    tempnum2 = 0
+    while stat:
+        data = stream.read(porcupine.frame_length,exception_on_overflow = False)
+        audio_data = np.frombuffer(data, dtype=np.short)
+        frames.append(audio_data)
+        temp = np.max(audio_data)
+        if temp > mindb and flag==False:
+            flag =True
+            print("开始录音")
+            tempnum2=tempnum
 
-        voice_data.append(pcm)
-        timeout += porcupine.frame_length / porcupine.sample_rate
+        if flag:
+
+            if(temp < mindb and stat2==False):
+                stat2 = True
+                tempnum2 = tempnum
+                print("声音小，且之前是是大的或刚开始，记录当前点")
+            if(temp > mindb):
+                stat2 =False
+                tempnum2 = tempnum
+                #刷新
+
+            if(tempnum > tempnum2 + delayTime*15 and stat2==True):
+                print("间隔%.2lfs后开始检测是否还是小声"%delayTime)
+                if(stat2 and temp < mindb):
+                    stat = False
+                    #还是小声，则stat=True
+                    print("小声！")
+                else:
+                    stat2 = False
+                    print("大声！")
+
+
+        print(str(temp)  +  "      " +  str(tempnum))
+        tempnum = tempnum + 1
+        if tempnum > 150:				#超时直接退出
+            stat = False
 
     # 关闭流和清理
     stream.stop_stream()
@@ -122,8 +156,9 @@ def listen_for_hotword():
     porcupine.delete()
 
     # 返回录音数据（例如，可以将其保存到文件或进一步处理）
-    if voice_data:
-        return np.concatenate(voice_data)
+    # logger.info(frames)
+    if frames:
+        return frames
     return None
 
 

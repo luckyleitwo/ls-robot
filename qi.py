@@ -64,7 +64,7 @@ class ls(object):
             # 初始化离线唤醒
             detector.initDetector(self)
         except AttributeError:
-            logger.error("初始化离线唤醒功能失败", stack_info=True)
+            # logger.error("初始化离线唤醒功能失败", stack_info=True)
             pass
         serverMain.app.run(host='0.0.0.0', port=2888, debug=True)
 

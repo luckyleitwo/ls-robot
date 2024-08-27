@@ -1,10 +1,16 @@
 import threading
 import traceback
 import uuid
-from robot import utils, logging, Player, ASR, config, statistic
+from robot import utils, logging, Player, ASR, config, statistic,constants
 from robot.LifeCycleHandler import LifeCycleHandler
 from robot.Scheduler import Scheduler
 from robot.sdk import History
+import pvporcupine
+import pyaudio
+import time
+import struct
+
+
 
 logger = logging.getLogger(__name__)
 
@@ -42,6 +48,45 @@ class Conversation(object):
             # self.brain.printPlugins()
         except Exception as e:
             logger.critical(f"对话初始化失败：{e}", stack_info=True)
+
+    def _ttsAction(self, msg, cache, index, onCompleted=None):
+        if msg:
+            voice = ""
+            if utils.getCache(msg):
+                logger.info(f"第{index}段TTS命中缓存，播放缓存语音")
+                voice = utils.getCache(msg)
+                while index != self.tts_index:
+                    # 阻塞直到轮到这个音频播放
+                    continue
+                with self.play_lock:
+                    self.player.play(
+                        voice,
+                        not cache,
+                        onCompleted=lambda: self._lastCompleted(index, onCompleted),
+                    )
+                    self.tts_index += 1
+                return voice
+            else:
+                try:
+                    voice = self.tts.get_speech(msg)
+                    logger.info(f"第{index}段TTS合成成功。msg: {msg}")
+                    while index != self.tts_index:
+                        # 阻塞直到轮到这个音频播放
+                        continue
+                    with self.play_lock:
+                        logger.info(f"即将播放第{index}段TTS。msg: {msg}")
+                        self.player.play(
+                            voice,
+                            not cache,
+                            onCompleted=lambda: self._lastCompleted(index, onCompleted),
+                        )
+                        self.tts_index += 1
+                    return voice
+                except Exception as e:
+                    logger.error(f"语音合成失败：{e}", stack_info=True)
+                    self.tts_index += 1
+                    traceback.print_exc()
+                    return None
 
     def stream_say(self, stream, cache=False, onCompleted=None):
         """
@@ -85,19 +130,12 @@ class Conversation(object):
         self.appendHistory(1, msg, UUID=resp_uuid, plugin="")
         self._after_play(msg, audios, "")
 
-    def interrupt(self):
-        if self.player and self.player.is_playing():
-            self.player.stop()
-        if self.immersiveMode:
-            self.brain.pause()
-
     def activeListen(self, silent=False):
         """
         主动问一个问题(适用于多轮对话)
         :param silent: 是否不触发唤醒表现（主要用于极客模式）
         :param
         """
-        voice = ""
         if self.immersiveMode:
             self.player.stop()
         elif self.player.is_playing():
@@ -106,11 +144,11 @@ class Conversation(object):
         try:
             if not silent:
                 self.lifeCycleHandler.onWakeup()
-                voice = utils.listen_for_hotword()
+            
+            voice = utils.listen_for_hotword()
             if not silent:
                 self.lifeCycleHandler.onThink()
             if voice:
-                logger.debug("这里来来")
                 query = self.asr.transcribe(voice)
                 utils.check_and_delete(voice)
                 return query
@@ -119,6 +157,17 @@ class Conversation(object):
             logger.error(f"主动聆听失败：{e}", stack_info=True)
             traceback.print_exc()
             return ""
+
+    def interrupt(self):
+        if self.player and self.player.is_playing():
+            self.player.stop()
+        if self.immersiveMode:
+            self.brain.pause()
+        if self.player and self.player.is_playing():
+            self.player.stop()
+        if self.immersiveMode:
+            self.brain.pause()
+
 
     def doResponse(self, query, UUID="", onSay=None, onStream=None):
         """

@@ -4,6 +4,8 @@
 from abc import ABCMeta, abstractmethod
 
 from robot import config, logging
+import numpy as np
+import wave
 
 logger = logging.getLogger(__name__)
 class AbstractASR(object):
@@ -44,9 +46,26 @@ class FunASR(AbstractASR):
 
     def transcribe(self, fp):
         print(fp)
+        # 配置音频参数
+        sample_rate = 16000  # 采样率（例如 16000 Hz）
+        channels = 1         # 单声道（1）
+        sample_width = 2     # 采样宽度（16-bit PCM）
+        output_file = 'output.wav'
+
+        # 将样本数据转换为 NumPy 数组
+        audio_data = np.array(fp, dtype=np.int16)
+
+        # 写入 WAV 文件
+        with wave.open(output_file, 'wb') as wav_file:
+            wav_file.setnchannels(channels)
+            wav_file.setsampwidth(sample_width)
+            wav_file.setframerate(sample_rate)
+            wav_file.writeframes(audio_data.tobytes())
+        print(f"音频数据已保存为 {output_file}")
         print("====================")
         return ""
         result = self.engine(fp)
+
         if result:
             logger.info(f"{self.SLUG} 语音识别到了：{result}")
             return result
