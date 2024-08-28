@@ -123,6 +123,7 @@ def get_engines():
 
 
 def asr_text(output_file):
+    logger.info("开始asr转换")
     url = "https://s1.v100.vip:8776"
     fileUrl = 'https://s1.v100.vip:8776/file='
     client = Client("https://s1.v100.vip:8776/")
@@ -141,4 +142,5 @@ def asr_text(output_file):
             language="auto",
             api_name="/model_inference"
         )
+        logger.info("结束asr转换")
         logger.info(result)
