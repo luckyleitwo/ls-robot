@@ -4,7 +4,6 @@ import shutil
 import time
 import wave
 import _thread as thread
-import webrtcvad
 import numpy as np
 import pvporcupine
 import pyaudio

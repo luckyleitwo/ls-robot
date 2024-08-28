@@ -8508,3 +8508,31 @@
 2024-08-27 22:42:23,101 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
 2024-08-27 22:42:23,101 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
 2024-08-27 22:42:24,304 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 08:33:59,557 - robot.ASR - ASR.py - get_engine_by_slug - line 101 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 08:33:59,573 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 08:33:59,573 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 08:34:28,196 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 08:34:28
+2024-08-28 08:34:28,229 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 08:34:28,232 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 08:34:28,241 - robot.utils - utils.py - listen_for_hotword - line 97 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 4, 'defaultInputDevice': 1, 'defaultOutputDevice': 2}
+2024-08-28 08:34:29,410 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 08:34:33,353 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 08:34:34,055 - robot.ASR - ASR.py - get_engine_by_slug - line 101 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 08:34:34,127 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 08:34:34,127 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 08:34:34,773 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 08:40:22,338 - robot.ASR - ASR.py - get_engine_by_slug - line 101 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 08:40:22,353 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 08:40:22,353 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 08:40:26,776 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 08:40:26
+2024-08-28 08:40:26,804 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 08:40:26,806 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 08:40:26,816 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 4, 'defaultInputDevice': 1, 'defaultOutputDevice': 2}
+2024-08-28 08:40:27,960 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 08:40:31,860 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 08:40:32,224 - robot.ASR - ASR.py - get_engine_by_slug - line 101 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 08:40:32,249 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 08:40:32,249 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 08:40:33,266 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 10:09:49,155 - robot.ASR - ASR.py - asr_text - line 146 - INFO - I did go and made many prisoners.😊
+2024-08-28 10:11:08,607 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼从此，世界在我面前指向我想去的任何地方，我完全而绝对的主持着我。😔

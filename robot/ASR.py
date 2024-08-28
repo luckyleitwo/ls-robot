@@ -1,13 +1,18 @@
 """"
     语音识别
 """
+import json
 from abc import ABCMeta, abstractmethod
 
+import requests
+from gradio_client import Client, handle_file
 from robot import config, logging
 import numpy as np
 import wave
 
 logger = logging.getLogger(__name__)
+
+
 class AbstractASR(object):
     """
     Generic parent class for all ASR engines
@@ -29,6 +34,7 @@ class AbstractASR(object):
     def transcribe(self, fp):
         pass
 
+
 class FunASR(AbstractASR):
     """
     达摩院FunASR实时语音转写服务软件包
@@ -39,17 +45,16 @@ class FunASR(AbstractASR):
     def __init__(self, inference_type, model_dir, **args):
         super(self.__class__, self).__init__()
 
-
     @classmethod
     def get_config(cls):
         return config.get("fun_asr", {})
 
     def transcribe(self, fp):
-        print(fp)
+        # print(fp)
         # 配置音频参数
         sample_rate = 16000  # 采样率（例如 16000 Hz）
-        channels = 1         # 单声道（1）
-        sample_width = 2     # 采样宽度（16-bit PCM）
+        channels = 1  # 单声道（1）
+        sample_width = 2  # 采样宽度（16-bit PCM）
         output_file = 'output.wav'
 
         # 将样本数据转换为 NumPy 数组
@@ -61,17 +66,17 @@ class FunASR(AbstractASR):
             wav_file.setsampwidth(sample_width)
             wav_file.setframerate(sample_rate)
             wav_file.writeframes(audio_data.tobytes())
-        print(f"音频数据已保存为 {output_file}")
-        print("====================")
-        return ""
-        result = self.engine(fp)
-
+        # tata = chatAi(result)
+        logger.info(f"音频数据已保存为 {output_file}")
+        logger.info("====================")
+        result = asr_text(output_file)
         if result:
             logger.info(f"{self.SLUG} 语音识别到了：{result}")
             return result
         else:
             logger.critical(f"{self.SLUG} 语音识别出错了", stack_info=True)
             return ""
+
 
 def get_engine_by_slug(slug=None):
     """
@@ -115,3 +120,25 @@ def get_engines():
         for engine in list(get_subclasses(AbstractASR))
         if hasattr(engine, "SLUG") and engine.SLUG
     ]
+
+
+def asr_text(output_file):
+    url = "https://s1.v100.vip:8776"
+    fileUrl = 'https://s1.v100.vip:8776/file='
+    client = Client("https://s1.v100.vip:8776/")
+    with open(output_file, 'rb') as file:
+        files = {'files': (output_file, file)}
+        # 其他的参数
+        data = {}
+
+        # 发送请求
+        response = requests.post(url=url + '/upload', files=files, data=data)
+        # print(response.text)
+        urlList = json.loads(response.text)
+        print(fileUrl + urlList[0])
+        result = client.predict(
+            input_wav=handle_file(fileUrl + urlList[0]),
+            language="auto",
+            api_name="/model_inference"
+        )
+        logger.info(result)
