@@ -1,7 +1,11 @@
+import asyncio
+import tempfile
 import threading
 import traceback
 import uuid
-from robot import utils, logging, Player, ASR, config, statistic,constants
+
+import pygame
+from robot import chatGpt, utils, logging, Player, ASR, config, statistic,constants
 from robot.LifeCycleHandler import LifeCycleHandler
 from robot.Scheduler import Scheduler
 from robot.sdk import History
@@ -9,7 +13,9 @@ import pvporcupine
 import pyaudio
 import time
 import struct
-
+import edge_tts
+from pydub import AudioSegment
+from pydub.playback import play
 
 
 logger = logging.getLogger(__name__)
@@ -95,6 +101,8 @@ class Conversation(object):
         :param cache: 是否缓存 TTS 结果
         :param onCompleted: 声音播报完成后的回调
         """
+        logger.info("进入流成声语音")
+        logger.info(stream)
         lines = []
         line = ""
         resp_uuid = str(uuid.uuid1())
@@ -127,8 +135,8 @@ class Conversation(object):
         if skip_tts:
             self._tts_line("内容包含代码，我就不念了", True, index, onCompleted)
         msg = "".join(lines)
-        self.appendHistory(1, msg, UUID=resp_uuid, plugin="")
-        self._after_play(msg, audios, "")
+        # self.appendHistory(1, msg, UUID=resp_uuid, plugin="")
+        # self._after_play(msg, audios, "")
 
     def activeListen(self, silent=False):
         """
@@ -169,6 +177,14 @@ class Conversation(object):
             self.brain.pause()
 
 
+    async def generate_speech(self,text, filename):
+        logger.info(text)
+        rate = '-4%'
+        volume = '+0%'
+        voice = 'zh-CN-YunxiNeural'
+        tts = edge_tts.Communicate(text=text, voice=voice, rate=rate, volume=volume)
+        await tts.save(constants.getData(filename))
+
     def doResponse(self, query, UUID="", onSay=None, onStream=None):
         """
         响应指令
@@ -178,43 +194,20 @@ class Conversation(object):
         :onSay: 朗读时的回调
         :onStream: 流式输出时的回调
         """
+        logger.info("响应指令")
         statistic.report(1)
         self.interrupt()
-        self.appendHistory(0, query, UUID)
+        logger.info('初始化openai')
+        msg = chatGpt.openChat(query)
+        logger.info("调用完成openai")
+        logger.info(msg)
+        filename = "aaa.wav"
 
-        if onSay:
-            self.onSay = onSay
+        # Generate speech
+        asyncio.run(self.generate_speech(text=msg, filename=filename))
 
-        if onStream:
-            self.onStream = onStream
-
-        if query.strip() == "":
-            self.pardon()
-            return
-
-        lastImmersiveMode = self.immersiveMode
-
-        parsed = self.doParse(query)
-        if self._InGossip(query) or not self.brain.query(query, parsed):
-            # 进入闲聊
-            if self.nlu.hasIntent(parsed, "PAUSE") or "闭嘴" in query:
-                # 停止说话
-                self.player.stop()
-            else:
-                # 没命中技能，使用机器人回复
-                if self.ai.SLUG == "openai":
-                    stream = self.ai.stream_chat(query)
-                    self.stream_say(stream, True, onCompleted=self.checkRestore)
-                else:
-                    msg = self.ai.chat(query, parsed)
-                    self.say(msg, True, onCompleted=self.checkRestore)
-        else:
-            # 命中技能
-            if lastImmersiveMode and lastImmersiveMode != self.matchPlugin:
-                if self.player:
-                    if self.player.is_playing():
-                        logger.debug("等说完再checkRestore")
-                        self.player.appendOnCompleted(lambda: self.checkRestore())
-                else:
-                    logger.debug("checkRestore")
-                    self.checkRestore()
+        # Play the generated audio
+        self.lifeCycleHandler.onHuiDa()
+        # asyncio.run(self.text_to_speech(msg))
+        # self.stream_say(stream=msg, onCompleted=self.checkRestore)
+    

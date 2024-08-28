@@ -163,6 +163,9 @@ class LifeCycleHandler(object):
 
     def _beep_lo(self):
         Player.play(constants.getData("beep_lo.wav"))
+    
+    def _huida(self):
+        Player.play(constants.getData("aaa.wav"))
 
     def onWakeup(self, onCompleted=None):
         """
@@ -185,6 +188,12 @@ class LifeCycleHandler(object):
         self._unihiker and self._unihiker.record(1, "我正在思考...")
         # if config.get("/LED/enable", False):
         #     LED.think()
+
+    def onHuiDa(self):
+        logger.info("onHuiDa")
+        self._huida()
+        self._unihiker and self._unihiker.think()
+        self._unihiker and self._unihiker.record(1, "我正在思考...")
 
     def onResponse(self, t=1, text=""):
         """

@@ -8540,3 +8540,621 @@
 2024-08-28 13:48:17,955 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
 2024-08-28 13:48:19,595 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
 2024-08-28 13:48:19,595 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼从此，世界在我面前指向我想去的任何地方，我完全而绝对的主持着我。😔
+2024-08-28 20:01:44,808 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:01:44,854 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:01:44,854 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:01:47,316 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:01:47
+2024-08-28 20:01:47,343 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:01:47,346 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:01:47,367 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:01:48,567 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:01:51,080 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:01:51,087 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:01:51,088 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:01:51,088 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:01:53,043 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:01:54,480 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:01:54,480 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话看一看。
+2024-08-28 20:01:54,485 - robot.ASR - ASR.py - transcribe - line 77 - CRITICAL - fun-asr 语音识别出错了
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 152, in activeListen
+    query = self.asr.transcribe(voice)
+  File "/Users/lei/ls/ls-robot/robot/ASR.py", line 77, in transcribe
+    logger.critical(f"{self.SLUG} 语音识别出错了", stack_info=True)
+2024-08-28 20:01:55,209 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:01:55,240 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:01:55,241 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:02:56,553 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:02:56
+2024-08-28 20:02:56,582 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:02:56,584 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:02:56,598 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:02:58,306 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:02:59,571 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:02:59,576 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:02:59,577 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:02:59,577 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:03:01,516 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:03:01,658 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:03:01,658 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:03:01,660 - robot.ASR - ASR.py - transcribe - line 77 - CRITICAL - fun-asr 语音识别出错了
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 152, in activeListen
+    query = self.asr.transcribe(voice)
+  File "/Users/lei/ls/ls-robot/robot/ASR.py", line 77, in transcribe
+    logger.critical(f"{self.SLUG} 语音识别出错了", stack_info=True)
+2024-08-28 20:03:08,130 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:03:08,162 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:03:08,163 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:03:20,015 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:03:20
+2024-08-28 20:03:20,044 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:03:20,047 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:03:20,065 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:03:21,258 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:03:24,084 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:03:24,090 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:03:24,091 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:03:24,092 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:03:26,027 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:03:26,355 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:03:26,356 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话，看一看到底怎么样。
+2024-08-28 20:03:26,357 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话，看一看到底怎么样。
+2024-08-28 20:03:27,180 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:03:27,210 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:03:27,212 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:06:07,150 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:06:07
+2024-08-28 20:06:07,179 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:06:07,181 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:06:07,202 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:06:08,401 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:06:10,092 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:06:10,098 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:06:10,100 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:06:10,101 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:06:11,871 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:06:11,872 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:06:11,872 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:06:12,050 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:09:46,477 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:09:46,521 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:09:46,521 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:09:48,232 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:09:48
+2024-08-28 20:09:48,260 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:09:48,264 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:09:48,281 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:09:49,983 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:09:51,408 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:09:51,413 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:09:51,415 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:09:51,415 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:09:53,375 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:09:53,545 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:09:53,556 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:09:53,557 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:09:53,557 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:09:54,408 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:09:54,461 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:09:54,461 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:10:27,755 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:10:27
+2024-08-28 20:10:27,784 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:10:27,788 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:10:27,805 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:10:29,507 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:10:30,974 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:10:30,979 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:10:30,980 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:10:30,980 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:10:32,918 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:10:32,919 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:10:32,921 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:10:32,921 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:10:32,923 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:25:35,482 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:25:35,513 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:25:35,513 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:28:17,304 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:28:17,337 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:28:17,337 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:28:19,713 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:28:19
+2024-08-28 20:28:19,744 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:28:19,747 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:28:19,768 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:28:21,521 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:28:22,874 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:28:22,880 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:28:22,881 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:28:22,882 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:28:24,514 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:28:24,515 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:28:24,516 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:28:24,517 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:28:24,824 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:28:25,846 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:28:25,879 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:28:25,881 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:29:11,710 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:29:11,753 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:29:11,754 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:29:13,266 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:29:13
+2024-08-28 20:29:13,296 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:29:13,298 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:29:13,316 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:29:15,015 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:29:16,338 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:29:16,344 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:29:16,347 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:29:16,348 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:29:18,288 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:29:18,605 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:29:18,605 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:29:18,606 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:29:18,606 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:29:19,728 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:29:19,770 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:29:19,770 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:30:19,306 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:30:19,337 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:30:19,337 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:30:20,889 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:30:20
+2024-08-28 20:30:20,917 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:30:20,920 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:30:20,938 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:30:22,634 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:30:23,492 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:30:23,499 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:30:23,501 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:30:23,502 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:30:25,450 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:30:25,524 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:30:25,525 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 两个笑话看一看。
+2024-08-28 20:30:25,526 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：两个笑话看一看。
+2024-08-28 20:30:25,527 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:30:26,750 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:30:26,779 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:30:26,780 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:31:28,948 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:31:28,981 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:31:28,982 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:31:35,260 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:31:35
+2024-08-28 20:31:35,291 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:31:35,293 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:31:35,310 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:31:37,008 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:31:38,307 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:31:38,314 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:31:38,316 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:31:38,317 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:31:40,069 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:31:40,070 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 你好你好。
+2024-08-28 20:31:40,071 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：你好你好。
+2024-08-28 20:31:40,072 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:31:40,264 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:33:24,286 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:33:24,317 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:33:24,318 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:33:26,014 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:33:26
+2024-08-28 20:33:26,044 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:33:26,047 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:33:26,061 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:33:27,754 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:33:28,931 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:33:28,937 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:33:28,939 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:33:28,940 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:33:30,633 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:33:30,633 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:33:30,634 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:33:30,635 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:33:30,882 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:34:07,878 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:34:07,910 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:34:07,911 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:34:09,301 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:34:09
+2024-08-28 20:34:09,330 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:34:09,333 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:34:09,352 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:34:10,548 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:34:11,932 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:34:11,939 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:34:11,941 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:34:11,941 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:34:13,835 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:34:13,836 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话看一看。
+2024-08-28 20:34:13,837 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话看一看。
+2024-08-28 20:34:13,838 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:34:13,911 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:34:54,825 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:34:54,859 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:34:54,859 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:35:01,146 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:35:01
+2024-08-28 20:35:01,175 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:35:01,177 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:35:01,198 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:35:02,890 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:35:03,660 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:35:03,665 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:35:03,667 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:35:03,667 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:35:05,103 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:35:05,705 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:35:05,705 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 下我要看一看。
+2024-08-28 20:35:05,706 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：下我要看一看。
+2024-08-28 20:35:05,706 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:35:05,708 - robot.Conversation - Conversation.py - doResponse - line 184 - INFO - 初始化openai
+2024-08-28 20:35:08,167 - robot.Conversation - Conversation.py - doResponse - line 186 - INFO - 调用完成openai
+2024-08-28 20:35:09,387 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:35:09,417 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:35:09,418 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:35:56,579 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:35:56,616 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:35:56,617 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:35:59,095 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:35:59
+2024-08-28 20:35:59,124 - robot.Conversation - Conversation.py - activeListen - line 143 - INFO - 进入主动聆听...
+2024-08-28 20:35:59,127 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:35:59,144 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:36:00,843 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:36:02,536 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:36:02,545 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:36:02,547 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:36:02,547 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:36:04,460 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:36:04,461 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 两个笑话看一看。
+2024-08-28 20:36:04,462 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：两个笑话看一看。
+2024-08-28 20:36:04,462 - robot.Conversation - Conversation.py - doResponse - line 181 - INFO - 响应指令
+2024-08-28 20:36:04,464 - robot.Conversation - Conversation.py - doResponse - line 184 - INFO - 初始化openai
+2024-08-28 20:36:04,484 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:36:07,363 - robot.Conversation - Conversation.py - doResponse - line 186 - INFO - 调用完成openai
+2024-08-28 20:36:08,346 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:36:08,377 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:36:08,377 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:39:42,574 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:39:42,631 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:39:42,631 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:39:44,247 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:39:44
+2024-08-28 20:39:44,274 - robot.Conversation - Conversation.py - activeListen - line 145 - INFO - 进入主动聆听...
+2024-08-28 20:39:44,277 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:39:44,297 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:39:45,502 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:39:47,346 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:39:47,353 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:39:47,354 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:39:47,354 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:39:49,154 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:39:49,155 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:39:49,156 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:39:49,156 - robot.Conversation - Conversation.py - doResponse - line 183 - INFO - 响应指令
+2024-08-28 20:39:49,159 - robot.Conversation - Conversation.py - doResponse - line 186 - INFO - 初始化openai
+2024-08-28 20:39:49,296 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:39:51,768 - robot.Conversation - Conversation.py - doResponse - line 188 - INFO - 调用完成openai
+2024-08-28 20:39:52,931 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:39:52,964 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:39:52,964 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:40:25,613 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:40:25,645 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:40:25,646 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:40:27,193 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:40:27
+2024-08-28 20:40:27,219 - robot.Conversation - Conversation.py - activeListen - line 145 - INFO - 进入主动聆听...
+2024-08-28 20:40:27,222 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:40:27,239 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:40:28,948 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:40:30,388 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:40:30,395 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:40:30,397 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:40:30,397 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:40:32,094 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:40:32,095 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:40:32,096 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:40:32,097 - robot.Conversation - Conversation.py - doResponse - line 183 - INFO - 响应指令
+2024-08-28 20:40:32,100 - robot.Conversation - Conversation.py - doResponse - line 186 - INFO - 初始化openai
+2024-08-28 20:40:32,339 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:40:34,967 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:40:34,999 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:40:35,001 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:44:26,936 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:44:26,968 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:44:26,968 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:44:40,257 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:44:40
+2024-08-28 20:44:40,284 - robot.Conversation - Conversation.py - activeListen - line 149 - INFO - 进入主动聆听...
+2024-08-28 20:44:40,287 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:44:40,304 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:44:42,010 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:44:43,403 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:44:43,411 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:44:43,413 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:44:43,413 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:44:44,846 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:44:45,338 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:44:45,338 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 20:44:45,338 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 20:44:45,339 - robot.Conversation - Conversation.py - doResponse - line 208 - INFO - 响应指令
+2024-08-28 20:44:45,340 - robot.Conversation - Conversation.py - doResponse - line 211 - INFO - 初始化openai
+2024-08-28 20:44:47,897 - robot.Conversation - Conversation.py - doResponse - line 213 - INFO - 调用完成openai
+2024-08-28 20:44:47,897 - robot.Conversation - Conversation.py - doResponse - line 214 - INFO - 为什么音乐家不喜欢打扫房间呢？
+
+因为他们总是留下一个节奏感不强的地方！
+2024-08-28 20:52:12,502 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:52:12,532 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:52:12,532 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:52:14,313 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:52:14
+2024-08-28 20:52:14,342 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 20:52:14,345 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:52:14,361 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:52:16,063 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:52:16,837 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:52:16,844 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:52:16,846 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:52:16,847 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:52:18,811 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:52:19,156 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:52:19,157 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 笑话看一看。
+2024-08-28 20:52:19,158 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：笑话看一看。
+2024-08-28 20:52:19,159 - robot.Conversation - Conversation.py - doResponse - line 205 - INFO - 响应指令
+2024-08-28 20:52:19,162 - robot.Conversation - Conversation.py - doResponse - line 208 - INFO - 初始化openai
+2024-08-28 20:52:26,948 - robot.Conversation - Conversation.py - doResponse - line 210 - INFO - 调用完成openai
+2024-08-28 20:52:26,949 - robot.Conversation - Conversation.py - doResponse - line 211 - INFO - 好的，这里是一个笑话给您看看：
+
+有一天，欧洲的兔子和美洲的兔子赛跑，结果欧洲的兔子获胜了。
+
+为什么？
+
+因为美洲的兔子有汉堡和薯条，跑起来太累了！
+2024-08-28 20:52:50,187 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:52:50,217 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:52:50,218 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:52:51,814 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:52:51
+2024-08-28 20:52:51,842 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 20:52:51,845 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:52:51,863 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:52:53,042 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:52:54,096 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:52:54,104 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:52:54,105 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:52:54,106 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:52:56,056 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:52:56,948 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:52:56,949 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼对以看。
+2024-08-28 20:52:56,950 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼对以看。
+2024-08-28 20:52:56,951 - robot.Conversation - Conversation.py - doResponse - line 205 - INFO - 响应指令
+2024-08-28 20:52:56,953 - robot.Conversation - Conversation.py - doResponse - line 208 - INFO - 初始化openai
+2024-08-28 20:53:00,532 - robot.Conversation - Conversation.py - doResponse - line 210 - INFO - 调用完成openai
+2024-08-28 20:53:00,532 - robot.Conversation - Conversation.py - doResponse - line 211 - INFO - 抱歉，我不确定你的意思。你是想让我给你唱一首歌吗？还是有其他什么需求？请告诉我更多细节，我会尽力帮助你。
+2024-08-28 20:55:34,802 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:55:34,832 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:55:34,833 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:55:37,096 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:55:37
+2024-08-28 20:55:37,128 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 20:55:37,131 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:55:37,149 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:55:38,884 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:55:40,430 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:55:40,439 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:55:40,440 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:55:40,440 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:55:41,884 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:55:42,359 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:55:42,360 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲一个笑话看看。
+2024-08-28 20:55:42,361 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲一个笑话看看。
+2024-08-28 20:55:42,362 - robot.Conversation - Conversation.py - doResponse - line 201 - INFO - 响应指令
+2024-08-28 20:55:42,365 - robot.Conversation - Conversation.py - doResponse - line 204 - INFO - 初始化openai
+2024-08-28 20:55:52,221 - robot.Conversation - Conversation.py - doResponse - line 206 - INFO - 调用完成openai
+2024-08-28 20:55:52,221 - robot.Conversation - Conversation.py - doResponse - line 207 - INFO - 好的，这是一个笑话： 
+
+有一天，一个小男孩走进了一个饼干店，他说：“老板，我能请你给我一些饼干吗？” 
+
+老板说：“当然可以了，但是你得告诉我你为什么要这些饼干。” 
+
+小男孩回答说：“因为我听爸爸说，如果有足够的饼干，我就可以煮出一个新妹妹！” 
+
+老板听后笑道：“哦，真的吗？那我明天就买一整箱饼干回家给我太太！” 
+
+小男孩一脸困惑地问：“为什么，你想要一个新妹妹吗？” 
+
+老板笑答道：“不，我只是希望我太太能多吃一些饼干，然后她就会变得大胖子，这样我就可以再把她变瘦啦！”
+2024-08-28 20:56:44,600 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:56:44,631 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:56:44,632 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:56:47,280 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:56:47
+2024-08-28 20:56:47,309 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 20:56:47,313 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:56:47,333 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:56:49,022 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:56:50,679 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:56:50,687 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:56:50,689 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:56:50,690 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:56:52,521 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:56:52,522 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲一个笑话看看。
+2024-08-28 20:56:52,522 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲一个笑话看看。
+2024-08-28 20:56:52,523 - robot.Conversation - Conversation.py - doResponse - line 204 - INFO - 响应指令
+2024-08-28 20:56:52,525 - robot.Conversation - Conversation.py - doResponse - line 207 - INFO - 初始化openai
+2024-08-28 20:56:52,628 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:57:00,774 - robot.Conversation - Conversation.py - doResponse - line 209 - INFO - 调用完成openai
+2024-08-28 20:57:00,775 - robot.Conversation - Conversation.py - doResponse - line 210 - INFO - 当时有两个月饼在路上突然碰面了，一个月饼说：“嘿，你怎么样？怎么一直跌跌撞撞的？” 另一个月饼说：“唉，我中了骗子的圈套！”听到这个，第一个月饼就问：“什么圈套啊？” 第二个月饼说：“有个人说要给我盖个房子，我就高兴地跟他去了，结果被他捏成个圆球！”
+2024-08-28 20:58:10,750 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 20:58:10,780 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 20:58:10,780 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 20:58:12,926 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 20:58:12
+2024-08-28 20:58:12,953 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 20:58:12,956 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:58:12,977 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 20:58:14,673 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 20:58:18,088 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:58:18,097 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 20:58:18,099 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 20:58:18,099 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 20:58:19,538 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 20:58:20,317 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 20:58:20,318 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 我，看一看。
+2024-08-28 20:58:20,318 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：我，看一看。
+2024-08-28 20:58:20,319 - robot.Conversation - Conversation.py - doResponse - line 205 - INFO - 响应指令
+2024-08-28 20:58:20,320 - robot.Conversation - Conversation.py - doResponse - line 208 - INFO - 初始化openai
+2024-08-28 20:58:22,844 - robot.Conversation - Conversation.py - doResponse - line 210 - INFO - 调用完成openai
+2024-08-28 20:58:22,845 - robot.Conversation - Conversation.py - doResponse - line 211 - INFO - 抱歉，我不太明白你的意思。你想让我看什么？
+2024-08-28 21:00:48,874 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 21:00:48,907 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 21:00:48,907 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 21:00:58,118 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 21:00:58
+2024-08-28 21:00:58,147 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 21:00:58,150 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:00:58,170 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 21:00:59,875 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:01:01,186 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:01:01,194 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 21:01:01,197 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 21:01:01,198 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 21:01:02,998 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 21:01:02,998 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 21:01:02,999 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 21:01:03,000 - robot.Conversation - Conversation.py - doResponse - line 204 - INFO - 响应指令
+2024-08-28 21:01:03,003 - robot.Conversation - Conversation.py - doResponse - line 207 - INFO - 初始化openai
+2024-08-28 21:01:03,136 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:01:21,325 - robot.Conversation - Conversation.py - doResponse - line 209 - INFO - 调用完成openai
+2024-08-28 21:01:21,325 - robot.Conversation - Conversation.py - doResponse - line 210 - INFO - 当然可以！这里有一个音乐相关的笑话：
+
+为什么钢琴家总是很冷？
+
+因为他们总是有很多“音符”！😄
+
+希望这个笑话能让你笑一笑！
+2024-08-28 21:01:21,326 - robot.Conversation - Conversation.py - generate_speech - line 181 - INFO - 当然可以！这里有一个音乐相关的笑话：
+
+为什么钢琴家总是很冷？
+
+因为他们总是有很多“音符”！😄
+
+希望这个笑话能让你笑一笑！
+2024-08-28 21:04:55,366 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 21:04:55,395 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 21:04:55,395 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 21:05:00,977 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 21:05:00
+2024-08-28 21:05:01,006 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 21:05:01,009 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:05:01,025 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 21:05:02,227 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:05:04,112 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:05:04,121 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 21:05:04,123 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 21:05:04,124 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 21:05:06,073 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:05:06,105 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 21:05:06,106 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话看一看。
+2024-08-28 21:05:06,107 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话看一看。
+2024-08-28 21:05:06,107 - robot.Conversation - Conversation.py - doResponse - line 197 - INFO - 响应指令
+2024-08-28 21:05:06,110 - robot.Conversation - Conversation.py - doResponse - line 200 - INFO - 初始化openai
+2024-08-28 21:05:13,543 - robot.Conversation - Conversation.py - doResponse - line 202 - INFO - 调用完成openai
+2024-08-28 21:05:13,544 - robot.Conversation - Conversation.py - doResponse - line 203 - INFO - 好的，给你讲个笑话：
+
+有一天，小明和小华去旅行，他们遇到了一个非常古老的桥，上面写着：“只有说谎的人可以过桥，说真话的人会掉下去。”小华一下子就走了过去，而小明却害怕地呆在原地。小明对小华说：“你怎么过去了？你不是总是说真话吗？”小华笑着回答：“没错，但是我刚才骗了你，我其实是说谎的。”
+2024-08-28 21:05:13,545 - robot.Conversation - Conversation.py - generate_speech - line 181 - INFO - 好的，给你讲个笑话：
+
+有一天，小明和小华去旅行，他们遇到了一个非常古老的桥，上面写着：“只有说谎的人可以过桥，说真话的人会掉下去。”小华一下子就走了过去，而小明却害怕地呆在原地。小明对小华说：“你怎么过去了？你不是总是说真话吗？”小华笑着回答：“没错，但是我刚才骗了你，我其实是说谎的。”
+2024-08-28 21:05:15,861 - robot.Player - Player.py - play - line 133 - CRITICAL - path not exists: /Users/lei/ls/ls-robot/static/aaa.wav
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 62, in initDetector
+    wukong.conversation.doResponse(query)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 210, in doResponse
+    self.lifeCycleHandler.onHuiDa()
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 194, in onHuiDa
+    self._huida()
+  File "/Users/lei/ls/ls-robot/robot/LifeCycleHandler.py", line 168, in _huida
+    Player.play(constants.getData("aaa.wav"))
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 42, in play
+    player.play(fname, onCompleted=onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 133, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-28 21:07:49,217 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-28 21:07:49,247 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-28 21:07:49,247 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-28 21:07:50,695 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 21:07:50
+2024-08-28 21:07:50,725 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 21:07:50,728 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:07:50,748 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 21:07:52,444 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:07:53,675 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:07:53,683 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 21:07:53,684 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 21:07:53,685 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 21:07:55,489 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 21:07:55,489 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼你好你好。
+2024-08-28 21:07:55,491 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼你好你好。
+2024-08-28 21:07:55,492 - robot.Conversation - Conversation.py - doResponse - line 197 - INFO - 响应指令
+2024-08-28 21:07:55,494 - robot.Conversation - Conversation.py - doResponse - line 200 - INFO - 初始化openai
+2024-08-28 21:07:55,625 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:08:00,730 - robot.Conversation - Conversation.py - doResponse - line 202 - INFO - 调用完成openai
+2024-08-28 21:08:00,730 - robot.Conversation - Conversation.py - doResponse - line 203 - INFO - 你好你好，有什么我可以帮助您的吗？
+2024-08-28 21:08:00,731 - robot.Conversation - Conversation.py - generate_speech - line 181 - INFO - 你好你好，有什么我可以帮助您的吗？
+2024-08-28 21:08:02,010 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/aaa.wav
+2024-08-28 21:08:07,013 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/aaa.wav
+2024-08-28 21:08:12,008 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-28 21:08:12
+2024-08-28 21:08:12,039 - robot.Conversation - Conversation.py - activeListen - line 151 - INFO - 进入主动聆听...
+2024-08-28 21:08:12,042 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:08:12,061 - robot.utils - utils.py - listen_for_hotword - line 96 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-28 21:08:13,761 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-28 21:08:15,783 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:08:15,793 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-28 21:08:15,795 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-28 21:08:15,797 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-28 21:08:17,737 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-28 21:08:17,794 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-28 21:08:17,795 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲一个笑话听一听。
+2024-08-28 21:08:17,795 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲一个笑话听一听。
+2024-08-28 21:08:17,796 - robot.Conversation - Conversation.py - doResponse - line 197 - INFO - 响应指令
+2024-08-28 21:08:17,797 - robot.Conversation - Conversation.py - doResponse - line 200 - INFO - 初始化openai
+2024-08-28 21:08:35,417 - robot.Conversation - Conversation.py - doResponse - line 202 - INFO - 调用完成openai
+2024-08-28 21:08:35,417 - robot.Conversation - Conversation.py - doResponse - line 203 - INFO - 好的，我来给你讲一个笑话。
+
+有一天，小明去兜售自己的新发明——一种可以使人在睡觉时飞翔的药水。他来到一家人家门前，兴高采烈地敲响了门铃。
+
+门打开后，一个妇人问：“你找什么？”
+小明回答：“我有一个神奇的药水，可以让人在睡觉时飞翔！”
+妇人疑惑地说：“这听起来太荒谬了。”
+小明自信满满地说：“请让我证明给你看！”
+于是，妇人带着小明进了屋子。
+
+小明拿出一瓶透明的药水，对妇人说：“请您喝下这个药水，然后睡上一觉，您就会在梦中飞翔。”
+妇人不信，但好奇心驱使她还是喝下了药水。
+
+第二天一早，小明来到这家人家的门前，只见妇人笑眯眯地站在门口。
+小明兴奋地问：“你昨晚喝了我的药水，是不是在梦中飞翔了？”
+妇人笑着回答：“不，我没有飞翔。但是，我却做了一个奇怪的梦。”
+小明有些失望地问：“是什么梦？”
+妇人哈哈大笑：“我梦到我喝了你的药水后，结果在梦里，我整夜都在上厕所！”
+
+希望这个笑话能够让你开心！
+2024-08-28 21:08:35,419 - robot.Conversation - Conversation.py - generate_speech - line 181 - INFO - 好的，我来给你讲一个笑话。
+
+有一天，小明去兜售自己的新发明——一种可以使人在睡觉时飞翔的药水。他来到一家人家门前，兴高采烈地敲响了门铃。
+
+门打开后，一个妇人问：“你找什么？”
+小明回答：“我有一个神奇的药水，可以让人在睡觉时飞翔！”
+妇人疑惑地说：“这听起来太荒谬了。”
+小明自信满满地说：“请让我证明给你看！”
+于是，妇人带着小明进了屋子。
+
+小明拿出一瓶透明的药水，对妇人说：“请您喝下这个药水，然后睡上一觉，您就会在梦中飞翔。”
+妇人不信，但好奇心驱使她还是喝下了药水。
+
+第二天一早，小明来到这家人家的门前，只见妇人笑眯眯地站在门口。
+小明兴奋地问：“你昨晚喝了我的药水，是不是在梦中飞翔了？”
+妇人笑着回答：“不，我没有飞翔。但是，我却做了一个奇怪的梦。”
+小明有些失望地问：“是什么梦？”
+妇人哈哈大笑：“我梦到我喝了你的药水后，结果在梦里，我整夜都在上厕所！”
+
+希望这个笑话能够让你开心！
+2024-08-28 21:08:40,394 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/aaa.wav
+2024-08-28 21:09:58,933 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/aaa.wav

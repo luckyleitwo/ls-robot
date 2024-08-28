@@ -89,17 +89,3 @@ def initDetector(wukong):
         finally:
             porcupine and porcupine.delete()
             recorder and recorder.delete()
-        # main loop
-        try:
-            callbacks = wukong._detected_callback
-            detector.start(
-                detected_callback=callbacks,
-                audio_recorder_callback=wukong.conversation.converse,
-                interrupt_check=wukong._interrupt_callback,
-                silent_count_threshold=config.get("silent_threshold", 15),
-                recording_timeout=config.get("recording_timeout", 5) * 4,
-                sleep_time=0.03,
-            )
-            detector.terminate()
-        except Exception as e:
-            logger.critical(f"离线唤醒机制初始化失败：{e}", stack_info=True)

@@ -144,3 +144,4 @@ def asr_text(output_file):
         )
         logger.info("结束asr转换")
         logger.info(result)
+        return result
