@@ -761,3 +761,919 @@ Stack (most recent call last):
 2024-08-29 18:01:34,929 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
 2024-08-29 18:01:34,929 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
 2024-08-29 18:01:34,931 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:20:19,446 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 19:20:19,447 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 19:20:19,447 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 19:20:19,447 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 19:20:19,490 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 19:20:19,490 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 19:20:29,970 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:20:29
+2024-08-29 19:20:30,001 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:20:30,003 - robot.Player - Player.py - play - line 133 - INFO - /Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:20:30,004 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:20:30,025 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:20:31,755 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:20:33,532 - robot.Player - Player.py - play - line 133 - INFO - /Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:20:33,532 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:20:33,539 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:20:33,540 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:20:33,540 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:20:35,489 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:20:35,754 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:20:35,755 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话听一听。
+2024-08-29 19:20:35,757 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话听一听。
+2024-08-29 19:20:35,757 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:20:38,265 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：🎼讲个笑话听一听
+2024-08-29 19:20:38,266 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:20:38,266 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:20:40,337 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:20:40,337 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x110ea7af0>
+2024-08-29 19:20:42,297 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/70c696500182468b9d8abf0163e52c2c.mp3
+2024-08-29 19:20:42,309 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: “有一天，一个叫小明的小朋友去找他的爸爸问他：‘爸爸，为什么月亮总是跟着我们走?’
+2024-08-29 19:20:42,310 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x110d00360>
+2024-08-29 19:20:42,311 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: “有一天，一个叫小明的小朋友去找他的爸爸问他：‘爸爸，为什么月亮总是跟着我们走?’
+2024-08-29 19:20:42,312 - robot.Player - Player.py - play - line 133 - INFO - /Users/lei/ls/ls-robot/temp/70c696500182468b9d8abf0163e52c2c.mp3
+2024-08-29 19:20:42,313 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/70c696500182468b9d8abf0163e52c2c.mp3
+2024-08-29 19:20:43,665 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/8fcf6685d20e4fee87767a6007762877.mp3
+2024-08-29 19:20:43,666 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 爸爸笑着回答道：‘因为月亮是一个粉丝啊，它喜欢我们，所以总是跟着我们走。
+2024-08-29 19:20:43,666 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x110d00360>
+2024-08-29 19:20:43,666 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 爸爸笑着回答道：‘因为月亮是一个粉丝啊，它喜欢我们，所以总是跟着我们走。
+2024-08-29 19:20:43,667 - robot.Player - Player.py - play - line 133 - INFO - /Users/lei/ls/ls-robot/temp/8fcf6685d20e4fee87767a6007762877.mp3
+2024-08-29 19:20:45,078 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/3e84fa66c8574d94a7b24b2445b25991.mp3
+2024-08-29 19:20:45,079 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: ’ 小明听了，笑着说：‘那我们是不是要给月亮签名呢？
+2024-08-29 19:20:45,079 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x110d00360>
+2024-08-29 19:20:45,079 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: ’ 小明听了，笑着说：‘那我们是不是要给月亮签名呢？
+2024-08-29 19:20:45,080 - robot.Player - Player.py - play - line 133 - INFO - /Users/lei/ls/ls-robot/temp/3e84fa66c8574d94a7b24b2445b25991.mp3
+2024-08-29 19:20:46,405 - robot.TTS - TTS.py - async_get_speech - line 65 - CRITICAL - edge-tts 合成失败：No audio was received. Please verify that your parameters are correct.！
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 62, in initDetector
+    wukong.conversation.doResponse(query)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 265, in doResponse
+    self.stream_say(stream, True, onCompleted=self.checkRestore)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 164, in stream_say
+    audio = self._tts_line(line.strip(), cache, index, onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 121, in _tts_line
+    result = self._ttsAction(line, cache, index, onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 85, in _ttsAction
+    voice = self.tts.get_speech(msg)
+  File "/Users/lei/ls/ls-robot/robot/TTS.py", line 70, in get_speech
+    tmpfile = event_loop.run_until_complete(self.async_get_speech(phrase))
+  File "/Users/lei/ls/ls-robot/.venv/lib/python3.9/site-packages/nest_asyncio.py", line 92, in run_until_complete
+    self._run_once()
+  File "/Users/lei/ls/ls-robot/.venv/lib/python3.9/site-packages/nest_asyncio.py", line 133, in _run_once
+    handle._run()
+  File "/usr/local/Cellar/python@3.9/3.9.19_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/Cellar/python@3.9/3.9.19_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 256, in __step
+    result = coro.send(None)
+  File "/Users/lei/ls/ls-robot/robot/TTS.py", line 65, in async_get_speech
+    logger.critical(f"{self.SLUG} 合成失败：{str(e)}！", stack_info=True)
+2024-08-29 19:20:46,409 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: ’”
+2024-08-29 19:20:46,409 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x110d00360>
+2024-08-29 19:20:46,409 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: ’”
+2024-08-29 19:20:46,411 - robot.Player - Player.py - play - line 136 - CRITICAL - path not exists: None
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 62, in initDetector
+    wukong.conversation.doResponse(query)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 265, in doResponse
+    self.stream_say(stream, True, onCompleted=self.checkRestore)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 164, in stream_say
+    audio = self._tts_line(line.strip(), cache, index, onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 121, in _tts_line
+    result = self._ttsAction(line, cache, index, onCompleted)
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 93, in _ttsAction
+    self.player.play(
+  File "/Users/lei/ls/ls-robot/robot/Player.py", line 136, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-29 19:20:47,758 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/4894814cf2da4288af4b80accf80e416.mp3
+2024-08-29 19:20:47,763 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 希望这个笑话能让你开心一下！
+2024-08-29 19:20:47,763 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x110d00360>
+2024-08-29 19:20:51,692 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/70c696500182468b9d8abf0163e52c2c.mp3
+2024-08-29 19:20:51,703 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/8fcf6685d20e4fee87767a6007762877.mp3
+2024-08-29 19:20:59,576 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/8fcf6685d20e4fee87767a6007762877.mp3
+2024-08-29 19:20:59,594 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/3e84fa66c8574d94a7b24b2445b25991.mp3
+2024-08-29 19:21:05,690 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/3e84fa66c8574d94a7b24b2445b25991.mp3
+2024-08-29 19:21:27,904 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 19:21:27,904 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 19:21:27,905 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 19:21:27,905 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 19:21:27,948 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 19:21:27,948 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 19:21:31,936 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:21:31
+2024-08-29 19:21:31,965 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:21:31,967 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:21:31,986 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:21:33,195 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:21:34,629 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:21:34,637 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:21:34,639 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:21:34,640 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:21:36,541 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:21:36,542 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼你好。
+2024-08-29 19:21:36,542 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼你好。
+2024-08-29 19:21:36,543 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:21:36,620 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:21:38,433 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：🎼你好
+2024-08-29 19:21:38,433 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:21:38,434 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:21:40,000 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:21:40,000 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x10743aa60>
+2024-08-29 19:21:41,231 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/491911ed87484ee0bda1883db3c2b41e.mp3
+2024-08-29 19:21:41,236 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 您好！
+2024-08-29 19:21:41,237 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:41,237 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 您好！
+2024-08-29 19:21:41,238 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/491911ed87484ee0bda1883db3c2b41e.mp3
+2024-08-29 19:21:42,611 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/f092d9d610994465ba0d17a1a078545a.mp3
+2024-08-29 19:21:42,615 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 欢迎您！
+2024-08-29 19:21:42,615 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:42,615 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 欢迎您！
+2024-08-29 19:21:43,470 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/491911ed87484ee0bda1883db3c2b41e.mp3
+2024-08-29 19:21:43,472 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/f092d9d610994465ba0d17a1a078545a.mp3
+2024-08-29 19:21:44,400 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/995b6a74a57248c7aaddeafca015d453.mp3
+2024-08-29 19:21:44,411 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 我是一个语言模型AI助手，可以回答您的问题、提供信息、或者和您进行对话。
+2024-08-29 19:21:44,412 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:44,412 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 我是一个语言模型AI助手，可以回答您的问题、提供信息、或者和您进行对话。
+2024-08-29 19:21:45,999 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/f092d9d610994465ba0d17a1a078545a.mp3
+2024-08-29 19:21:46,000 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/995b6a74a57248c7aaddeafca015d453.mp3
+2024-08-29 19:21:46,285 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/327dce415ccf433bb9598bab41d0ffa8.mp3
+2024-08-29 19:21:46,287 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 无论您是想了解音乐、学习乐理知识，还是想听听最新的音乐推荐，我都可以为您提供帮助。
+2024-08-29 19:21:46,288 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:46,288 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 无论您是想了解音乐、学习乐理知识，还是想听听最新的音乐推荐，我都可以为您提供帮助。
+2024-08-29 19:21:47,854 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/587da2286aef48f9907815c6d66f2f9a.mp3
+2024-08-29 19:21:47,859 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 音乐是一种美妙的艺术形式，它可以带来欢乐、慰藉和思考。
+2024-08-29 19:21:47,859 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:47,860 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 音乐是一种美妙的艺术形式，它可以带来欢乐、慰藉和思考。
+2024-08-29 19:21:49,447 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/8e99a3d57c804de987b087c93753a8dd.mp3
+2024-08-29 19:21:49,452 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 如果您有任何关于音乐的问题或者需要帮助，都可以随时向我提问。
+2024-08-29 19:21:49,453 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:49,453 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 如果您有任何关于音乐的问题或者需要帮助，都可以随时向我提问。
+2024-08-29 19:21:51,001 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/da49853fd2a54effb51ea0479c30b55a.mp3
+2024-08-29 19:21:51,004 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 同时，如果您在寻找关于音乐的信息或者别的问题，也可以向我提问。
+2024-08-29 19:21:51,005 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:51,005 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 同时，如果您在寻找关于音乐的信息或者别的问题，也可以向我提问。
+2024-08-29 19:21:52,610 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/0117179315f34ff49994f9b67da50cc0.mp3
+2024-08-29 19:21:52,611 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第7段TTS合成成功。msg: 希望我可以成为您的好帮手，让我们一起沉浸在音乐的海洋中，共同感受美妙的旋律和情感吧！
+2024-08-29 19:21:52,611 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:52,611 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第7段TTS。msg: 希望我可以成为您的好帮手，让我们一起沉浸在音乐的海洋中，共同感受美妙的旋律和情感吧！
+2024-08-29 19:21:54,339 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/0e83a7cb108242ab82387c65e8fd30d2.mp3
+2024-08-29 19:21:54,343 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: 祝您在这里度过愉快的时光！
+2024-08-29 19:21:54,344 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:21:54,344 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第8段TTS。msg: 祝您在这里度过愉快的时光！
+2024-08-29 19:21:54,812 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/995b6a74a57248c7aaddeafca015d453.mp3
+2024-08-29 19:21:54,814 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/327dce415ccf433bb9598bab41d0ffa8.mp3
+2024-08-29 19:22:04,429 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/327dce415ccf433bb9598bab41d0ffa8.mp3
+2024-08-29 19:22:04,431 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/587da2286aef48f9907815c6d66f2f9a.mp3
+2024-08-29 19:22:10,342 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:22:10
+2024-08-29 19:22:10,371 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:22:10,376 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/587da2286aef48f9907815c6d66f2f9a.mp3
+2024-08-29 19:22:10,380 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:22:10,413 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:22:12,106 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:22:13,800 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:22:13,811 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:22:13,813 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:22:13,813 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:22:15,783 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:22:15,952 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:22:15,952 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲一个笑话听一听。
+2024-08-29 19:22:15,953 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲一个笑话听一听。
+2024-08-29 19:22:15,953 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:22:17,850 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话听一听
+2024-08-29 19:22:17,851 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:22:17,852 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:22:19,317 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:22:19,318 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x10743ae50>
+2024-08-29 19:22:20,970 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/3dda3d1025794b0ea8781a1ab4836c31.mp3
+2024-08-29 19:22:20,973 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 当然可以！
+2024-08-29 19:22:20,974 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:20,974 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 当然可以！
+2024-08-29 19:22:20,975 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/3dda3d1025794b0ea8781a1ab4836c31.mp3
+2024-08-29 19:22:22,304 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/dadf1efcd28d40f8886e31c0c0e175b0.mp3
+2024-08-29 19:22:22,309 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 这里有一个简单的笑话：
+2024-08-29 19:22:22,310 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:22,310 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 这里有一个简单的笑话：
+2024-08-29 19:22:23,465 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/3dda3d1025794b0ea8781a1ab4836c31.mp3
+2024-08-29 19:22:23,466 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/dadf1efcd28d40f8886e31c0c0e175b0.mp3
+2024-08-29 19:22:24,042 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/2f89a23ced2847e0906b439ab141e4df.mp3
+2024-08-29 19:22:24,050 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 有一天，一只青蛙走进了银行，它对柜台小姐说：“我想借一万美元。”
+2024-08-29 19:22:24,051 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:24,051 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 有一天，一只青蛙走进了银行，它对柜台小姐说：“我想借一万美元。”
+2024-08-29 19:22:25,299 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/b98805526c014040be03a5da4f7c704c.mp3
+2024-08-29 19:22:25,304 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 柜台小姐有些惊讶，问：“你有抵押物吗？”
+2024-08-29 19:22:25,304 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:25,305 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 柜台小姐有些惊讶，问：“你有抵押物吗？”
+2024-08-29 19:22:26,845 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/29527a7d72ae429bb59b83c9d31407a3.mp3
+2024-08-29 19:22:26,850 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 青蛙从口袋里拿出一只小粉色的陶罐，放在桌子上。
+2024-08-29 19:22:26,851 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:26,851 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 青蛙从口袋里拿出一只小粉色的陶罐，放在桌子上。
+2024-08-29 19:22:26,954 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/dadf1efcd28d40f8886e31c0c0e175b0.mp3
+2024-08-29 19:22:26,955 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/2f89a23ced2847e0906b439ab141e4df.mp3
+2024-08-29 19:22:28,055 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/0f8c805ed30341beb29905715c71d598.mp3
+2024-08-29 19:22:28,065 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 柜台小姐觉得奇怪，但还是给经理打了电话。
+2024-08-29 19:22:28,066 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:28,067 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 柜台小姐觉得奇怪，但还是给经理打了电话。
+2024-08-29 19:22:29,627 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/d9ab18b1903040118eb50f9060cbb453.mp3
+2024-08-29 19:22:29,632 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 经理走过来，看了看青蛙的陶罐，觉得没什么用，就对青蛙说：“抱歉，我们不能给你贷款。”
+2024-08-29 19:22:29,632 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:29,632 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 经理走过来，看了看青蛙的陶罐，觉得没什么用，就对青蛙说：“抱歉，我们不能给你贷款。”
+2024-08-29 19:22:31,114 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/e361e18774a24dc4b0717aedc4bfbd7d.mp3
+2024-08-29 19:22:31,117 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第7段TTS合成成功。msg: 青蛙抬起头，问：“你为什么不相信我？”
+2024-08-29 19:22:31,117 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:31,118 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第7段TTS。msg: 青蛙抬起头，问：“你为什么不相信我？”
+2024-08-29 19:22:32,799 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/568edf16d0d1401f8edf774796610d69.mp3
+2024-08-29 19:22:32,807 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: 经理回答：“因为你只带了一只陶罐。”
+2024-08-29 19:22:32,808 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:32,808 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第8段TTS。msg: 经理回答：“因为你只带了一只陶罐。”
+2024-08-29 19:22:34,240 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/e7a5f7d1b7e240099b6e4913bb689b8a.mp3
+2024-08-29 19:22:34,246 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第9段TTS合成成功。msg: 青蛙愤怒地说：“你不知道这是什么吗？
+2024-08-29 19:22:34,246 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:34,247 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第9段TTS。msg: 青蛙愤怒地说：“你不知道这是什么吗？
+2024-08-29 19:22:34,726 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/2f89a23ced2847e0906b439ab141e4df.mp3
+2024-08-29 19:22:34,727 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/b98805526c014040be03a5da4f7c704c.mp3
+2024-08-29 19:22:35,760 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/b2ac1ff4d73e4bb99d66d8df268552d6.mp3
+2024-08-29 19:22:35,761 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第10段TTS合成成功。msg: 这是我妈妈留给我的，它的名字叫‘小猪’！
+2024-08-29 19:22:35,762 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:35,762 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第10段TTS。msg: 这是我妈妈留给我的，它的名字叫‘小猪’！
+2024-08-29 19:22:37,331 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/d1c6b7dbdf134834a519feeea5cecc48.mp3
+2024-08-29 19:22:37,336 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第11段TTS合成成功。msg: 你要知道，小猪在我家可是有千万的存款呢！”
+2024-08-29 19:22:37,337 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:37,337 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第11段TTS。msg: 你要知道，小猪在我家可是有千万的存款呢！”
+2024-08-29 19:22:39,009 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/2a781f738fc644d6b7076ed594ced08b.mp3
+2024-08-29 19:22:39,013 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第12段TTS合成成功。msg: 经理听后，无奈地摇了摇头：“好吧，不过你必须把它带来证明一下。”
+2024-08-29 19:22:39,014 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:39,014 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第12段TTS。msg: 经理听后，无奈地摇了摇头：“好吧，不过你必须把它带来证明一下。”
+2024-08-29 19:22:39,741 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/b98805526c014040be03a5da4f7c704c.mp3
+2024-08-29 19:22:39,742 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/29527a7d72ae429bb59b83c9d31407a3.mp3
+2024-08-29 19:22:40,474 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/72a2a039e63e4e22a1aea77dad1a4379.mp3
+2024-08-29 19:22:40,479 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第13段TTS合成成功。msg: 青蛙笑着回答：“那就等我把它从贷款中解救出来吧！”
+2024-08-29 19:22:40,480 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:40,480 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第13段TTS。msg: 青蛙笑着回答：“那就等我把它从贷款中解救出来吧！”
+2024-08-29 19:22:42,027 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/11b2a25d14eb4329bc48c74209f67147.mp3
+2024-08-29 19:22:42,032 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第14段TTS合成成功。msg: 希望这个笑话能让您开心！
+2024-08-29 19:22:42,032 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:22:42,032 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第14段TTS。msg: 希望这个笑话能让您开心！
+2024-08-29 19:22:46,064 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/29527a7d72ae429bb59b83c9d31407a3.mp3
+2024-08-29 19:22:46,065 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/0f8c805ed30341beb29905715c71d598.mp3
+2024-08-29 19:22:51,340 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/0f8c805ed30341beb29905715c71d598.mp3
+2024-08-29 19:22:51,341 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/d9ab18b1903040118eb50f9060cbb453.mp3
+2024-08-29 19:23:00,676 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/d9ab18b1903040118eb50f9060cbb453.mp3
+2024-08-29 19:23:00,678 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/e361e18774a24dc4b0717aedc4bfbd7d.mp3
+2024-08-29 19:23:05,201 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:23:05
+2024-08-29 19:23:05,233 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:23:05,239 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/e361e18774a24dc4b0717aedc4bfbd7d.mp3
+2024-08-29 19:23:05,242 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:23:05,275 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:23:06,967 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:23:09,125 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:23:09,133 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:23:09,134 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:23:09,135 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:23:11,092 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:23:11,279 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:23:11,280 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 呃，你好你好。
+2024-08-29 19:23:11,281 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：呃，你好你好。
+2024-08-29 19:23:11,281 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:23:13,659 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：呃，你好你好
+2024-08-29 19:23:13,659 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:23:13,660 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:23:15,503 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:23:15,503 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x107731670>
+2024-08-29 19:23:16,699 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/3c8d7e183d6244b198273745b67eb2ea.mp3
+2024-08-29 19:23:16,700 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 你好！
+2024-08-29 19:23:16,701 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:16,701 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 你好！
+2024-08-29 19:23:16,702 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/3c8d7e183d6244b198273745b67eb2ea.mp3
+2024-08-29 19:23:18,052 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/3606b462492541a7b2f99615b683954e.mp3
+2024-08-29 19:23:18,059 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 欢迎您的问候！
+2024-08-29 19:23:18,060 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:18,060 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 欢迎您的问候！
+2024-08-29 19:23:18,950 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/3c8d7e183d6244b198273745b67eb2ea.mp3
+2024-08-29 19:23:18,951 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/3606b462492541a7b2f99615b683954e.mp3
+2024-08-29 19:23:19,807 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/d47a0039f7564993ba0d2953d08ae829.mp3
+2024-08-29 19:23:19,815 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 或许您是在寻找帮助或者想要进行一次有趣的交流。
+2024-08-29 19:23:19,816 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:19,816 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 或许您是在寻找帮助或者想要进行一次有趣的交流。
+2024-08-29 19:23:21,370 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/c2b50fafc3794085b7ee97ed676854a5.mp3
+2024-08-29 19:23:21,375 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 无论您的目的是什么，我都很愿意与您交谈。
+2024-08-29 19:23:21,376 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:21,376 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 无论您的目的是什么，我都很愿意与您交谈。
+2024-08-29 19:23:21,698 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/3606b462492541a7b2f99615b683954e.mp3
+2024-08-29 19:23:21,699 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/d47a0039f7564993ba0d2953d08ae829.mp3
+2024-08-29 19:23:23,105 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/1d6285b2ff684d22a429e656adc851bf.mp3
+2024-08-29 19:23:23,107 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 作为一个语言模型AI助手，我可以回答您的问题，提供所需的信息，或者与您进行任何话题的对话。
+2024-08-29 19:23:23,108 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:23,108 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 作为一个语言模型AI助手，我可以回答您的问题，提供所需的信息，或者与您进行任何话题的对话。
+2024-08-29 19:23:24,677 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/38c28292d80f4a389bcd517b8058a356.mp3
+2024-08-29 19:23:24,678 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 如果您需要帮助、建议，抑或仅仅是想要分享一些生活中的趣事，我都可以为您提供支持和陪伴。
+2024-08-29 19:23:24,678 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:24,679 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 如果您需要帮助、建议，抑或仅仅是想要分享一些生活中的趣事，我都可以为您提供支持和陪伴。
+2024-08-29 19:23:26,157 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/e7bb0190be0345748f697d4bd5965257.mp3
+2024-08-29 19:23:26,159 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 无论何时何地，我都会竭尽所能去帮助您。
+2024-08-29 19:23:26,159 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:26,159 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 无论何时何地，我都会竭尽所能去帮助您。
+2024-08-29 19:23:27,661 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/257d27e3213749e08747b65596471222.mp3
+2024-08-29 19:23:27,666 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第7段TTS合成成功。msg: 谢谢您与我交流，我期待着与您有一个愉快的对话！
+2024-08-29 19:23:27,667 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:27,667 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第7段TTS。msg: 谢谢您与我交流，我期待着与您有一个愉快的对话！
+2024-08-29 19:23:27,744 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/d47a0039f7564993ba0d2953d08ae829.mp3
+2024-08-29 19:23:27,745 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/c2b50fafc3794085b7ee97ed676854a5.mp3
+2024-08-29 19:23:29,254 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/32f3f36b06c8475f904bb5db4dc1c267.mp3
+2024-08-29 19:23:29,260 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: 如果您有任何问题，都可以尽管问我。
+2024-08-29 19:23:29,261 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:29,261 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第8段TTS。msg: 如果您有任何问题，都可以尽管问我。
+2024-08-29 19:23:30,625 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/ddb0e3bde40e47cd9ab3ea4468cb8733.mp3
+2024-08-29 19:23:30,630 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第9段TTS合成成功。msg: 祝您度过一个愉快的时光！
+2024-08-29 19:23:30,631 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:30,631 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第9段TTS。msg: 祝您度过一个愉快的时光！
+2024-08-29 19:23:32,778 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/c2b50fafc3794085b7ee97ed676854a5.mp3
+2024-08-29 19:23:32,780 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/1d6285b2ff684d22a429e656adc851bf.mp3
+2024-08-29 19:23:41,851 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:23:41
+2024-08-29 19:23:41,882 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:23:41,887 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/1d6285b2ff684d22a429e656adc851bf.mp3
+2024-08-29 19:23:41,889 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:23:41,923 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:23:43,616 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:23:44,152 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:23:44,163 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:23:44,164 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:23:44,164 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:23:45,434 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:23:45,435 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 
+2024-08-29 19:23:45,443 - robot.ASR - ASR.py - transcribe - line 77 - CRITICAL - fun-asr 语音识别出错了
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 210, in activeListen
+    query = self.asr.transcribe(voice)
+  File "/Users/lei/ls/ls-robot/robot/ASR.py", line 77, in transcribe
+    logger.critical(f"{self.SLUG} 语音识别出错了", stack_info=True)
+2024-08-29 19:23:45,443 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:23:45,880 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：
+2024-08-29 19:23:45,881 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:23:45,881 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:23:46,110 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:23:47,646 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:23:47,647 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x10776e4c0>
+2024-08-29 19:23:49,101 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/8707e9452fb94b358151d6c5f48918f3.mp3
+2024-08-29 19:23:49,106 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 看起来您在发送消息时似乎出现了一些问题。
+2024-08-29 19:23:49,106 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:49,107 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 看起来您在发送消息时似乎出现了一些问题。
+2024-08-29 19:23:49,107 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/8707e9452fb94b358151d6c5f48918f3.mp3
+2024-08-29 19:23:50,759 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/ae08d586085b475da3998986af9ddbaa.mp3
+2024-08-29 19:23:50,764 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 如果您有任何问题需要帮助，或者想要和我交流一些内容，请随时告诉我。
+2024-08-29 19:23:50,765 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:50,765 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 如果您有任何问题需要帮助，或者想要和我交流一些内容，请随时告诉我。
+2024-08-29 19:23:52,133 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/3c330ad81ca74f5f9742625c693f4781.mp3
+2024-08-29 19:23:52,138 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 我很乐意为您提供帮助，无论是回答问题、提供信息，还是进行有趣的交谈。
+2024-08-29 19:23:52,138 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:52,139 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 我很乐意为您提供帮助，无论是回答问题、提供信息，还是进行有趣的交谈。
+2024-08-29 19:23:53,532 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/9611c3490a714f73855e27d9864433ba.mp3
+2024-08-29 19:23:53,537 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 期待听到您的回复！
+2024-08-29 19:23:53,538 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1072962a0>
+2024-08-29 19:23:53,538 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 期待听到您的回复！
+2024-08-29 19:23:54,646 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/8707e9452fb94b358151d6c5f48918f3.mp3
+2024-08-29 19:23:54,648 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/ae08d586085b475da3998986af9ddbaa.mp3
+2024-08-29 19:24:02,461 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/ae08d586085b475da3998986af9ddbaa.mp3
+2024-08-29 19:24:02,463 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/3c330ad81ca74f5f9742625c693f4781.mp3
+2024-08-29 19:24:10,789 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/3c330ad81ca74f5f9742625c693f4781.mp3
+2024-08-29 19:24:10,791 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/9611c3490a714f73855e27d9864433ba.mp3
+2024-08-29 19:24:14,040 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/9611c3490a714f73855e27d9864433ba.mp3
+2024-08-29 19:33:40,014 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 19:33:40,015 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 226 - INFO - 使用 openai 对话机器人
+2024-08-29 19:33:40,016 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 19:33:40,016 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 19:33:40,046 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 19:33:40,046 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 19:33:42,113 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:33:42
+2024-08-29 19:33:42,144 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:33:42,148 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:33:42,165 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:33:43,870 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:33:45,264 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:33:45,274 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:33:45,275 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:33:45,276 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:33:47,200 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:33:47,200 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话看一看。
+2024-08-29 19:33:47,201 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话看一看。
+2024-08-29 19:33:47,201 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:33:47,212 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:33:49,051 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲个笑话看一看
+2024-08-29 19:33:49,051 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:33:49,052 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:33:49,052 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '请用200字回答：讲个笑话看一看'}]
+2024-08-29 19:33:51,149 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:33:51,150 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x106ac3a60>
+2024-08-29 19:33:52,585 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/1dcceb7a9c344afca9ef1410a72e6b36.mp3
+2024-08-29 19:33:52,589 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一只小鸭子走进一家药店，它对店员说：“你们有头疼药吗？”
+2024-08-29 19:33:52,589 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:52,590 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一只小鸭子走进一家药店，它对店员说：“你们有头疼药吗？”
+2024-08-29 19:33:52,590 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/1dcceb7a9c344afca9ef1410a72e6b36.mp3
+2024-08-29 19:33:54,291 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/a597cbfe3a8744cdb5144afada4c0d18.mp3
+2024-08-29 19:33:54,295 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 店员回答：“当然有了，而且我们还有治脚脚痛、治双重胃痛、甚至治心灵伤痛的药。”
+2024-08-29 19:33:54,295 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:54,295 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 店员回答：“当然有了，而且我们还有治脚脚痛、治双重胃痛、甚至治心灵伤痛的药。”
+2024-08-29 19:33:55,634 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/b1b7f0bf8e974ac2bf3227b779e4074d.mp3
+2024-08-29 19:33:55,636 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 小鸭子犹豫了一下，然后说：“那我只需要头疼药，因为我头疼得很厉害。”
+2024-08-29 19:33:55,637 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:55,637 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 小鸭子犹豫了一下，然后说：“那我只需要头疼药，因为我头疼得很厉害。”
+2024-08-29 19:33:57,111 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/d229b0f27d8848549a4f7f43da525f96.mp3
+2024-08-29 19:33:57,112 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 店员笑了笑，拿出一瓶药给小鸭子，说：“这是最适合你的，但是你要记得按照说明服用。”
+2024-08-29 19:33:57,112 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:57,113 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 店员笑了笑，拿出一瓶药给小鸭子，说：“这是最适合你的，但是你要记得按照说明服用。”
+2024-08-29 19:33:58,365 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/fcc69515ccbb4f29af742b82cd102671.mp3
+2024-08-29 19:33:58,366 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 小鸭子接过药瓶，看了看，在上面写着：“每天服用两次，如果不见好转，请尽快去找兽医。”
+2024-08-29 19:33:58,367 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:58,368 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 小鸭子接过药瓶，看了看，在上面写着：“每天服用两次，如果不见好转，请尽快去找兽医。”
+2024-08-29 19:33:59,643 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/1dcceb7a9c344afca9ef1410a72e6b36.mp3
+2024-08-29 19:33:59,644 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/a597cbfe3a8744cdb5144afada4c0d18.mp3
+2024-08-29 19:33:59,697 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/854b183f9b0e4fa3a8a45de07bc0b4fd.mp3
+2024-08-29 19:33:59,703 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 小鸭子一边笑着一边说：“真是好专业的药方啊！”
+2024-08-29 19:33:59,703 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:33:59,703 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 小鸭子一边笑着一边说：“真是好专业的药方啊！”
+2024-08-29 19:34:01,821 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/8ea6f40371c64712a92652de1c1fa092.mp3
+2024-08-29 19:34:01,825 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 店员也被逗乐了，说：“要是头还疼得不行了，你就去找兽医吧！”
+2024-08-29 19:34:01,825 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:34:01,826 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 店员也被逗乐了，说：“要是头还疼得不行了，你就去找兽医吧！”
+2024-08-29 19:34:03,385 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/31135af6e3ca4965a31c5c62034f0b83.mp3
+2024-08-29 19:34:03,388 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第7段TTS合成成功。msg: 小鸭子点了点头，开心地拿着药走了出去。
+2024-08-29 19:34:03,388 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:34:03,389 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第7段TTS。msg: 小鸭子点了点头，开心地拿着药走了出去。
+2024-08-29 19:34:04,777 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/1efb365b20734de8bd85f9da8c02cc86.mp3
+2024-08-29 19:34:04,780 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: 笑话是个很好的调剂生活的方式。
+2024-08-29 19:34:04,781 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10691d420>
+2024-08-29 19:34:04,781 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第8段TTS。msg: 笑话是个很好的调剂生活的方式。
+2024-08-29 19:34:09,222 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/a597cbfe3a8744cdb5144afada4c0d18.mp3
+2024-08-29 19:34:09,225 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/b1b7f0bf8e974ac2bf3227b779e4074d.mp3
+2024-08-29 19:36:03,264 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 19:36:03,264 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 226 - INFO - 使用 openai 对话机器人
+2024-08-29 19:36:03,265 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 19:36:03,265 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 19:36:03,296 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 19:36:03,296 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 19:36:35,960 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 19:36:35
+2024-08-29 19:36:35,989 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 19:36:35,993 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:36:36,014 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 19:36:37,781 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 19:36:38,474 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:36:38,482 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 19:36:38,483 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 19:36:38,484 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 19:36:39,926 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 19:36:39,934 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 19:36:39,935 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼你好。
+2024-08-29 19:36:39,936 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼你好。
+2024-08-29 19:36:39,937 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 19:36:41,458 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 🎼你好
+2024-08-29 19:36:41,459 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 19:36:41,459 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 19:36:41,460 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼你好'}]
+2024-08-29 19:36:42,900 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 19:36:42,901 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11530faf0>
+2024-08-29 19:36:44,473 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/e49876966ecc478191ee551902d381cf.mp3
+2024-08-29 19:36:44,478 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 你好, 有什么我可以帮助你的吗？
+2024-08-29 19:36:44,479 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x1151694e0>
+2024-08-29 19:36:44,479 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 你好, 有什么我可以帮助你的吗？
+2024-08-29 19:36:44,480 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/e49876966ecc478191ee551902d381cf.mp3
+2024-08-29 19:36:48,489 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/e49876966ecc478191ee551902d381cf.mp3
+2024-08-29 20:56:15,226 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 20:56:15,226 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 226 - INFO - 使用 openai 对话机器人
+2024-08-29 20:56:15,227 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 20:56:15,227 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 20:56:15,262 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 20:56:15,262 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 20:56:18,114 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 20:56:18
+2024-08-29 20:56:18,142 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 20:56:18,146 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 20:56:18,166 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 20:56:19,863 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 20:56:21,068 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 20:56:21,077 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 20:56:21,079 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 20:56:21,080 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 20:56:23,020 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 20:56:23,020 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话。
+2024-08-29 20:56:23,021 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话。
+2024-08-29 20:56:23,021 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 20:56:23,029 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 20:56:25,124 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 🎼讲个笑话
+2024-08-29 20:56:25,125 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 20:56:25,125 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 20:56:25,125 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼讲个笑话'}]
+2024-08-29 20:56:26,631 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 20:56:26,632 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x112610a60>
+2024-08-29 20:56:28,192 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/870f2d01439f44b38a4862f379c1656b.mp3
+2024-08-29 20:56:28,198 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 好的，这是一个音乐类的笑话：
+2024-08-29 20:56:28,199 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x112469480>
+2024-08-29 20:56:28,199 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 好的，这是一个音乐类的笑话：
+2024-08-29 20:56:28,200 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/870f2d01439f44b38a4862f379c1656b.mp3
+2024-08-29 20:56:29,589 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/6f1490ba28a5477f9bdb41b385e2d1d8.mp3
+2024-08-29 20:56:29,594 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 为什么音乐家总是忘记他们的钢琴在哪里放的呢？
+2024-08-29 20:56:29,595 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x112469480>
+2024-08-29 20:56:29,595 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 为什么音乐家总是忘记他们的钢琴在哪里放的呢？
+2024-08-29 21:00:44,430 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:00:44,430 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:00:44,431 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:00:44,431 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:00:44,461 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:00:44,461 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:00:45,946 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:00:45
+2024-08-29 21:00:45,976 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:00:45,978 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:00:45,998 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:00:47,693 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:00:48,734 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:00:48,742 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:00:48,744 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:00:48,744 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:00:50,573 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:00:50,574 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲个笑话。
+2024-08-29 21:00:50,574 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲个笑话。
+2024-08-29 21:00:50,575 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:00:50,707 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:02:05,002 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:02:05,002 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:02:05,003 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:02:05,004 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:02:05,041 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:02:05,041 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:02:12,910 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:02:12
+2024-08-29 21:02:12,940 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:02:12,943 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:02:12,960 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:02:14,660 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:02:16,046 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:02:16,052 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:02:16,054 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:02:16,055 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:02:18,002 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:02:18,143 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:02:18,143 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话吧。
+2024-08-29 21:02:18,144 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话吧。
+2024-08-29 21:02:18,144 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:03:26,368 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:03:26,369 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:03:26,369 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:03:26,369 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:03:26,399 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:03:26,399 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:03:28,163 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:03:28
+2024-08-29 21:03:28,191 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:03:28,195 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:03:28,213 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:03:29,407 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:03:31,275 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:03:31,283 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:03:31,286 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:03:31,287 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:03:33,220 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:03:38,376 - robot.Conversation - Conversation.py - activeListen - line 215 - ERROR - 主动聆听失败：The upstream Gradio app has raised an exception but has not enabled verbose error reporting. To enable, set show_error=True in launch().
+Stack (most recent call last):
+  File "/Users/lei/ls/ls-robot/qi.py", line 76, in <module>
+    ls.run()
+  File "/Users/lei/ls/ls-robot/qi.py", line 65, in run
+    detector.initDetector(self)
+  File "/Users/lei/ls/ls-robot/robot/detector.py", line 61, in initDetector
+    query = wukong.conversation.activeListen()
+  File "/Users/lei/ls/ls-robot/robot/Conversation.py", line 215, in activeListen
+    logger.error(f"主动聆听失败：{e}", stack_info=True)
+2024-08-29 21:03:38,385 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:07:08,774 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:07:08,774 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:07:08,775 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:07:08,775 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:07:08,805 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:07:08,805 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:07:10,223 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:07:10
+2024-08-29 21:07:10,252 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:07:10,256 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:07:10,274 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:07:11,977 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:07:13,725 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:07:13,733 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:07:13,734 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:07:13,735 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:07:15,168 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:07:16,430 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:07:16,431 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话吧。
+2024-08-29 21:07:16,433 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话吧。
+2024-08-29 21:07:16,434 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:08:30,284 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:08:30,284 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:08:30,284 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:08:30,284 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:08:30,318 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:08:30,318 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:08:34,510 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:08:34
+2024-08-29 21:08:34,541 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:08:34,543 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:08:34,563 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:08:36,264 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:08:38,625 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:08:38,634 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:08:38,635 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:08:38,636 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:08:40,493 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:08:40,494 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话吧。
+2024-08-29 21:08:40,496 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话吧。
+2024-08-29 21:08:40,496 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:08:40,583 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:08:57,071 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:08:57,072 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:08:57,072 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:08:57,072 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:08:57,104 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:08:57,104 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:09:01,254 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:09:01
+2024-08-29 21:09:01,282 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:09:01,284 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:09:01,301 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:09:02,997 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:09:04,461 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:09:04,470 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:09:04,472 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:09:04,472 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:09:06,292 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:09:06,292 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话吧。
+2024-08-29 21:09:06,293 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话吧。
+2024-08-29 21:09:06,293 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:09:06,427 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:09:08,130 - robot.chatGpt - chatGpt.py - chat - line 178 - INFO - msg: 讲个笑话吧
+2024-08-29 21:09:10,953 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:09:10,953 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:09:10,953 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:09:10,953 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:09:10,988 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:09:10,988 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:09:45,833 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:09:45,833 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:09:45,833 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:09:45,833 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:09:45,866 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:09:45,866 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:09:50,834 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:09:50
+2024-08-29 21:09:50,865 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:09:50,867 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:09:50,884 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:09:52,584 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:09:53,923 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:09:53,930 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:09:53,932 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:09:53,932 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:09:55,876 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:09:56,110 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:09:56,110 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话吧。
+2024-08-29 21:09:56,111 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话吧。
+2024-08-29 21:09:56,111 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:09:58,047 - robot.chatGpt - chatGpt.py - chat - line 178 - INFO - msg: 讲个笑话吧
+2024-08-29 21:10:00,388 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:10:00,389 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:10:00,389 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:10:00,389 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:10:00,419 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:10:00,419 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:13:11,647 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:13:11,647 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 239 - INFO - 使用 openai 对话机器人
+2024-08-29 21:13:11,647 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:13:11,648 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:13:11,684 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:13:11,684 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:13:45,060 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:13:45,060 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:13:45,060 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:13:45,060 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:13:45,092 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:13:45,092 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:13:46,744 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:13:46
+2024-08-29 21:13:46,775 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:13:46,778 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:13:46,799 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:13:48,493 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:13:50,752 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:13:50,760 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:13:50,762 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:13:50,763 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:13:52,711 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:13:53,316 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:13:53,317 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话看看。
+2024-08-29 21:13:53,318 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话看看。
+2024-08-29 21:13:53,319 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:13:55,173 - robot.chatGpt - chatGpt.py - chat - line 178 - INFO - msg: 讲个笑话看看
+2024-08-29 21:13:57,268 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:13:57,269 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:13:57,269 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:13:57,269 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:13:57,299 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:13:57,299 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:16:46,183 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:16:46,184 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:16:46,184 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:16:46,184 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:16:46,216 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:16:46,216 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:16:47,974 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:16:47
+2024-08-29 21:16:48,004 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:16:48,008 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:16:48,026 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:16:49,729 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:16:51,442 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:16:51,452 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:16:51,453 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:16:51,454 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:16:53,189 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:16:53,190 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲一个笑话听听。
+2024-08-29 21:16:53,191 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲一个笑话听听。
+2024-08-29 21:16:53,191 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:16:53,401 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:16:55,400 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 讲一个笑话听听
+2024-08-29 21:16:55,401 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:16:55,401 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:16:55,402 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '讲一个笑话听听'}]
+2024-08-29 21:16:56,438 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - False
+2024-08-29 21:21:47,843 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:21:47,844 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:21:47,844 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:21:47,844 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:21:47,878 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:21:47,878 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:21:52,764 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:21:52
+2024-08-29 21:21:52,792 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:21:52,794 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:21:52,814 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:21:54,013 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:21:56,137 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:21:56,142 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:21:56,144 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:21:56,145 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:21:57,832 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:21:57,833 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲一个笑话听一听。
+2024-08-29 21:21:57,834 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲一个笑话听一听。
+2024-08-29 21:21:57,835 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:21:58,078 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:21:59,575 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 讲一个笑话听一听
+2024-08-29 21:21:59,576 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:21:59,576 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:21:59,576 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '讲一个笑话听一听'}]
+2024-08-29 21:22:02,056 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - False
+2024-08-29 21:22:38,474 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:22:38,475 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:22:38,475 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:22:38,475 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:22:38,505 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:22:38,506 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:22:39,803 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:22:39
+2024-08-29 21:22:39,833 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:22:39,838 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:22:39,858 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:22:41,561 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:22:43,314 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:22:43,322 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:22:43,324 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:22:43,324 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:22:45,267 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:22:45,268 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲个笑话听听。
+2024-08-29 21:22:45,275 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲个笑话听听。
+2024-08-29 21:22:45,276 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:22:45,280 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:22:47,109 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 讲个笑话听听
+2024-08-29 21:22:47,110 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:22:47,110 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:22:47,111 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '讲个笑话听听'}]
+2024-08-29 21:22:48,673 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 当然！这儿有个笑话：
+
+一天，两个饼干在走路。突然，一个饼干摔倒了，另一个饼干问：“你没事吧？”
+
+摔倒的饼干回答：“我有点碎了。”
+2024-08-29 21:23:25,541 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 21:23:25,541 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 236 - INFO - 使用 openai 对话机器人
+2024-08-29 21:23:25,541 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 21:23:25,541 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 21:23:25,571 - robot.detector - detector.py - initDetector - line 16 - CRITICAL - 离线唤醒 唤醒
+2024-08-29 21:23:25,572 - robot.detector - detector.py - initDetector - line 19 - INFO - 使用 porcupine 进行离线唤醒
+2024-08-29 21:23:27,138 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:23:27
+2024-08-29 21:23:27,167 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:23:27,170 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:23:27,190 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:23:28,390 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:23:30,996 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:23:31,006 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:23:31,007 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:23:31,008 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:23:32,987 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:23:33,014 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:23:33,018 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼讲1个200字的笑话。
+2024-08-29 21:23:33,020 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼讲1个200字的笑话。
+2024-08-29 21:23:33,020 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:23:34,849 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 🎼讲1个200字的笑话
+2024-08-29 21:23:34,849 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:23:34,849 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:23:34,850 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼讲1个200字的笑话'}]
+2024-08-29 21:23:39,176 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 好吧，这里有一个笑话，希望你喜欢：
+
+有一天，小明和他的小狗一起去公园散步。走着走着，小明看到一个魔法师在表演魔术。小明非常兴奋，于是带着小狗凑过去看。
+
+魔法师看到小明，说：“小朋友，如果你能回答出我的问题，我就变一个特别的魔术给你看。”
+
+小明点点头，表示同意。
+
+魔法师问：“什么东西早上用四条腿走路，中午用两条腿走路，晚上用三条腿走路？”
+
+小明想了想，回答道：“是人，因为人早上是小婴儿，爬着走；中午是成年人，用两条腿走；晚上是老人，拄着拐杖。”
+
+魔法师笑了笑，说：“答对了！但这次我要变的魔术不是给你看的，而是给你的小狗看的！”
+
+小明满脸疑惑：“为什么？”
+
+魔法师神秘地说：“因为我准备把它变成一只会说话的狗！”
+
+小狗突然开口说：“求求你，不要！我已经有够多话想和他说了！”
+
+小明愣住了，小狗对小明说：“你竟然每天吃狗粮？你有病吧？”
+
+小明瞪大了眼睛，说：“原来是你每天把我的午餐偷吃的！”
+
+魔法师哈哈大笑，删除了变回小狗的魔法，小狗一脸无奈，终于说：“看来我再也不能偷懒了。”
+2024-08-29 21:23:46,859 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/db1e3c2cfae34ac9a6ac05c7d9ced84a.mp3
+2024-08-29 21:23:46,863 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/db1e3c2cfae34ac9a6ac05c7d9ced84a.mp3
+2024-08-29 21:25:19,950 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/db1e3c2cfae34ac9a6ac05c7d9ced84a.mp3
+2024-08-29 21:25:22,073 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:25:22
+2024-08-29 21:25:22,102 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:25:22,105 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:25:22,129 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:25:23,825 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:25:26,899 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:25:26,908 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:25:26,910 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:25:26,910 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:25:28,732 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:25:28,733 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 讲1个20个字的冷笑话。
+2024-08-29 21:25:28,734 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：讲1个20个字的冷笑话。
+2024-08-29 21:25:28,735 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:25:28,857 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:25:31,034 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 讲1个20个字的冷笑话
+2024-08-29 21:25:31,034 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:25:31,034 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:25:31,034 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼讲1个200字的笑话'}, {'role': 'user', 'content': '讲1个20个字的冷笑话'}]
+2024-08-29 21:25:32,300 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 为啥鱼不说话？因为它们在水里“氤”啊！
+2024-08-29 21:25:33,408 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/f72badb20161473f89e69a4d80957bce.mp3
+2024-08-29 21:25:33,411 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/f72badb20161473f89e69a4d80957bce.mp3
+2024-08-29 21:25:38,688 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/f72badb20161473f89e69a4d80957bce.mp3
+2024-08-29 21:25:59,734 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:25:59
+2024-08-29 21:25:59,763 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:25:59,767 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:25:59,792 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:26:01,493 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:26:02,634 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:26:02,643 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:26:02,644 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:26:02,645 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:26:04,127 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:26:04,128 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 🎼现在几点了？
+2024-08-29 21:26:04,129 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：🎼现在几点了？
+2024-08-29 21:26:04,129 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:26:04,601 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:26:05,651 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 🎼现在几点了？
+2024-08-29 21:26:05,652 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:26:05,652 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:26:05,652 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼讲1个200字的笑话'}, {'role': 'user', 'content': '讲1个20个字的冷笑话'}, {'role': 'user', 'content': '🎼现在几点了？'}]
+2024-08-29 21:26:06,577 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 现在是9点。
+
+助理无法实时提供时间。如果你需要知道当前时间，请查看你的设备或其他时间显示工具。
+2024-08-29 21:26:08,293 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/5eadd4cd911342019cb911cd92e770e4.mp3
+2024-08-29 21:26:08,297 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/5eadd4cd911342019cb911cd92e770e4.mp3
+2024-08-29 21:26:20,164 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/5eadd4cd911342019cb911cd92e770e4.mp3
+2024-08-29 21:26:20,455 - robot.detector - detector.py - initDetector - line 50 - INFO - [porcupine] Keyword hi-siri_en_mac_v3_0_0.ppn Detected at time 2024-08-29 21:26:20
+2024-08-29 21:26:20,484 - robot.Conversation - Conversation.py - activeListen - line 201 - INFO - 进入主动聆听...
+2024-08-29 21:26:20,487 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:26:20,511 - robot.utils - utils.py - listen_for_hotword - line 99 - INFO - {'index': 0, 'structVersion': 1, 'type': 5, 'name': 'Core Audio', 'deviceCount': 3, 'defaultInputDevice': 0, 'defaultOutputDevice': 1}
+2024-08-29 21:26:22,216 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_hi.wav
+2024-08-29 21:26:23,806 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:26:23,816 - robot.ASR - ASR.py - transcribe - line 70 - INFO - 音频数据已保存为 output.wav
+2024-08-29 21:26:23,818 - robot.ASR - ASR.py - transcribe - line 71 - INFO - ====================
+2024-08-29 21:26:23,818 - robot.ASR - ASR.py - asr_text - line 126 - INFO - 开始asr转换
+2024-08-29 21:26:25,438 - robot.ASR - ASR.py - asr_text - line 145 - INFO - 结束asr转换
+2024-08-29 21:26:25,439 - robot.ASR - ASR.py - asr_text - line 146 - INFO - 我长得帅吗？
+2024-08-29 21:26:25,440 - robot.ASR - ASR.py - transcribe - line 74 - INFO - fun-asr 语音识别到了：我长得帅吗？
+2024-08-29 21:26:25,440 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 21:26:25,761 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/static/beep_lo.wav
+2024-08-29 21:26:27,202 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 我长得帅吗？
+2024-08-29 21:26:27,203 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-4o，开始流式请求
+2024-08-29 21:26:27,203 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 21:26:27,203 - robot.chatGpt - chatGpt.py - stream_chat - line 128 - INFO - [{'role': 'user', 'content': '🎼讲1个200字的笑话'}, {'role': 'user', 'content': '讲1个20个字的冷笑话'}, {'role': 'user', 'content': '🎼现在几点了？'}, {'role': 'user', 'content': '我长得帅吗？'}]
+2024-08-29 21:26:31,250 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 作为人工智能, 我无法看到你长什么样。不过，每个人都有独特的魅力和吸引力，外貌只是一部分。在心理学上，自信和善良是吸引人的重要因素，所以做个自信和善良的人吧！
+2024-08-29 21:26:32,878 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/lei/ls/ls-robot/temp/4f3f02284d9042ccb663c0d80512acd9.mp3
+2024-08-29 21:26:32,882 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/lei/ls/ls-robot/temp/4f3f02284d9042ccb663c0d80512acd9.mp3
+2024-08-29 21:26:51,092 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/lei/ls/ls-robot/temp/4f3f02284d9042ccb663c0d80512acd9.mp3

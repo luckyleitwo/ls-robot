@@ -130,7 +130,6 @@ class SoxPlayer(AbstractPlayer):
     def play(self, src, delete=False, onCompleted=None):
         if src and (os.path.exists(src) or src.startswith("http")):
             self.delete = delete
-            logger.info(src)
             self.play_queue.put((src, onCompleted))
         else:
             logger.critical(f"path not exists: {src}", stack_info=True)

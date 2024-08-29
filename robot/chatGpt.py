@@ -90,7 +90,7 @@ class OPENAIRobot(AbstractRobot):
         # Try to get anyq config from config
         return config.get("openai", {})
 
-    def stream_chat(self, texts):
+    def stream_chat(self, texts,stream=True):
         """
         从ChatGPT API获取回复
         :return: 回复
@@ -120,15 +120,16 @@ class OPENAIRobot(AbstractRobot):
         try:
 
             # optional; defaults to `os.environ['OPENAI_API_KEY']`
-            openai.api_key = "sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00"
+            openai.api_key = "sk-hSaUp2XwPvZB4zdVShdYiFVC0Exc2dwOOpoKaYaemeLAbGCW"
 
             # all client options can be configured just like the `OpenAI` instantiation counterpart
-            openai.base_url = "https://free.gpt.ge/v1/"
+            openai.base_url = "https://api.chatanywhere.tech/v1/"
             openai.default_headers = {"x-foo": "true"}
+            logger.info(self.context)
             response = openai.chat.completions.create(
                 model=self.model,
                 messages=self.context,
-                stream=True
+                stream=stream
             )
 
             def generate():
@@ -162,7 +163,7 @@ class OPENAIRobot(AbstractRobot):
             def generate():
                 yield "request error:\n" + str(ee)
 
-        return generate
+        return generate if stream else response.choices[0].message.content
 
     def chat(self, texts, parsed):
         """
@@ -176,9 +177,19 @@ class OPENAIRobot(AbstractRobot):
         msg = self.prefix + msg  # 增加一段前缀
         logger.info("msg: " + msg)
         try:
-            respond = "你好你好"
+            # optional; defaults to `os.environ['OPENAI_API_KEY']`
+            openai.api_key = "sk-hSaUp2XwPvZB4zdVShdYiFVC0Exc2dwOOpoKaYaemeLAbGCW"
+            self.context.append({"role": "user", "content": msg})
+            # all client options can be configured just like the `OpenAI` instantiation counterpart
+            openai.base_url = "https://free.gpt.ge/v1/"
+            openai.default_headers = {"x-foo": "true"}
+            response = openai.chat.completions.create(
+                model=self.model,
+                messages=self.context,
+                # stream=True
+            )
             logger.info("进去openai响应")
-            return respond
+            return response.choices[0].message.content
         except self.openai.error.InvalidRequestError:
             logger.warning("token超出长度限制，丢弃历史会话")
             self.context = []

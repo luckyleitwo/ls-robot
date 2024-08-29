@@ -15,3 +15,5 @@ pip3 install -r requirements.txt
 python qi.py
 ```
 
+<!-- ChatAnywhere转发API密钥，内含30CA币：sk-hSaUp2XwPvZB4zdVShdYiFVC0Exc2dwOOpoKaYaemeLAbGCW -->
+
