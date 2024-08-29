@@ -113,7 +113,6 @@ class OPENAIRobot(AbstractRobot):
         else:
             raise ValueError("Please check your config file, OpenAiRobot's provider should be openai or azure.")
 
-        data = [{"model": self.model, "messages": self.context, "stream": True}]
         logger.info(f"使用模型：{self.model}，开始流式请求")
         url = self.api_base + "/completions"
         logger.info(url)

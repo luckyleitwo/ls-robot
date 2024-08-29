@@ -10016,3 +10016,9 @@ Error code: 400 - {'error': {'message': 'json: cannot unmarshal string into Go s
 2024-08-29 10:32:37,296 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/temp/6fc678ed6ae7412dab38ff56477fb7fd.mp3
 2024-08-29 10:32:37,309 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/temp/f992419ec5e046d3a1176dc6b3c03bcc.mp3
 2024-08-29 10:32:40,215 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/temp/f992419ec5e046d3a1176dc6b3c03bcc.mp3
+2024-08-29 11:28:31,737 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：../download/65528.mp3
+2024-08-29 11:28:31,748 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：../download/65528.mp3
+2024-08-29 11:29:47,148 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：../download/65528.mp3
+2024-08-29 11:29:47,155 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：../download/65528.mp3
+2024-08-29 11:30:38,983 - robot.Player - Player.py - playLoop - line 101 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/download/65528.mp3
+2024-08-29 11:30:38,989 - robot.Player - Player.py - doPlay - line 125 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/download/65528.mp3

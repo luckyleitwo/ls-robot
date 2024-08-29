@@ -286,7 +286,7 @@ openai:
     provider: 'azure' # openai的接口填写openai, azure的填写azure
     api_version: '2023-05-15' # 如果是openai的，留空就行，azure的需填写对应的api_version，参考官方文档
     # 参数指定将生成文本的模型类型。目前支持 gpt-3.5-turbo 和 gpt-3.5-turbo-0301 两种选择
-    model: 'gpt-3.5-turbo'
+    model: 'gpt-3.5-turbo-1106'
     # 在前面加的一段前缀
     prefix: '请用200字回答：'
     # 该temperature参数可以设置返回内容地多样性。值越大意味着该模型更有可能产生创造性的东西，设置为 1 意味着模型将返回它不确定的结果；相比之下，将此参数设置为 0 意味着模型将返回它几乎可以肯定的结果。
