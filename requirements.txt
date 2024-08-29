@@ -12,6 +12,6 @@ watchdog~=5.0.0
 pycloudmusic~=0.1.4.5
 aiofiles~=24.1.0
 aiohttp~=3.10.5
-openai==1.37.1
+openai==1.42.0
 pydub~=0.25.1
 python-dateutil~=2.9.0.post0

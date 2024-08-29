@@ -57,6 +57,12 @@ class Conversation(object):
         except Exception as e:
             logger.critical(f"对话初始化失败：{e}", stack_info=True)
 
+    def _lastCompleted(self, index, onCompleted):
+        # logger.debug(f"{index}, {self.tts_index}, {self.tts_count}")
+        if index >= self.tts_count - 1:
+            # logger.debug(f"执行onCompleted")
+            onCompleted and onCompleted()
+
     def _ttsAction(self, msg, cache, index, onCompleted=None):
         if msg:
             voice = ""
@@ -95,6 +101,25 @@ class Conversation(object):
                     self.tts_index += 1
                     traceback.print_exc()
                     return None
+
+    def _tts_line(self, line, cache, index=0, onCompleted=None):
+        """
+        对单行字符串进行 TTS 并返回合成后的音频
+        :param line: 字符串
+        :param cache: 是否缓存 TTS 结果
+        :param index: 合成序号
+        :param onCompleted: 播放完成的操作
+        """
+        line = line.strip()
+        pattern = r"http[s]?://.+"
+        if re.match(pattern, line):
+            logger.info("内容包含URL，屏蔽后续内容")
+            return None
+        line.replace("- ", "")
+        if line:
+            result = self._ttsAction(line, cache, index, onCompleted)
+            return result
+        return None
 
     def stream_say(self, stream, cache=False, onCompleted=None):
         """
@@ -223,8 +248,10 @@ class Conversation(object):
         statistic.report(1)
         self.interrupt()
         parsed = self.doParse(query=query)
-        msg = self.ai.chat(texts=query, parsed=parsed)
-        self.say(msg, True, onCompleted=self.checkRestore)
+        stream = self.ai.stream_chat(query)
+        self.stream_say(stream, True, onCompleted=self.checkRestore)
+        # msg = self.ai.chat(texts=query, parsed=parsed)
+        # self.say(msg, True, onCompleted=self.checkRestore)
         # logger.info('初始化openai')
         # msg = chatGpt.openChat(query)
         # logger.info("调用完成openai")

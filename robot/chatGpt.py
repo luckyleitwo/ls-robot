@@ -3,6 +3,7 @@ import os
 import json
 import random
 import requests
+import openai
 
 from uuid import getnode as get_mac
 from abc import ABCMeta, abstractmethod
@@ -112,20 +113,23 @@ class OPENAIRobot(AbstractRobot):
         else:
             raise ValueError("Please check your config file, OpenAiRobot's provider should be openai or azure.")
 
-        data = {"model": self.model, "messages": self.context, "stream": True}
+        data = [{"model": self.model, "messages": self.context, "stream": True}]
         logger.info(f"使用模型：{self.model}，开始流式请求")
         url = self.api_base + "/completions"
-        if self.provider == 'azure':
-            url = f"{self.api_base}/openai/deployments/{self.model}/chat/completions?api-version={self.api_version}"
+        logger.info(url)
         # 请求接收流式数据
         try:
-            response = requests.request(
-                "POST",
-                url,
-                headers=header,
-                json=data,
-                stream=True,
-                proxies={"https": self.openai.proxy},
+
+            # optional; defaults to `os.environ['OPENAI_API_KEY']`
+            openai.api_key = "sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00"
+
+            # all client options can be configured just like the `OpenAI` instantiation counterpart
+            openai.base_url = "https://free.gpt.ge/v1/"
+            openai.default_headers = {"x-foo": "true"}
+            response = openai.chat.completions.create(
+                model=self.model,
+                messages=self.context,
+                stream=True
             )
 
             def generate():
@@ -133,34 +137,25 @@ class OPENAIRobot(AbstractRobot):
                 one_message = {"role": "assistant", "content": stream_content}
                 self.context.append(one_message)
                 i = 0
-                for line in response.iter_lines():
-                    line_str = str(line, encoding="utf-8")
-                    if line_str.startswith("data:") and line_str[5:]:
-                        if line_str.startswith("data: [DONE]"):
-                            break
-                        line_json = json.loads(line_str[5:])
-                        if "choices" in line_json:
-                            if len(line_json["choices"]) > 0:
-                                choice = line_json["choices"][0]
-                                if "delta" in choice:
-                                    delta = choice["delta"]
-                                    if "role" in delta:
-                                        role = delta["role"]
-                                    elif "content" in delta:
-                                        delta_content = delta["content"]
-                                        i += 1
-                                        if i < 40:
-                                            logger.debug(delta_content, end="")
-                                        elif i == 40:
-                                            logger.debug("......")
-                                        one_message["content"] = (
-                                                one_message["content"] + delta_content
-                                        )
-                                        yield delta_content
-
-                    elif len(line_str.strip()) > 0:
-                        logger.debug(line_str)
-                        yield line_str
+                for line in response:
+                    if line.choices:
+                        if len(line.choices) > 0:
+                            choice = line.choices[0]
+                            if choice.delta:
+                                delta = choice.delta
+                                if delta.role:
+                                    role = delta.role
+                                elif delta.content:
+                                    delta_content = delta.content
+                                    i += 1
+                                    if i < 40:
+                                        logger.debug(delta_content, end="")
+                                    elif i == 40:
+                                        logger.debug("......")
+                                    one_message["content"] = (
+                                            one_message["content"] + delta_content
+                                    )
+                                    yield delta_content
 
         except Exception as e:
             ee = e
