@@ -489,3 +489,275 @@ Stack (most recent call last):
     self.reInit()
   File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 58, in reInit
     logger.critical(f"对话初始化失败：{e}", stack_info=True)
+2024-08-29 17:50:23,719 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 17:50:23,720 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 17:50:23,720 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 17:50:23,720 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 17:50:23,722 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 17:50:25,448 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话
+2024-08-29 17:50:25,449 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 17:50:25,449 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 17:50:27,329 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 17:50:27,329 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x120d9d550>
+2024-08-29 17:50:29,031 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/208e46eaa253432c91910479ab05d799.mp3
+2024-08-29 17:50:29,035 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一天，一只羊问另一只羊：“你知道为什么牛都打炮吗？”
+2024-08-29 17:50:29,035 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:29,035 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一天，一只羊问另一只羊：“你知道为什么牛都打炮吗？”
+2024-08-29 17:50:30,398 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120cf0d90>
+2024-08-29 17:50:30,404 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120cf0d90>
+2024-08-29 17:50:31,462 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/198bd3632ef6456d874ab803e8dd6e8d.mp3
+2024-08-29 17:50:31,463 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 另一只羊摇摇头，说：“为什么？”
+2024-08-29 17:50:31,463 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:31,463 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 另一只羊摇摇头，说：“为什么？”
+2024-08-29 17:50:31,558 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120d6b640>
+2024-08-29 17:50:31,563 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120d6b640>
+2024-08-29 17:50:32,921 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/113eefec9f28463aa61fb1f57545337c.mp3
+2024-08-29 17:50:32,923 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 第一只羊说：“因为他们想要牛奶啊！”
+2024-08-29 17:50:32,923 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:32,923 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 第一只羊说：“因为他们想要牛奶啊！”
+2024-08-29 17:50:33,018 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120d6b250>
+2024-08-29 17:50:33,023 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120d6b250>
+2024-08-29 17:50:34,298 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/fef0bf09fd8345aba6641e0e347b3991.mp3
+2024-08-29 17:50:34,299 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 接着两只羊哈哈大笑起来。
+2024-08-29 17:50:34,300 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:34,300 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 接着两只羊哈哈大笑起来。
+2024-08-29 17:50:34,393 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120cf0a30>
+2024-08-29 17:50:34,399 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120cf0a30>
+2024-08-29 17:50:35,521 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/a4b84453216e4d2185e55912f7ff30c7.mp3
+2024-08-29 17:50:35,523 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 笑话虽然简单但总能给人带来快乐，笑容是最好的调剂剂。
+2024-08-29 17:50:35,523 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:35,523 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 笑话虽然简单但总能给人带来快乐，笑容是最好的调剂剂。
+2024-08-29 17:50:35,616 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120cf0850>
+2024-08-29 17:50:35,620 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120cf0850>
+2024-08-29 17:50:37,168 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/ca18321da54941049acfe329ce4d67f4.mp3
+2024-08-29 17:50:37,168 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 希望这个小笑话也能让你快乐一下。
+2024-08-29 17:50:37,169 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x120cf06c0>
+2024-08-29 17:50:37,169 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 希望这个小笑话也能让你快乐一下。
+2024-08-29 17:50:37,269 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120e2faf0>
+2024-08-29 17:50:37,275 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120e2faf0>
+2024-08-29 17:51:52,897 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 17:51:52,897 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 17:51:52,897 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 17:51:52,897 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 17:51:52,905 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 17:51:54,549 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话
+2024-08-29 17:51:54,550 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 17:51:54,550 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 17:51:56,243 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 17:51:56,244 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1174ccca0>
+2024-08-29 17:51:57,796 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/731f572647494eca9cccfe15a41d7a4c.mp3
+2024-08-29 17:51:57,797 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一天，小明去参加一个面试。
+2024-08-29 17:51:57,798 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:51:57,798 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一天，小明去参加一个面试。
+2024-08-29 17:51:57,982 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x117434670>
+2024-08-29 17:51:59,233 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/d4e64aca9ddb4791b740ef0ad9352f81.mp3
+2024-08-29 17:51:59,235 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 面试官问道：“小明，你最大的优点是什么？”
+2024-08-29 17:51:59,236 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:51:59,236 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 面试官问道：“小明，你最大的优点是什么？”
+2024-08-29 17:52:00,777 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/5a27f407e92d4755be0091b24bb8340b.mp3
+2024-08-29 17:52:00,779 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 小明脱口而出：“我很有耐心！”
+2024-08-29 17:52:00,779 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:00,780 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 小明脱口而出：“我很有耐心！”
+2024-08-29 17:52:02,342 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/501d1cbe7e684eb09d6d4c5a6cb0fe8c.mp3
+2024-08-29 17:52:02,345 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 面试官微笑着说：“那么你最大的缺点呢？”
+2024-08-29 17:52:02,346 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:02,346 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 面试官微笑着说：“那么你最大的缺点呢？”
+2024-08-29 17:52:03,833 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/3f289afce4a94f7fbd1beea9732a180a.mp3
+2024-08-29 17:52:03,837 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 小明立刻答道：“我要告诉你吗，等一下，等一下，等一下……”
+2024-08-29 17:52:03,837 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:03,837 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 小明立刻答道：“我要告诉你吗，等一下，等一下，等一下……”
+2024-08-29 17:52:05,240 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/6ac8ee682bd945dd902ae76eef1f7adc.mp3
+2024-08-29 17:52:05,242 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 面试官和小明都笑了起来。
+2024-08-29 17:52:05,242 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:05,242 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 面试官和小明都笑了起来。
+2024-08-29 17:52:06,669 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/9f0e841a72b143bea83f40c628881f13.mp3
+2024-08-29 17:52:06,671 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 小明顿时感到轻松了很多。
+2024-08-29 17:52:06,671 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:06,672 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 小明顿时感到轻松了很多。
+2024-08-29 17:52:08,190 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/ab28d508f18b4054a65516988b6395e8.mp3
+2024-08-29 17:52:08,191 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第7段TTS合成成功。msg: 于是他又接着说：“这个面试结果我能不能等一下知道呢？
+2024-08-29 17:52:08,191 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:08,192 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第7段TTS。msg: 于是他又接着说：“这个面试结果我能不能等一下知道呢？
+2024-08-29 17:52:09,508 - robot.TTS - TTS.py - async_get_speech - line 65 - CRITICAL - edge-tts 合成失败：No audio was received. Please verify that your parameters are correct.！
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1551, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/shenglei/ls/ls-robot/text/text.py", line 8, in <module>
+    conversationz.doResponse(query="讲一个笑话")
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 265, in doResponse
+    self.stream_say(stream, True, onCompleted=self.checkRestore)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 164, in stream_say
+    audio = self._tts_line(line.strip(), cache, index, onCompleted)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 121, in _tts_line
+    result = self._ttsAction(line, cache, index, onCompleted)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 85, in _ttsAction
+    voice = self.tts.get_speech(msg)
+  File "/Users/shenglei/ls/ls-robot/robot/TTS.py", line 70, in get_speech
+    tmpfile = event_loop.run_until_complete(self.async_get_speech(phrase))
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers-pro/pydevd_asyncio/pydevd_nest_asyncio.py", line 234, in run_until_complete
+    self._run_once()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers-pro/pydevd_asyncio/pydevd_nest_asyncio.py", line 286, in _run_once
+    handle._run()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers-pro/pydevd_asyncio/pydevd_nest_asyncio.py", line 395, in step
+    step_orig(task, exc)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 256, in __step
+    result = coro.send(None)
+  File "/Users/shenglei/ls/ls-robot/robot/TTS.py", line 65, in async_get_speech
+    logger.critical(f"{self.SLUG} 合成失败：{str(e)}！", stack_info=True)
+2024-08-29 17:52:09,509 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: ”
+2024-08-29 17:52:09,509 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:52:09,510 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第8段TTS。msg: ”
+2024-08-29 17:52:09,513 - robot.Player - Player.py - play - line 135 - CRITICAL - path not exists: None
+Stack (most recent call last):
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2252, in <module>
+    main()
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 2234, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1544, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1551, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/shenglei/ls/ls-robot/text/text.py", line 8, in <module>
+    conversationz.doResponse(query="讲一个笑话")
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 265, in doResponse
+    self.stream_say(stream, True, onCompleted=self.checkRestore)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 164, in stream_say
+    audio = self._tts_line(line.strip(), cache, index, onCompleted)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 121, in _tts_line
+    result = self._ttsAction(line, cache, index, onCompleted)
+  File "/Users/shenglei/ls/ls-robot/robot/Conversation.py", line 93, in _ttsAction
+    self.player.play(
+  File "/Users/shenglei/ls/ls-robot/robot/Player.py", line 135, in play
+    logger.critical(f"path not exists: {src}", stack_info=True)
+2024-08-29 17:52:10,685 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/3a7867c16d0f4c17a7af580e830013df.mp3
+2024-08-29 17:52:10,688 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第8段TTS合成成功。msg: 面试官再次被逗乐了，当场就决定录取他了。
+2024-08-29 17:52:10,688 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x117262480>
+2024-08-29 17:56:42,765 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 17:56:42,765 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 17:56:42,765 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 17:56:42,765 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 17:56:42,774 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 17:56:44,340 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话
+2024-08-29 17:56:44,340 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 17:56:44,341 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 17:56:45,171 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 17:56:45,172 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12181ef70>
+2024-08-29 17:56:46,880 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/dcbf1e43f21f49df9a751ead6d496a90.mp3
+2024-08-29 17:56:46,882 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一天，小明去商店买一只鸭子。
+2024-08-29 17:56:46,882 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x12179f3c0>
+2024-08-29 17:56:46,883 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一天，小明去商店买一只鸭子。
+2024-08-29 17:56:47,077 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x121911220>
+2024-08-29 17:56:47,087 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x121911220>
+2024-08-29 17:56:48,179 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/fb63936c6f734c00b3d7c2326f902b03.mp3
+2024-08-29 17:56:48,181 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 他问店主：“这鸭子能飞吗？”
+2024-08-29 17:56:48,181 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x12179f3c0>
+2024-08-29 17:56:48,181 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 他问店主：“这鸭子能飞吗？”
+2024-08-29 17:56:48,275 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x121722550>
+2024-08-29 17:56:48,281 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x121722550>
+2024-08-29 17:56:49,448 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/ec1b31315cfe470c9937e9f1647da669.mp3
+2024-08-29 17:56:49,449 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 店主回答：“不行，这是一只普通的鸭子。”
+2024-08-29 17:56:49,450 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x12179f3c0>
+2024-08-29 17:56:49,450 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 店主回答：“不行，这是一只普通的鸭子。”
+2024-08-29 17:56:49,542 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x12179fbe0>
+2024-08-29 17:56:49,549 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x12179fbe0>
+2024-08-29 17:57:38,788 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 17:57:38,788 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 17:57:38,789 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 17:57:38,789 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 17:57:38,797 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 17:57:40,337 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话
+2024-08-29 17:57:40,338 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 17:57:40,338 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 17:57:42,088 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 17:57:42,090 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x10f7bb9d0>
+2024-08-29 17:57:43,937 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/e743ed1cb8d84b91a85a969443f53bfd.mp3
+2024-08-29 17:57:43,940 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一天，一个小男孩走进了一家宠物店，他问店员：“你们这里有没有训练得很厉害的鹦鹉？”
+2024-08-29 17:57:43,941 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10f73c390>
+2024-08-29 17:57:43,941 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一天，一个小男孩走进了一家宠物店，他问店员：“你们这里有没有训练得很厉害的鹦鹉？”
+2024-08-29 17:57:44,135 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10f7fd610>
+2024-08-29 17:57:44,144 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10f7fd610>
+2024-08-29 17:57:45,357 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/19e7aa929c8841c2a4862e8c32ab6f21.mp3
+2024-08-29 17:57:45,358 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 店员笑着说：“当然有啦，我们这里有一只非常厉害的鹦鹉，它还会唱歌呢！”
+2024-08-29 17:57:45,358 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10f73c390>
+2024-08-29 17:57:45,358 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 店员笑着说：“当然有啦，我们这里有一只非常厉害的鹦鹉，它还会唱歌呢！”
+2024-08-29 17:57:45,452 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10f73caf0>
+2024-08-29 17:57:45,459 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10f73caf0>
+2024-08-29 17:57:46,971 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/736bbe56d5e045f9a2c42b8e142be881.mp3
+2024-08-29 17:57:46,975 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 小男孩很兴奋地问：“那我能听听它唱歌吗？”
+2024-08-29 17:57:46,975 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10f73c390>
+2024-08-29 17:57:46,976 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 小男孩很兴奋地问：“那我能听听它唱歌吗？”
+2024-08-29 17:57:47,070 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10f73c790>
+2024-08-29 17:57:47,077 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10f73c790>
+2024-08-29 17:57:48,824 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/0aa64edc12e3434fbbaa22b0333feadf.mp3
+2024-08-29 17:57:48,825 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 店员点点头，带着小男孩走到鹦鹉的笼子旁边，只见鹦鹉正叼着一支牙刷在笼子里搅拌着水，还边搅拌边唱道：“刷牙不玩水，洗澡不搅拌。”
+2024-08-29 17:57:48,826 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x10f73c390>
+2024-08-29 17:57:48,826 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 店员点点头，带着小男孩走到鹦鹉的笼子旁边，只见鹦鹉正叼着一支牙刷在笼子里搅拌着水，还边搅拌边唱道：“刷牙不玩水，洗澡不搅拌。”
+2024-08-29 17:57:48,930 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10f8aa0a0>
+2024-08-29 17:57:48,936 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10f8aa0a0>
+2024-08-29 18:01:13,423 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 18:01:13,423 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 18:01:13,424 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 18:01:13,424 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 18:01:13,432 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
+2024-08-29 18:01:15,025 - robot.chatGpt - chatGpt.py - stream_chat - line 102 - INFO - msg: 请用200字回答：讲一个笑话
+2024-08-29 18:01:15,026 - robot.chatGpt - chatGpt.py - stream_chat - line 116 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-08-29 18:01:15,026 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - https://free.gpt.ge/v1/completions
+2024-08-29 18:01:16,114 - robot.Conversation - Conversation.py - stream_say - line 143 - INFO - 进入流成声语音
+2024-08-29 18:01:16,114 - robot.Conversation - Conversation.py - stream_say - line 144 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1170e9f70>
+2024-08-29 18:01:17,619 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/88920983b25a4a6c8b826da7f196ad1e.mp3
+2024-08-29 18:01:17,622 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第0段TTS合成成功。msg: 有一只猴子去找大象学画画，大象问猴子：“你想画什么？”
+2024-08-29 18:01:17,623 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:17,623 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第0段TTS。msg: 有一只猴子去找大象学画画，大象问猴子：“你想画什么？”
+2024-08-29 18:01:17,623 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/88920983b25a4a6c8b826da7f196ad1e.mp3
+2024-08-29 18:01:17,624 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/temp/88920983b25a4a6c8b826da7f196ad1e.mp3
+2024-08-29 18:01:18,766 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/830ef89b6a8d4d1d9b059709e1132ab2.mp3
+2024-08-29 18:01:18,790 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第1段TTS合成成功。msg: 猴子说：“我想画只猴子。”
+2024-08-29 18:01:18,800 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:18,803 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第1段TTS。msg: 猴子说：“我想画只猴子。”
+2024-08-29 18:01:18,805 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/830ef89b6a8d4d1d9b059709e1132ab2.mp3
+2024-08-29 18:01:20,307 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/cd1eb7cf30bb4dabbddab4e4697d228a.mp3
+2024-08-29 18:01:20,310 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第2段TTS合成成功。msg: 于是大象把一只猴子画出来给猴子看，猴子看了很生气，说：“你画错了，我的脸不是这样的！”
+2024-08-29 18:01:20,311 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:20,311 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第2段TTS。msg: 于是大象把一只猴子画出来给猴子看，猴子看了很生气，说：“你画错了，我的脸不是这样的！”
+2024-08-29 18:01:20,312 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/cd1eb7cf30bb4dabbddab4e4697d228a.mp3
+2024-08-29 18:01:21,804 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/adc42ee965fc424cadd23e742735155b.mp3
+2024-08-29 18:01:21,805 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第3段TTS合成成功。msg: 于是大象再次画了一只猴子给猴子看，猴子还是不满意，说：“还是不对，我的耳朵不是这样的！”
+2024-08-29 18:01:21,805 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:21,805 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第3段TTS。msg: 于是大象再次画了一只猴子给猴子看，猴子还是不满意，说：“还是不对，我的耳朵不是这样的！”
+2024-08-29 18:01:21,805 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/adc42ee965fc424cadd23e742735155b.mp3
+2024-08-29 18:01:23,306 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/46b1f100885341dc818d7d3328731370.mp3
+2024-08-29 18:01:23,307 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第4段TTS合成成功。msg: 大象听了很着急，便问猴子：“那你究竟是什么样的？”
+2024-08-29 18:01:23,307 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:23,307 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第4段TTS。msg: 大象听了很着急，便问猴子：“那你究竟是什么样的？”
+2024-08-29 18:01:23,307 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/46b1f100885341dc818d7d3328731370.mp3
+2024-08-29 18:01:24,507 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/temp/88920983b25a4a6c8b826da7f196ad1e.mp3
+2024-08-29 18:01:24,508 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/temp/830ef89b6a8d4d1d9b059709e1132ab2.mp3
+2024-08-29 18:01:24,727 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/db03213067034cf9a54b8448745a57d2.mp3
+2024-08-29 18:01:24,727 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第5段TTS合成成功。msg: 猴子想了想说：“我是一只猴子啊，不就是一只爱管闲事的动物吗！”
+2024-08-29 18:01:24,727 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:24,727 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第5段TTS。msg: 猴子想了想说：“我是一只猴子啊，不就是一只爱管闲事的动物吗！”
+2024-08-29 18:01:24,728 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/db03213067034cf9a54b8448745a57d2.mp3
+2024-08-29 18:01:26,257 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/dd4743c5fff74571b60eac5616e96cc2.mp3
+2024-08-29 18:01:26,258 - robot.Conversation - Conversation.py - _ttsAction - line 86 - INFO - 第6段TTS合成成功。msg: 整个画画过程充满了笑声。
+2024-08-29 18:01:26,259 - robot.Conversation - Conversation.py - _ttsAction - line 87 - INFO - <unlocked _thread.lock object at 0x11706c1b0>
+2024-08-29 18:01:26,259 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 即将播放第6段TTS。msg: 整个画画过程充满了笑声。
+2024-08-29 18:01:26,260 - robot.Player - Player.py - play - line 133 - INFO - /Users/shenglei/ls/ls-robot/temp/dd4743c5fff74571b60eac5616e96cc2.mp3
+2024-08-29 18:01:27,389 - robot.Player - Player.py - doPlay - line 127 - INFO - 播放完成：/Users/shenglei/ls/ls-robot/temp/830ef89b6a8d4d1d9b059709e1132ab2.mp3
+2024-08-29 18:01:27,390 - robot.Player - Player.py - playLoop - line 103 - INFO - 开始播放音频：/Users/shenglei/ls/ls-robot/temp/cd1eb7cf30bb4dabbddab4e4697d228a.mp3
+2024-08-29 18:01:34,929 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-08-29 18:01:34,929 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 225 - INFO - 使用 openai 对话机器人
+2024-08-29 18:01:34,929 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-08-29 18:01:34,929 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-08-29 18:01:34,931 - robot.Conversation - Conversation.py - doResponse - line 260 - INFO - 响应指令
