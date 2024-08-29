@@ -45,7 +45,7 @@ class EdgeTTS(AbstractTTS):
 
     SLUG = "edge-tts"
 
-    def __init__(self, voice="zh-CN-XiaoxiaoNeural", **args):
+    def __init__(self, voice="zh-CN-YunxiNeural", **args):
         super(self.__class__, self).__init__()
         self.voice = voice
 
@@ -57,7 +57,7 @@ class EdgeTTS(AbstractTTS):
     async def async_get_speech(self, phrase):
         try:
             tmpfile = os.path.join(constants.TEMP_PATH, uuid.uuid4().hex + ".mp3")
-            tts = edge_tts.Communicate(text=phrase, voice=self.voice)
+            tts = edge_tts.Communicate(text=phrase, voice=self.voice, rate='-4%', volume='+0%')
             await tts.save(tmpfile)
             logger.info(f"{self.SLUG} 语音合成成功，合成路径：{tmpfile}")
             return tmpfile

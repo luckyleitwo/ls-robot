@@ -84,6 +84,7 @@ class Conversation(object):
                 try:
                     voice = self.tts.get_speech(msg)
                     logger.info(f"第{index}段TTS合成成功。msg: {msg}")
+                    logger.info(self.play_lock)
                     while index != self.tts_index:
                         # 阻塞直到轮到这个音频播放
                         continue
@@ -121,6 +122,17 @@ class Conversation(object):
             return result
         return None
 
+    def _after_play(self, msg, audios, plugin=""):
+        cached_audios = [
+            f"http://{config.get('/server/host')}:{config.get('/server/port')}/audio/{os.path.basename(voice)}"
+            for voice in audios
+        ]
+        if self.onSay:
+            logger.info(f"onSay: {msg}, {cached_audios}")
+            self.onSay(msg, cached_audios, plugin=plugin)
+            self.onSay = None
+        utils.lruCache()  # 清理缓存
+
     def stream_say(self, stream, cache=False, onCompleted=None):
         """
         从流中逐字逐句生成语音
@@ -148,6 +160,7 @@ class Conversation(object):
                 if "```" in line.strip():
                     skip_tts = True
                 if not skip_tts:
+                    print(line)
                     audio = self._tts_line(line.strip(), cache, index, onCompleted)
                     if audio:
                         self.tts_count += 1
@@ -163,7 +176,7 @@ class Conversation(object):
             self._tts_line("内容包含代码，我就不念了", True, index, onCompleted)
         msg = "".join(lines)
         # self.appendHistory(1, msg, UUID=resp_uuid, plugin="")
-        # self._after_play(msg, audios, "")
+        self._after_play(msg, audios, "")
 
     def _onCompleted(self, msg):
         if config.get('active_mode', False) and \

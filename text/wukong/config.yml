@@ -196,7 +196,7 @@ mac-tts:
 edge-tts:
     # 命令行执行 edge-tts --list-voices 可以打印所有音色
     # 中文推荐 `zh` 开头的音色
-    voice: zh-CN-XiaoxiaoNeural
+    voice: zh-CN-YunxiNeural
 
 # 基于 VITS 的AI语音合成
 VITS:
