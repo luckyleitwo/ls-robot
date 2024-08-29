@@ -1,6 +1,9 @@
+import hashlib
 import os
 import re
 import shutil
+import subprocess
+import tempfile
 import time
 import wave
 import _thread as thread
@@ -178,3 +181,57 @@ def check_and_delete(fp, wait=0):
                 shutil.rmtree(fp)
 
     thread.start_new_thread(run, ())
+
+def stripPunctuation(s):
+    """
+    移除字符串末尾的标点
+    """
+    punctuations = [',', '，', '.', '。', '?']
+    if any(s.endswith(p) for p in punctuations):
+        s = s[:-1]
+    return s
+
+def getCache(msg):
+    """ 获取缓存的语音 """
+    md5 = hashlib.md5(msg.encode('utf-8')).hexdigest()
+    mp3_cache = os.path.join(constants.TEMP_PATH, md5 + '.mp3')
+    wav_cache = os.path.join(constants.TEMP_PATH, md5 + '.wav')
+    if os.path.exists(mp3_cache):
+        return mp3_cache
+    elif os.path.exists(wav_cache):
+        return wav_cache
+    return None
+
+
+def saveCache(voice, msg):
+    """ 获取缓存的语音 """
+    foo, ext = os.path.splitext(voice)
+    md5 = hashlib.md5(msg.encode('utf-8')).hexdigest()
+    target = os.path.join(constants.TEMP_PATH, md5 + ext)
+    shutil.copyfile(voice, target)
+    return target
+
+
+def lruCache():
+    """ 清理最近未使用的缓存 """
+    def run(*args):
+        if config.get('/lru_cache/enable', True):
+            days = config.get('/lru_cache/days', 7)
+            subprocess.run('find . -name "*.mp3" -atime +%d -exec rm {} \;' % days, cwd=constants.TEMP_PATH, shell=True)
+
+    thread.start_new_thread(run, ())
+
+
+def write_temp_file(data, suffix, mode='w+b'):
+    """
+    写入临时文件
+
+    :param data: 数据
+    :param suffix: 后缀名
+    :param mode: 写入模式，默认为 w+b
+    :returns: 文件保存后的路径
+    """
+    with tempfile.NamedTemporaryFile(mode=mode, suffix=suffix, delete=False) as f:
+        f.write(data)
+        tmpfile = f.name
+    return tmpfile
