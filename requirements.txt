@@ -15,3 +15,4 @@ aiohttp~=3.10.5
 openai==1.42.0
 pydub~=0.25.1
 python-dateutil~=2.9.0.post0
+nltk~=3.9.1

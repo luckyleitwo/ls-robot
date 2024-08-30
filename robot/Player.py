@@ -12,8 +12,8 @@ from pydub import AudioSegment
 from robot import logging
 from ctypes import CFUNCTYPE, c_char_p, c_int, cdll
 from contextlib import contextmanager
-
 from . import utils
+from .AudioPlayer import AudioPlayer, load_audio
 
 logger = logging.getLogger(__name__)
 
@@ -87,7 +87,8 @@ class SoxPlayer(AbstractPlayer):
         self.loop = asyncio.new_event_loop()  # 创建事件循环
         self.thread_loop = threading.Thread(target=self.loop.run_forever)
         self.thread_loop.start()
-
+        self.audio_player = AudioPlayer()
+        self.audio_player.start_stream()
     def executeOnCompleted(self, res, onCompleted):
         # 全部播放完成，播放统一的 onCompleted()
         res and onCompleted and onCompleted()
@@ -103,13 +104,15 @@ class SoxPlayer(AbstractPlayer):
                     logger.info(f"开始播放音频：{src}")
                     self.src = src
                     res = self.doPlay(src)
-                    self.play_queue.task_done()
+                    self.audio_player.append_audio(src)
+                    # self.play_queue.task_done()
                     # 将 onCompleted() 方法的调用放到事件循环的线程中执行
                     self.loop.call_soon_threadsafe(
                         self.executeOnCompleted, res, onCompleted
                     )
 
     def doPlay(self, src):
+        print("---------------")
         system = platform.system()
         if system == "Darwin":
             cmd = ["afplay", str(src)]
@@ -122,6 +125,7 @@ class SoxPlayer(AbstractPlayer):
         self.playing = True
         self.proc.wait()
         self.playing = False
+        logger.info("=================")
         if self.delete:
             utils.check_and_delete(src)
         logger.info(f"播放完成：{src}")
@@ -130,7 +134,9 @@ class SoxPlayer(AbstractPlayer):
     def play(self, src, delete=False, onCompleted=None):
         if src and (os.path.exists(src) or src.startswith("http")):
             self.delete = delete
-            self.play_queue.put((src, onCompleted))
+            # self.audio_player
+            initial_audio = load_audio(src)
+            self.play_queue.put((initial_audio, onCompleted))
         else:
             logger.critical(f"path not exists: {src}", stack_info=True)
 

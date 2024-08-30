@@ -5,4 +5,4 @@ from robot.Conversation import Conversation
 
 conversationz = Conversation(False)
 
-conversationz.doResponse(query="讲一个笑话")
+conversationz.doResponse(query="讲一个200字的笑话")
