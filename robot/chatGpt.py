@@ -8,6 +8,7 @@ import openai
 from uuid import getnode as get_mac
 from abc import ABCMeta, abstractmethod
 from robot import logging, config, utils
+from robot.opaiFun import open_chat
 
 logger = logging.getLogger(__name__)
 
@@ -90,7 +91,7 @@ class OPENAIRobot(AbstractRobot):
         # Try to get anyq config from config
         return config.get("openai", {})
 
-    def stream_chat(self, texts,stream=True):
+    def stream_chat(self, texts,stream=True,types=1):
         """
         从ChatGPT API获取回复
         :return: 回复
@@ -100,7 +101,8 @@ class OPENAIRobot(AbstractRobot):
         msg = utils.stripPunctuation(msg)
         msg = self.prefix + msg  # 增加一段前缀
         logger.info("msg: " + msg)
-        self.context.append({"role": "user", "content": msg})
+        if types == 1:
+            self.context.append({"role": "user", "content": msg})
 
         header = {
             "Content-Type": "application/json",
@@ -124,16 +126,16 @@ class OPENAIRobot(AbstractRobot):
 
             # all client options can be configured just like the `OpenAI` instantiation counterpart
             # openai.base_url = "https://api.chatanywhere.tech/v1/"
-            openai.api_key = 'sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00'
-            openai.base_url = "https://free.gpt.ge/v1/"
-            openai.default_headers = {"x-foo": "true"}
+            # openai.api_key = 'sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00'
+            # openai.base_url = "https://free.gpt.ge/v1/"
+            # openai.default_headers = {"x-foo": "true"}
             logger.info(self.context)
-            response = openai.chat.completions.create(
-                model=self.model,
-                messages=self.context,
-                stream=stream
-            )
-
+            # response = openai.chat.completions.create(
+            #     model=self.model,
+            #     messages=self.context,
+            #     stream=stream
+            # )
+            response = open_chat(model=self.model,context=self.context,stream=stream,msg=msg,type=types)
             def generate():
                 stream_content = str()
                 one_message = {"role": "assistant", "content": stream_content}

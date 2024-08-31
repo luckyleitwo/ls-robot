@@ -1,4 +1,5 @@
 import asyncio
+import json
 import os
 import re
 import tempfile
@@ -262,12 +263,16 @@ class Conversation(object):
         self.interrupt()
         
         parsed = self.doParse(query=query)
+        stream = self.ai.stream_chat(texts=query,stream=False,types=2)
+        logger.info(stream)
+        json_object = json.loads(stream)
+        logger.info(json_object["type"])
         # msg = self.ai.chat(texts=query,parsed=parsed)
         # logger.info(msg)
-        stream = self.ai.stream_chat(query)
+        # stream = self.ai.stream_chat(query)
         # logger.info(stream)
         # self.say(stream, True, onCompleted=self.checkRestore)
-        self.stream_say(stream, False, onCompleted=self.checkRestore)
+        # self.stream_say(stream, False, onCompleted=self.checkRestore)
         # msg = self.ai.chat(texts=query, parsed=parsed)
         # self.say(msg, True, onCompleted=self.checkRestore)
         # logger.info('初始化openai')
