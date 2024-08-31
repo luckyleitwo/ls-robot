@@ -20,12 +20,14 @@ import edge_tts
 from pydub import AudioSegment
 from pydub.playback import play
 
+from skill.MusicSkill import MusicSkill
+
 logger = logging.getLogger(__name__)
 
 
 class Conversation(object):
     def __init__(self, profiling=False):
-        self.brain, self.asr, self.ai, self.tts, self.nlu = None, None, None, None, None
+        self.brain, self.asr, self.ai, self.tts, self.nlu,self.music = None, None, None, None, None,None
         self.reInit()
         self.scheduler = Scheduler(self)
         # 历史会话消息
@@ -53,6 +55,9 @@ class Conversation(object):
             self.tts = TTS.get_engine_by_slug(config.get("tts_engine", "baidu-tts"))
             self.nlu = NLU.get_engine_by_slug(config.get("nlu_engine", "unit"))
             self.player = Player.SoxPlayer()
+            self.music = MusicSkill()
+            asyncio.run(self.music.initialize())
+            # self.music = asyncio.run(music.initialize())
             # self.brain = Brain(self)
             # self.brain.printPlugins()
         except Exception as e:
@@ -249,7 +254,7 @@ class Conversation(object):
         }
         return self.nlu.parse(query, **args)
 
-    def doResponse(self, query, UUID="", onSay=None, onStream=None):
+    async def doResponse(self, query, UUID="", onSay=None, onStream=None):
         """
         响应指令
 
@@ -267,6 +272,14 @@ class Conversation(object):
         logger.info(stream)
         json_object = json.loads(stream)
         logger.info(json_object["type"])
+        if (json_object["type"] == "music"):
+            likeList = await self.music.search_music(play=self.player.audio_player,data=json_object['data'])
+
+            # likeList = await self.music.likeList(play=self.player.audio_player)
+            # for music in likeList:
+            #     print(music)
+            #     print(music.name, music.artist_str, music.id)
+
         # msg = self.ai.chat(texts=query,parsed=parsed)
         # logger.info(msg)
         # stream = self.ai.stream_chat(query)

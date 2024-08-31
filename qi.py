@@ -1,3 +1,4 @@
+import asyncio
 import signal
 
 from robot import detector, logger, utils
@@ -73,4 +74,4 @@ class ls(object):
 
 if __name__ == "__main__":
     ls = ls()
-    ls.run()
+    asyncio.run(ls.run())

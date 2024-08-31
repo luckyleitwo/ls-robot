@@ -1,3 +1,4 @@
+import asyncio
 import time
 
 from robot import config, logging, constants
@@ -59,7 +60,7 @@ def initDetector(wukong):
                     recorder.stop()
                     wukong.conversation.interrupt()
                     query = wukong.conversation.activeListen()
-                    wukong.conversation.doResponse(query)
+                    asyncio.run(wukong.conversation.doResponse(query))                    
                     recorder.start()
         except pvporcupine.PorcupineActivationError as e:
             logger.error("[Porcupine] AccessKey activation error", stack_info=True)
