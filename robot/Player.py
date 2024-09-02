@@ -22,6 +22,29 @@ def py_error_handler(filename, line, function, err, fmt):
     pass
 
 
+# Define a cache directory
+CACHE_DIR = "audio_cache"
+
+# Ensure cache directory exists
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+
+def cache_audio(src):
+    """Download and cache audio file locally."""
+    if src.startswith("http"):
+        local_filename = os.path.join(CACHE_DIR, os.path.basename(src))
+        if not os.path.exists(local_filename):
+            response = requests.get(src, stream=True)
+            if response.status_code == 200:
+                with open(local_filename, "wb") as f:
+                    for chunk in response.iter_content(chunk_size=8192):
+                        f.write(chunk)
+            else:
+                raise Exception(f"Failed to download file from {src}")
+        return local_filename
+    return src
+
+
 ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
 
 c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
@@ -89,6 +112,7 @@ class SoxPlayer(AbstractPlayer):
         self.thread_loop.start()
         self.audio_player = AudioPlayer()
         self.audio_player.start_stream()
+
     def executeOnCompleted(self, res, onCompleted):
         # 全部播放完成，播放统一的 onCompleted()
         res and onCompleted and onCompleted()
@@ -105,7 +129,6 @@ class SoxPlayer(AbstractPlayer):
                     self.src = src
                     res = self.doPlay(src)
                     self.audio_player.append_audio(src)
-                    # self.play_queue.task_done()
                     # 将 onCompleted() 方法的调用放到事件循环的线程中执行
                     self.loop.call_soon_threadsafe(
                         self.executeOnCompleted, res, onCompleted
@@ -132,13 +155,13 @@ class SoxPlayer(AbstractPlayer):
         return self.proc and self.proc.returncode == 0
 
     def play(self, src, delete=False, onCompleted=None):
+        # src = cache_audio(src)  # 缓存音频文件
         if src and (os.path.exists(src) or src.startswith("http")):
             self.delete = delete
-            # self.audio_player
             initial_audio = load_audio(src)
             self.play_queue.put((initial_audio, onCompleted))
         else:
-            logger.critical(f"path not exists: {src}", stack_info=True)
+            logger.critical(f"路径不存在: {src}", stack_info=True)
 
     def preappendCompleted(self, onCompleted):
         onCompleted and self.onCompleteds.insert(0, onCompleted)
@@ -196,6 +219,7 @@ class MusicPlayer(SoxPlayer):
     def play(self):
         logger.debug("MusicPlayer play")
         path = self.playlist[self.idx]
+        # path = cache_audio(path)  # 缓存音频文件
         super().stop()
         super().play(path, False, self.next)
 
