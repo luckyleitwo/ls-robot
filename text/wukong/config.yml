@@ -365,8 +365,8 @@ weather:
 # 逻辑模块 意图推理
 #
 llmApi:
-    api_key: ''
-    base_url: ''
+    api_key: 'JEDZHTWjkYCEgEKqUugY:kzEIYIkPwfZnfASeAbBZ'
+    base_url: 'https://spark-api-open.xf-yun.com/v1'
     prompt: >-
     
       角色设定：

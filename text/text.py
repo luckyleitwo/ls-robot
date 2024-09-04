@@ -8,11 +8,13 @@ logger = logging.getLogger(__name__)
 def open_chat(msg):
     access_key = config.get("/llmApi/prompt")
     context = f"{access_key} \n\n接下来我的输入是：{{{{{msg}}}}}"
+    print(context)
     client = OpenAI(
         api_key=config.get("/llmApi/api_key"),
-        base_url=config.get("/llmApi/api_key"),  # 指向讯飞星火的请求地址
+        base_url=config.get("/llmApi/base_url"),  # 指向讯飞星火的请求地址
         default_headers={"x-foo": "true"}
     )
+    print(client)
     logger.info("开始")
     response = client.chat.completions.create(
         model="general",
@@ -45,4 +47,4 @@ def open_chat(msg):
     return response
 
 
-open_chat(msg="播放陶喆的你爱我还是他")
+open_chat(msg="讲一个笑话吧")
