@@ -1,0 +1,5 @@
+[
+    {"text": "我想订一个酒店房间", "intent": "book_hotel"},
+    {"text": "明天天气如何", "intent": "weather_forecast"},
+    {"text": "给我设置一个闹钟，早上7点", "intent": "set_alarm"}
+]

@@ -1,0 +1,4 @@
+[
+    {"text": "附近有好餐馆吗？", "intent": "find_restaurant"},
+    {"text": "帮我查一下电影时间", "intent": "check_movie_times"}
+]
