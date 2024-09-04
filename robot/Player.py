@@ -7,59 +7,12 @@ import queue
 import signal
 import threading
 
-from pydub import AudioSegment
 
 from robot import logging
-from ctypes import CFUNCTYPE, c_char_p, c_int, cdll
-from contextlib import contextmanager
 from . import utils
 from .AudioPlayer import AudioPlayer, load_audio
 
 logger = logging.getLogger(__name__)
-
-
-def py_error_handler(filename, line, function, err, fmt):
-    pass
-
-
-# Define a cache directory
-CACHE_DIR = "audio_cache"
-
-# Ensure cache directory exists
-os.makedirs(CACHE_DIR, exist_ok=True)
-
-
-def cache_audio(src):
-    """Download and cache audio file locally."""
-    if src.startswith("http"):
-        local_filename = os.path.join(CACHE_DIR, os.path.basename(src))
-        if not os.path.exists(local_filename):
-            response = requests.get(src, stream=True)
-            if response.status_code == 200:
-                with open(local_filename, "wb") as f:
-                    for chunk in response.iter_content(chunk_size=8192):
-                        f.write(chunk)
-            else:
-                raise Exception(f"Failed to download file from {src}")
-        return local_filename
-    return src
-
-
-ERROR_HANDLER_FUNC = CFUNCTYPE(None, c_char_p, c_int, c_char_p, c_int, c_char_p)
-
-c_error_handler = ERROR_HANDLER_FUNC(py_error_handler)
-
-
-@contextmanager
-def no_alsa_error():
-    try:
-        asound = cdll.LoadLibrary("libasound.so")
-        asound.snd_lib_error_set_handler(c_error_handler)
-        yield
-        asound.snd_lib_error_set_handler(None)
-    except:
-        yield
-        pass
 
 
 def play(fname, onCompleted=None):
