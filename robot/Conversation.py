@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 
 class Conversation(object):
     def __init__(self, profiling=False):
-        self.brain, self.asr, self.ai, self.tts, self.nlu,self.music = None, None, None, None, None,None
+        self.brain, self.asr, self.ai, self.tts, self.nlu, self.music = None, None, None, None, None, None
         self.reInit()
         self.scheduler = Scheduler(self)
         # 历史会话消息
@@ -158,10 +158,13 @@ class Conversation(object):
         self.tts_count = 0
         index = 0
         skip_tts = False
+        print(stream())
         for data in stream():
             if self.onStream:
                 self.onStream(data, resp_uuid)
+            # print(data)
             line += data
+            print(line)
             if any(char in data for char in utils.getPunctuations()):
                 if "```" in line.strip():
                     skip_tts = True
@@ -266,14 +269,21 @@ class Conversation(object):
         logger.info("响应指令")
         statistic.report(1)
         self.interrupt()
-        
+
         parsed = self.doParse(query=query)
-        stream = self.ai.stream_chat(texts=query,stream=False,types=2)
+        stream = self.ai.stream_chat(texts=query, stream=False, types=2)
         logger.info(stream)
         json_object = json.loads(stream)
         logger.info(json_object["type"])
-        if (json_object["type"] == "music"):
-            likeList = await self.music.search_music(play=self.player.audio_player,data=json_object['data'])
+        if json_object["type"] == 404:
+            logger.info("正常使用chatGPT回答就可以了")
+            streamMsg = self.ai.stream_chat(texts=query)
+            print("12312312")
+            # self.say(streamMsg, True, onCompleted=self.checkRestore)
+            self.stream_say(streamMsg, False, onCompleted=self.checkRestore)
+        if json_object["type"] == "music":
+            logger.info("播放音乐1")
+            likeList = await self.music.search_music(play=self.player.audio_player, data=json_object['data'])
 
             # likeList = await self.music.likeList(play=self.player.audio_player)
             # for music in likeList:

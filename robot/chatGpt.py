@@ -8,7 +8,7 @@ import openai
 from uuid import getnode as get_mac
 from abc import ABCMeta, abstractmethod
 from robot import logging, config, utils
-from robot.opaiFun import open_chat
+from robot.opaiFun import open_chat, general_chat
 
 logger = logging.getLogger(__name__)
 
@@ -91,7 +91,7 @@ class OPENAIRobot(AbstractRobot):
         # Try to get anyq config from config
         return config.get("openai", {})
 
-    def stream_chat(self, texts,stream=True,types=1):
+    def stream_chat(self, texts, stream=True, types=1):
         """
         从ChatGPT API获取回复
         :return: 回复
@@ -135,7 +135,8 @@ class OPENAIRobot(AbstractRobot):
             #     messages=self.context,
             #     stream=stream
             # )
-            response = open_chat(model=self.model,context=self.context,stream=stream,msg=msg,type=types)
+            response = general_chat(msg=msg) if types == 2 else open_chat(model=self.model, context=self.context, stream=stream, msg=msg, type=types)
+
             def generate():
                 stream_content = str()
                 one_message = {"role": "assistant", "content": stream_content}
@@ -147,9 +148,7 @@ class OPENAIRobot(AbstractRobot):
                             choice = line.choices[0]
                             if choice.delta:
                                 delta = choice.delta
-                                if delta.role:
-                                    role = delta.role
-                                elif delta.content:
+                                if delta.content:
                                     delta_content = delta.content
                                     i += 1
                                     if i < 40:

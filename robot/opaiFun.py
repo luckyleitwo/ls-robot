@@ -1,6 +1,6 @@
-import openai
+from openai import OpenAI
 
-from robot import logging
+from robot import logging, config
 
 logger = logging.getLogger(__name__)
 
@@ -20,21 +20,64 @@ text = """"
 \n没有匹配的技能就返回 {"type": 404}\n
 """
 
-def open_chat(model,context,stream,msg,type):
-    openai.api_key = 'sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00'
-    openai.base_url = "https://free.gpt.ge/v1/"
-    openai.default_headers = {"x-foo": "true"}
-    logger.info(context)
-    constz = context if type == 1 else [{"role": "system", "content": text},{"role": "user", "content": msg}]
-    logger.info(constz)
-    response =  openai.chat.completions.create(
-        model=model,
-        messages=constz,
+
+def open_chat(model, context, stream, msg, type):
+    # import openai
+    # openai.api_key = 'sk-ZRD4wE1uJUhTm0xh7d5152D55f994b78961540665a50Ff00'
+    # openai.base_url = "https://free.gpt.ge/v1/"
+    # openai.default_headers = {"x-foo": "true"}
+    # logger.info(context)
+    # constz = context if type == 1 else [{"role": "system", "content": text}, {"role": "user", "content": msg}]
+    # logger.info(constz)
+    # logger.info("开始")
+    # response = openai.chat.completions.create(
+    #     model=model,
+    #     messages=constz,
+    #     stream=stream,
+    #     temperature=0.6,
+    #     top_p=1,
+    #     frequency_penalty=0,
+    # )
+
+
+    client = OpenAI(
+        api_key=config.get("/llmApi/api_key"),
+        base_url=config.get("/llmApi/base_url"),  # 指向讯飞星火的请求地址
+        default_headers={"x-foo": "true"}
+    )
+    logger.info("开始")
+    response = client.chat.completions.create(
+        model="general",
+        messages=[{"role": "user", "content": msg}],
         stream=stream,
         temperature=0.6,
         top_p=1,
         frequency_penalty=0,
+        tool_choice="auto"
     )
-
+    # for lin in response:
+    #     print(lin)
+    logger.info("结束")
     return response
 
+
+def general_chat(msg):
+    access_key = config.get("/llmApi/prompt")
+    context = f"{access_key} \n\n接下来我的输入是：{{{{{msg}}}}}"
+    client = OpenAI(
+        api_key=config.get("/llmApi/api_key"),
+        base_url=config.get("/llmApi/base_url"),  # 指向讯飞星火的请求地址
+        default_headers={"x-foo": "true"}
+    )
+    logger.info("开始")
+    response = client.chat.completions.create(
+        model="general",
+        messages=[{"role": "user", "content": context}],
+        stream=False,
+        temperature=0.1,
+        top_p=1,
+        frequency_penalty=0,
+        max_tokens=100
+    )
+    logger.info("结束")
+    return response

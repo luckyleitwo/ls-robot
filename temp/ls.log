@@ -2804,3 +2804,1682 @@ Stack (most recent call last):
 2024-09-04 17:35:37,212 - __main__ - text.py - open_chat - line 28 - INFO - 结束
 2024-09-04 17:39:43,409 - __main__ - text.py - open_chat - line 18 - INFO - 开始
 2024-09-04 17:39:45,005 - __main__ - text.py - open_chat - line 28 - INFO - 结束
+2024-09-04 17:56:32,203 - __main__ - text.py - open_chat - line 18 - INFO - 开始
+2024-09-04 17:56:33,228 - __main__ - text.py - open_chat - line 28 - INFO - 结束
+2024-09-05 09:49:40,873 - __main__ - text.py - open_chat - line 18 - INFO - 开始
+2024-09-05 09:49:42,069 - __main__ - text.py - open_chat - line 28 - INFO - 结束
+2024-09-05 11:23:39,805 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:23:39,806 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:23:39,806 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:23:39,806 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:24:26,406 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:24:26,406 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:24:26,406 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:24:26,406 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:24:59,117 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:24:59,117 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:24:59,117 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:24:59,117 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:25:41,628 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:25:41,628 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:25:41,628 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:25:41,628 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:25:42,092 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:25:43,923 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:25:43,923 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:25:43,923 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:25:43,923 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:25:43,923 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - []
+2024-09-05 11:25:43,923 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'system', 'content': '"\n 你是一个语意义识别助手 你可以匹配以下技能\n1.发微信\n2.播放音乐\n\n匹配技能返回结构个是\n微信: {"type": "wechat","data": ["发送微信人名称如果没有就空字符串","发送内容"]}\n音乐: {"type": "music","data": ["歌手名称如果没有就空字符串","歌曲名称"]}\n\n\n如用户说 发消息 你回答 {"type": "微信","data": [这里是你根据 用户发的消息匹配的内容(如用户说发你好给冰棒 里面的内容就是 ["冰棒","你好"] 且如果用户发送的是 发消息没有具体发给谁 data里面只需要[] )]}\n\n如果是音乐 有歌曲名称需要对歌曲名称和唱歌人进行分词处理\n\n\n没有匹配的技能就返回 {"type": 404}\n\n'}, {'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:25:48,292 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:25:48,292 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:25:57,450 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:25:57,450 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:25:57,450 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:25:57,450 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:25:58,137 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:25:59,698 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:25:59,699 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:25:59,699 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:25:59,699 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:25:59,699 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - []
+2024-09-05 11:25:59,699 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'system', 'content': '"\n 你是一个语意义识别助手 你可以匹配以下技能\n1.发微信\n2.播放音乐\n\n匹配技能返回结构个是\n微信: {"type": "wechat","data": ["发送微信人名称如果没有就空字符串","发送内容"]}\n音乐: {"type": "music","data": ["歌手名称如果没有就空字符串","歌曲名称"]}\n\n\n如用户说 发消息 你回答 {"type": "微信","data": [这里是你根据 用户发的消息匹配的内容(如用户说发你好给冰棒 里面的内容就是 ["冰棒","你好"] 且如果用户发送的是 发消息没有具体发给谁 data里面只需要[] )]}\n\n如果是音乐 有歌曲名称需要对歌曲名称和唱歌人进行分词处理\n\n\n没有匹配的技能就返回 {"type": 404}\n\n'}, {'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:26:01,216 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - 抱歉，我目前还不支持讲笑话的技能。有其他什么需要我帮忙的吗？
+2024-09-05 11:26:48,261 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:26:48,262 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:26:48,262 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:26:48,262 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:26:48,943 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:26:50,640 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:26:50,640 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:26:50,641 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:26:50,641 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:26:50,641 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - []
+2024-09-05 11:26:50,641 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'system', 'content': '"\n 你是一个语意义识别助手 你可以匹配以下技能\n1.发微信\n2.播放音乐\n\n匹配技能返回结构个是\n微信: {"type": "wechat","data": ["发送微信人名称如果没有就空字符串","发送内容"]}\n音乐: {"type": "music","data": ["歌手名称如果没有就空字符串","歌曲名称"]}\n\n\n如用户说 发消息 你回答 {"type": "微信","data": [这里是你根据 用户发的消息匹配的内容(如用户说发你好给冰棒 里面的内容就是 ["冰棒","你好"] 且如果用户发送的是 发消息没有具体发给谁 data里面只需要[] )]}\n\n如果是音乐 有歌曲名称需要对歌曲名称和唱歌人进行分词处理\n\n\n没有匹配的技能就返回 {"type": 404}\n\n'}, {'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:26:55,678 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:26:55,678 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:28:59,399 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:28:59,399 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 11:28:59,399 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:28:59,399 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:29:00,093 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:29:01,820 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:29:01,820 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:29:01,820 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:29:01,821 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:29:01,821 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - []
+2024-09-05 11:29:01,821 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'system', 'content': '"\n 你是一个语意义识别助手 你可以匹配以下技能\n1.发微信\n2.播放音乐\n\n匹配技能返回结构个是\n微信: {"type": "wechat","data": ["发送微信人名称如果没有就空字符串","发送内容"]}\n音乐: {"type": "music","data": ["歌手名称如果没有就空字符串","歌曲名称"]}\n\n\n如用户说 发消息 你回答 {"type": "微信","data": [这里是你根据 用户发的消息匹配的内容(如用户说发你好给冰棒 里面的内容就是 ["冰棒","你好"] 且如果用户发送的是 发消息没有具体发给谁 data里面只需要[] )]}\n\n如果是音乐 有歌曲名称需要对歌曲名称和唱歌人进行分词处理\n\n\n没有匹配的技能就返回 {"type": 404}\n\n'}, {'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:29:04,325 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:29:04,326 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:29:14,363 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:29:14,363 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 11:29:14,363 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:29:14,363 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:29:15,012 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:29:16,775 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:29:16,775 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:29:16,775 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:29:16,776 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:29:16,776 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - []
+2024-09-05 11:29:16,776 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'system', 'content': '"\n 你是一个语意义识别助手 你可以匹配以下技能\n1.发微信\n2.播放音乐\n\n匹配技能返回结构个是\n微信: {"type": "wechat","data": ["发送微信人名称如果没有就空字符串","发送内容"]}\n音乐: {"type": "music","data": ["歌手名称如果没有就空字符串","歌曲名称"]}\n\n\n如用户说 发消息 你回答 {"type": "微信","data": [这里是你根据 用户发的消息匹配的内容(如用户说发你好给冰棒 里面的内容就是 ["冰棒","你好"] 且如果用户发送的是 发消息没有具体发给谁 data里面只需要[] )]}\n\n如果是音乐 有歌曲名称需要对歌曲名称和唱歌人进行分词处理\n\n\n没有匹配的技能就返回 {"type": 404}\n\n'}, {'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:29:17,898 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:29:17,898 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:29:26,331 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:29:26,331 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:29:26,331 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:29:26,331 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:29:26,979 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:29:28,743 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:29:28,744 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:29:28,744 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:29:28,744 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:29:28,760 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:29:30,334 - robot.opaiFun - opaiFun.py - general_chat - line 66 - INFO - 结束
+2024-09-05 11:29:30,334 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - 对于这个输入，我无法匹配到任何技能。因此，我的回答是：
+
+{"type": 404}
+2024-09-05 11:30:30,433 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:30:30,433 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:30:30,433 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:30:30,433 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:30:32,384 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:30:33,880 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:30:33,881 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:30:33,881 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:30:33,881 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:30:33,897 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:30:35,566 - robot.opaiFun - opaiFun.py - general_chat - line 66 - INFO - 结束
+2024-09-05 11:30:35,567 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - 对于这个输入，我无法匹配到任何技能。因此，我的回答是：
+
+{"type": 404}
+2024-09-05 11:30:50,564 - __main__ - text.py - open_chat - line 18 - INFO - 开始
+2024-09-05 11:30:51,569 - __main__ - text.py - open_chat - line 28 - INFO - 结束
+2024-09-05 11:31:40,057 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:31:40,057 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:31:40,057 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:31:40,057 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:31:41,086 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:31:42,797 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:31:42,797 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:31:42,797 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:31:42,798 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:31:42,814 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:31:44,509 - robot.opaiFun - opaiFun.py - general_chat - line 67 - INFO - 结束
+2024-09-05 11:31:44,510 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - 对于这个输入，我无法匹配到任何技能。因此，我的回答是：
+
+{"type": 404}
+2024-09-05 11:32:04,236 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:32:04,236 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:32:04,236 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:32:04,236 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:32:04,918 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:32:06,414 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:32:06,414 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:32:06,414 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:32:06,414 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:32:06,430 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:32:07,819 - robot.opaiFun - opaiFun.py - general_chat - line 67 - INFO - 结束
+2024-09-05 11:32:07,820 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - 对于这个输入，没有匹配的技能，因此返回： {"type": 404}
+2024-09-05 11:32:25,492 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:32:25,492 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:32:25,492 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:32:25,492 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:32:26,126 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:32:27,889 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:32:27,889 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:32:27,889 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:32:27,889 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:32:27,906 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:32:28,918 - robot.opaiFun - opaiFun.py - general_chat - line 67 - INFO - 结束
+2024-09-05 11:32:28,918 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:32:28,918 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:37:11,848 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:37:11,848 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:37:11,848 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:37:11,848 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:37:12,252 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:37:13,974 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:37:13,975 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:37:13,975 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:37:13,975 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:37:14,002 - robot.opaiFun - opaiFun.py - general_chat - line 56 - INFO - 开始
+2024-09-05 11:37:15,079 - robot.opaiFun - opaiFun.py - general_chat - line 67 - INFO - 结束
+2024-09-05 11:37:15,079 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:37:15,079 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:37:15,080 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:38:13,719 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:38:13,719 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:38:13,719 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:38:13,719 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:38:14,133 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:38:15,611 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:38:15,611 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:38:15,611 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:38:15,611 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:38:15,628 - robot.opaiFun - opaiFun.py - general_chat - line 53 - INFO - 开始
+2024-09-05 11:38:16,743 - robot.opaiFun - opaiFun.py - general_chat - line 63 - INFO - 结束
+2024-09-05 11:38:16,743 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:38:16,743 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:38:16,743 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:42:58,567 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:42:58,568 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:42:58,568 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:42:58,568 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:42:59,035 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:43:00,699 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:43:00,699 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:43:00,699 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:43:00,699 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:43:00,716 - robot.opaiFun - opaiFun.py - general_chat - line 53 - INFO - 开始
+2024-09-05 11:43:02,096 - robot.opaiFun - opaiFun.py - general_chat - line 63 - INFO - 结束
+2024-09-05 11:43:02,097 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404, "data": "正常回答"}
+2024-09-05 11:43:02,097 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:43:02,097 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:43:55,679 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:43:55,679 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:43:55,679 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:43:55,679 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:43:56,096 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:43:58,782 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:43:58,782 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:43:58,782 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:43:58,782 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:43:58,799 - robot.opaiFun - opaiFun.py - general_chat - line 53 - INFO - 开始
+2024-09-05 11:43:59,817 - robot.opaiFun - opaiFun.py - general_chat - line 63 - INFO - 结束
+2024-09-05 11:43:59,818 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:43:59,818 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:43:59,818 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:43:59,818 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:43:59,818 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:43:59,818 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:43:59,818 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:43:59,818 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:43:59,818 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:44:02,652 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:44:02,653 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - 老师问小明：“小明，你知道什么是‘不作不死’吗？”
+小明回答：“不知道。”
+老师说：“就是你不做作业，就会死在考试中！”
+2024-09-05 11:44:26,000 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:44:26,000 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:44:26,000 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:44:26,000 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:44:26,469 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:44:28,254 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:44:28,254 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:44:28,254 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:44:28,254 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:44:28,272 - robot.opaiFun - opaiFun.py - general_chat - line 53 - INFO - 开始
+2024-09-05 11:44:29,388 - robot.opaiFun - opaiFun.py - general_chat - line 63 - INFO - 结束
+2024-09-05 11:44:29,388 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:44:29,388 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:44:29,388 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:44:29,389 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:44:29,389 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:44:29,389 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:44:29,389 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:44:29,389 - robot.opaiFun - opaiFun.py - open_chat - line 28 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:44:29,389 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:44:33,418 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:44:33,419 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1306a20d0>
+2024-09-05 11:44:34,765 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/9f1c66665fe343a3b5a0d032ad701459.mp3
+2024-09-05 11:44:34,766 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 为什么猫咪不喜欢打扑克？
+2024-09-05 11:44:34,767 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x130625270>
+2024-09-05 11:44:34,767 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 为什么猫咪不喜欢打扑克？
+2024-09-05 11:44:36,037 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x130625760>
+2024-09-05 11:44:36,048 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 11:44:36,048 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x130625760>
+2024-09-05 11:44:37,274 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/f4761786000b42d491c90964ecf7bcc8.mp3
+2024-09-05 11:44:37,275 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 因为他们总是被抓住！
+2024-09-05 11:44:37,275 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x130625270>
+2024-09-05 11:44:37,275 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 因为他们总是被抓住！
+2024-09-05 11:44:37,347 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1306250d0>
+2024-09-05 11:44:37,353 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 11:44:37,353 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1306250d0>
+2024-09-05 11:46:29,117 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:46:29,118 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:46:29,118 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:46:29,118 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:46:29,513 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:46:31,241 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:46:31,241 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:46:31,241 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:46:31,241 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:46:31,258 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 11:46:32,475 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 11:46:32,475 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:46:32,476 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:46:32,476 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:46:32,476 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:46:32,476 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:46:32,476 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:46:32,476 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:46:32,489 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:46:32,979 - robot.opaiFun - opaiFun.py - open_chat - line 55 - INFO - 结束
+2024-09-05 11:46:32,979 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:46:32,980 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x121d670d0>
+2024-09-05 11:47:01,042 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:47:01,043 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:47:01,043 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:47:01,044 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:47:01,759 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:47:03,498 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:47:03,498 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:47:03,499 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:47:03,499 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:47:03,514 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 11:47:04,627 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 11:47:04,627 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:47:04,627 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:47:04,627 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:47:04,627 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:47:04,627 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:47:04,627 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:47:04,628 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:47:04,642 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:47:05,078 - robot.opaiFun - opaiFun.py - open_chat - line 55 - INFO - 结束
+2024-09-05 11:47:05,079 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:47:05,079 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x14a20b0d0>
+2024-09-05 11:47:59,531 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:47:59,531 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:47:59,532 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:47:59,532 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:48:00,219 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:48:01,761 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:48:01,761 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:48:01,761 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:48:01,761 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:48:01,777 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 11:48:02,965 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 11:48:02,965 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:48:02,965 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:48:02,965 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:48:02,965 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:48:02,965 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:48:02,966 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:48:02,966 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:48:02,980 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:48:05,945 - robot.opaiFun - opaiFun.py - open_chat - line 57 - INFO - 结束
+2024-09-05 11:48:05,946 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:48:05,946 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1364990d0>
+2024-09-05 11:48:45,415 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:48:45,415 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:48:45,415 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:48:45,415 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:48:46,053 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:48:47,507 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:48:47,508 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:48:47,508 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:48:47,508 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:48:47,524 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 11:48:48,669 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 11:48:48,670 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:48:48,670 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:48:48,670 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:48:48,670 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:48:48,670 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:48:48,670 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:48:48,670 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:48:48,684 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:48:49,153 - robot.opaiFun - opaiFun.py - open_chat - line 55 - INFO - 结束
+2024-09-05 11:48:49,153 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:48:49,154 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x127a63040>
+2024-09-05 11:53:04,491 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:53:04,492 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:53:04,492 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:53:04,492 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:53:05,147 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:53:07,128 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:53:07,129 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:53:07,129 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:53:07,129 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:53:07,145 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 11:53:08,188 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 11:53:08,189 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:53:08,189 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:53:08,189 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:53:08,189 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:53:08,189 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:53:08,189 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:53:08,189 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:53:08,202 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:53:08,663 - robot.opaiFun - opaiFun.py - open_chat - line 55 - INFO - 结束
+2024-09-05 11:53:08,663 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:53:08,663 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1275698b0>
+2024-09-05 11:53:20,829 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:53:20,829 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:53:20,829 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:53:20,829 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:53:21,431 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:53:22,960 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:53:22,961 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:53:22,961 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:53:22,961 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:53:22,977 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 11:53:24,008 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 11:53:24,008 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:53:24,009 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:53:24,009 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:53:24,009 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:53:24,009 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:53:24,009 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:53:24,009 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:53:24,026 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:53:26,994 - robot.opaiFun - opaiFun.py - open_chat - line 57 - INFO - 结束
+2024-09-05 11:53:26,995 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:53:26,996 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x114f68d30>
+2024-09-05 11:58:29,248 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:58:29,248 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:58:29,249 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:58:29,249 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:58:30,332 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:58:31,710 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:58:31,710 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:58:31,711 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:58:31,711 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:58:31,727 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 11:58:32,956 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 11:58:32,956 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:58:32,956 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:58:32,957 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:58:32,957 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:58:32,957 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:58:32,957 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:58:32,957 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:58:32,969 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:58:32,969 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:58:32,969 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1257e30d0>
+2024-09-05 11:58:35,250 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/190c1a33e642499f9e10ebdc49bbff32.mp3
+2024-09-05 11:58:35,251 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: request error:
+create() got an unexpected keyword argument 'top_k'
+2024-09-05 11:58:35,251 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x125764300>
+2024-09-05 11:58:35,252 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: request error:
+create() got an unexpected keyword argument 'top_k'
+2024-09-05 11:58:36,380 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1257e2130>
+2024-09-05 11:58:36,387 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 11:58:36,387 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1257e2130>
+2024-09-05 11:59:28,747 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 11:59:28,747 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 11:59:28,747 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 11:59:28,747 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 11:59:29,376 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 11:59:31,494 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:59:31,494 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:59:31,494 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:59:31,494 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 11:59:31,511 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 11:59:32,551 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 11:59:32,552 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 11:59:32,552 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 11:59:32,552 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 11:59:32,552 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 11:59:32,552 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 11:59:32,552 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 11:59:32,552 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 11:59:32,564 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 11:59:35,264 - robot.opaiFun - opaiFun.py - open_chat - line 57 - INFO - 结束
+2024-09-05 11:59:35,265 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 11:59:35,265 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12b777670>
+2024-09-05 13:35:59,379 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:35:59,379 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 13:35:59,379 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:35:59,379 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:36:01,079 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:36:02,780 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:36:02,780 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:36:02,780 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:36:02,780 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:36:02,797 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 13:36:03,936 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 13:36:03,937 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:36:03,937 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:36:03,937 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:36:03,937 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:36:03,937 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:36:03,937 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:36:03,937 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:36:03,950 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 13:36:07,132 - robot.opaiFun - opaiFun.py - open_chat - line 57 - INFO - 结束
+2024-09-05 13:36:07,133 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:36:07,133 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x14aad60d0>
+2024-09-05 13:39:26,723 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:39:26,723 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:39:26,723 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:39:26,723 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:39:27,144 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:39:28,703 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:39:28,703 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:39:28,703 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:39:28,703 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:39:28,714 - robot.opaiFun - opaiFun.py - general_chat - line 69 - INFO - 开始
+2024-09-05 13:39:29,759 - robot.opaiFun - opaiFun.py - general_chat - line 79 - INFO - 结束
+2024-09-05 13:39:29,760 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:39:29,760 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:39:29,760 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:39:29,760 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:39:29,760 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:39:29,760 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:39:29,761 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:39:29,772 - robot.opaiFun - opaiFun.py - open_chat - line 46 - INFO - 开始
+2024-09-05 13:39:32,694 - robot.opaiFun - opaiFun.py - open_chat - line 57 - INFO - 结束
+2024-09-05 13:39:32,695 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:39:32,695 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11c2210d0>
+2024-09-05 13:40:59,932 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:40:59,932 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:40:59,932 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:40:59,932 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:41:00,843 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:41:02,560 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:41:02,561 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:41:02,561 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:41:02,561 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:41:02,577 - robot.opaiFun - opaiFun.py - general_chat - line 70 - INFO - 开始
+2024-09-05 13:41:03,639 - robot.opaiFun - opaiFun.py - general_chat - line 80 - INFO - 结束
+2024-09-05 13:41:03,639 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:41:03,640 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:41:03,640 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:41:03,640 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:41:03,640 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:41:03,640 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:41:03,640 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:03,640 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:03,640 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:05,227 - robot.opaiFun - opaiFun.py - open_chat - line 58 - INFO - 结束
+2024-09-05 13:41:05,227 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:41:05,227 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x16230b0d0>
+2024-09-05 13:41:06,509 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/f0afdd2580f6416f9f39c56f918fc2e0.mp3
+2024-09-05 13:41:06,510 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 为什么蘑菇能参加聚会？
+2024-09-05 13:41:06,510 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x1605802a0>
+2024-09-05 13:41:06,510 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 为什么蘑菇能参加聚会？
+2024-09-05 13:41:07,417 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x160580760>
+2024-09-05 13:41:07,441 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:41:07,441 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x160580760>
+2024-09-05 13:41:08,699 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/8b89cee806504f18997d6e782a151d01.mp3
+2024-09-05 13:41:08,700 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 因为它是“蘑菇”星人！
+2024-09-05 13:41:08,700 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x1605802a0>
+2024-09-05 13:41:08,701 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 因为它是“蘑菇”星人！
+2024-09-05 13:41:08,773 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x160580610>
+2024-09-05 13:41:08,778 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:41:08,779 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x160580610>
+2024-09-05 13:41:37,163 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:41:37,164 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:41:37,164 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:41:37,164 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:41:37,886 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:41:38,625 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:41:38,626 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:41:38,626 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:41:38,626 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:41:38,642 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:41:39,789 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:41:39,790 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:41:39,790 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:41:39,790 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:41:39,790 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:41:39,790 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:41:39,790 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:41:39,791 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:39,791 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:39,791 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:41:39,791 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:41:40,704 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 13:41:40,704 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:41:40,705 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x126962160>
+2024-09-05 13:41:42,032 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/9f32b2d8d89140ef82b31386f23526eb.mp3
+2024-09-05 13:41:42,034 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 为什么猫咪不喜欢在线购物？
+2024-09-05 13:41:42,035 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x124dd4240>
+2024-09-05 13:41:42,035 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 为什么猫咪不喜欢在线购物？
+2024-09-05 13:41:42,200 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x124dd4e20>
+2024-09-05 13:41:42,206 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:41:42,206 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x124dd4e20>
+2024-09-05 13:41:43,419 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/8767a7fa199c4729bf3faaaf67552337.mp3
+2024-09-05 13:41:43,420 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 因为他们不喜欢点击！
+2024-09-05 13:41:43,420 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x124dd4240>
+2024-09-05 13:41:43,420 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 因为他们不喜欢点击！
+2024-09-05 13:41:43,493 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x124dd4f10>
+2024-09-05 13:41:43,499 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:41:43,499 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x124dd4f10>
+2024-09-05 13:43:02,044 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:43:02,044 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:43:02,044 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:43:02,044 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:43:02,481 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:43:04,775 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:43:04,775 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:43:04,775 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:43:04,775 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:43:04,785 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:43:05,820 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:43:05,820 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:43:05,820 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:43:05,821 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:43:05,821 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:43:05,821 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:43:05,821 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:43:05,821 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:43:05,821 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:43:05,821 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:43:05,821 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:43:06,083 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:43:06,084 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1287ab8b0>
+2024-09-05 13:43:07,425 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/c1b8f9ca2eb145d19271418512259762.mp3
+2024-09-05 13:43:07,426 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: request error:
+404 page not found
+2024-09-05 13:43:07,427 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x12872c210>
+2024-09-05 13:43:07,427 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: request error:
+404 page not found
+2024-09-05 13:43:07,598 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1287a0550>
+2024-09-05 13:43:07,605 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:43:07,605 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1287a0550>
+2024-09-05 13:44:06,313 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:44:06,314 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:44:06,314 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:44:06,314 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:44:06,988 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:44:08,566 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:44:08,567 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:44:08,567 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:44:08,567 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:44:08,584 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:44:09,618 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:44:09,619 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:44:09,619 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:44:09,619 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:44:09,619 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:44:09,619 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:44:09,619 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:44:09,619 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:44:09,619 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - <module 'openai' from '/Users/shenglei/ls/qil-robot/.venv/lib/python3.9/site-packages/openai/__init__.py'>
+2024-09-05 13:44:09,619 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:44:09,620 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:44:09,864 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:44:09,865 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x10fc9e0d0>
+2024-09-05 13:44:10,991 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/6afb843093cc4a68b69305cda32d7f24.mp3
+2024-09-05 13:44:10,994 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: request error:
+404 page not found
+2024-09-05 13:44:10,994 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x10fc20240>
+2024-09-05 13:44:10,994 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: request error:
+404 page not found
+2024-09-05 13:44:11,169 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10fc67f10>
+2024-09-05 13:44:11,175 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:44:11,176 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10fc67f10>
+2024-09-05 13:45:07,844 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:45:07,845 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:45:07,845 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:45:07,845 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:45:08,587 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:45:10,203 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:45:10,204 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:45:10,204 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:45:10,204 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:45:10,221 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 13:45:11,249 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 13:45:11,250 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:45:11,250 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:45:11,250 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:45:11,250 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:45:11,250 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:45:11,250 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:45:11,250 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:45:11,251 - robot.opaiFun - opaiFun.py - open_chat - line 30 - INFO - <module 'openai' from '/Users/shenglei/ls/qil-robot/.venv/lib/python3.9/site-packages/openai/__init__.py'>
+2024-09-05 13:45:11,251 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:45:11,251 - robot.opaiFun - opaiFun.py - open_chat - line 33 - INFO - 开始
+2024-09-05 13:45:11,405 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:45:11,405 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11772bf70>
+2024-09-05 13:45:12,643 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/568a1c99a36043cea41ddaa9fcef2e7d.mp3
+2024-09-05 13:45:12,644 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: request error:
+404 page not found
+2024-09-05 13:45:12,644 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x117764270>
+2024-09-05 13:45:12,644 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: request error:
+404 page not found
+2024-09-05 13:45:12,816 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1194e4640>
+2024-09-05 13:45:12,822 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:45:12,822 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1194e4640>
+2024-09-05 13:46:26,934 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:46:26,934 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:46:26,934 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:46:26,934 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:46:27,680 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:46:29,382 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:46:29,382 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:46:29,382 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:46:29,382 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:46:29,395 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:46:30,506 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:46:30,507 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:46:30,507 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:46:30,507 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:46:30,507 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:46:30,507 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:46:30,507 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:46:30,507 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:30,507 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:30,507 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:30,508 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:46:30,747 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:46:30,747 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x117135f70>
+2024-09-05 13:46:33,019 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/9631e37ecd4b474cbf69197cff927474.mp3
+2024-09-05 13:46:33,022 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: request error:
+Error code: 400 - {'error': {'message': 'invalid param model:gpt-3.5-turbo-1106 (sid: cha000b0c67@dx191c0b851d9b8f3532)', 'type': 'invalid_request_error', 'param': None, 'code': '10005'}}
+2024-09-05 13:46:33,022 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x11716c210>
+2024-09-05 13:46:33,022 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: request error:
+Error code: 400 - {'error': {'message': 'invalid param model:gpt-3.5-turbo-1106 (sid: cha000b0c67@dx191c0b851d9b8f3532)', 'type': 'invalid_request_error', 'param': None, 'code': '10005'}}
+2024-09-05 13:46:33,218 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1171e0730>
+2024-09-05 13:46:33,225 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 13:46:33,225 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1171e0730>
+2024-09-05 13:46:45,734 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:46:45,735 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:46:45,735 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:46:45,735 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:46:46,326 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:46:48,306 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:46:48,306 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:46:48,306 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:46:48,307 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:46:48,320 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:46:49,412 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:46:49,413 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:46:49,413 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:46:49,413 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:46:49,413 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:46:49,413 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:46:49,413 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:46:49,413 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:49,413 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:49,413 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:46:49,413 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:46:49,874 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 13:46:49,875 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:46:49,875 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x16202e5e0>
+2024-09-05 13:47:08,206 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:47:08,206 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:47:08,206 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:47:08,206 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:47:08,857 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:47:09,518 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:47:09,519 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:47:09,519 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:47:09,519 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:47:09,528 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:47:10,548 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:47:10,549 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:47:10,549 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:47:10,549 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:47:10,549 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:47:10,549 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:47:10,549 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:47:10,549 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:10,549 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:10,550 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:10,550 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:47:13,611 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 13:47:13,611 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:47:13,611 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x122fc0dc0>
+2024-09-05 13:47:53,322 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:47:53,322 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:47:53,322 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:47:53,323 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:47:53,942 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:47:55,484 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:47:55,484 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:47:55,485 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:47:55,485 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:47:55,501 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:47:56,629 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:47:56,629 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:47:56,629 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:47:56,630 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:47:56,630 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:47:56,630 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:47:56,630 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:47:56,630 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:56,630 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:56,630 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:47:56,630 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:47:59,282 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 13:47:59,283 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:47:59,283 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <generator object OPENAIRobot.stream_chat.<locals>.generate at 0x11a7abc80>
+2024-09-05 13:48:14,791 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:48:14,792 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 13:48:14,792 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:48:14,792 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:48:15,566 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:48:17,290 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:48:17,291 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:48:17,291 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:48:17,291 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:48:17,303 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 13:48:18,298 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 13:48:18,299 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:48:18,299 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:48:18,299 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:48:18,299 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:48:18,299 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:48:18,300 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:48:18,300 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:48:18,300 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:48:18,300 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:48:18,300 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:48:20,635 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 13:48:20,636 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:48:20,636 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12436f0d0>
+2024-09-05 13:49:14,247 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:49:14,248 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 218 - INFO - 使用 openai 对话机器人
+2024-09-05 13:49:14,248 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:49:14,248 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:49:14,945 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:49:17,418 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:49:17,419 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:49:17,419 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:49:17,419 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:49:17,431 - robot.opaiFun - opaiFun.py - general_chat - line 95 - INFO - 开始
+2024-09-05 13:49:18,546 - robot.opaiFun - opaiFun.py - general_chat - line 105 - INFO - 结束
+2024-09-05 13:49:18,547 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:49:18,547 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:49:18,547 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:49:18,547 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:49:18,547 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:49:18,547 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:49:18,547 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:18,547 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:18,547 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:18,547 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:49:20,793 - robot.opaiFun - opaiFun.py - open_chat - line 83 - INFO - 结束
+2024-09-05 13:49:26,226 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 13:49:26,226 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 218 - INFO - 使用 openai 对话机器人
+2024-09-05 13:49:26,226 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 13:49:26,226 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 13:49:26,895 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 13:49:28,583 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:49:28,586 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:49:28,589 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:49:28,589 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 13:49:28,601 - robot.opaiFun - opaiFun.py - general_chat - line 95 - INFO - 开始
+2024-09-05 13:49:29,712 - robot.opaiFun - opaiFun.py - general_chat - line 105 - INFO - 结束
+2024-09-05 13:49:29,712 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 13:49:29,712 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 13:49:29,713 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 13:49:29,713 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 13:49:29,713 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 13:49:29,713 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 13:49:29,713 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:29,713 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:29,713 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 13:49:29,713 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 13:49:32,284 - robot.opaiFun - opaiFun.py - open_chat - line 83 - INFO - 结束
+2024-09-05 13:49:32,284 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 13:49:32,284 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function open_chat.<locals>.generate at 0x1298de040>
+2024-09-05 14:04:28,585 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:04:28,585 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:04:28,585 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:04:28,585 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:04:30,745 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:04:32,825 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:04:32,825 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:04:32,825 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:04:32,825 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:04:32,842 - robot.opaiFun - opaiFun.py - general_chat - line 93 - INFO - 开始
+2024-09-05 14:04:33,873 - robot.opaiFun - opaiFun.py - general_chat - line 103 - INFO - 结束
+2024-09-05 14:04:33,873 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:04:33,873 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:04:33,873 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:04:33,873 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:04:33,873 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:04:33,873 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:04:33,873 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:04:39,915 - robot.opaiFun - opaiFun.py - open_chat - line 81 - INFO - 结束
+2024-09-05 14:04:39,915 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:04:39,915 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11f1ca040>
+2024-09-05 14:06:29,764 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:06:29,764 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:06:29,764 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:06:29,764 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:06:30,550 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:06:32,291 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:06:32,292 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:06:32,292 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:06:32,292 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:06:32,315 - robot.opaiFun - opaiFun.py - general_chat - line 94 - INFO - 开始
+2024-09-05 14:06:33,369 - robot.opaiFun - opaiFun.py - general_chat - line 104 - INFO - 结束
+2024-09-05 14:06:33,369 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:06:33,369 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:06:33,369 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:06:33,370 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:06:33,370 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:06:33,370 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:06:33,370 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:06:37,823 - robot.opaiFun - opaiFun.py - open_chat - line 82 - INFO - 结束
+2024-09-05 14:06:37,824 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:06:37,825 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11c67f1f0>
+2024-09-05 14:15:28,792 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:15:28,792 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:15:28,792 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:15:28,792 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:15:29,525 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:15:31,245 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:15:31,245 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:15:31,245 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:15:31,245 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:15:31,268 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:15:32,434 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:15:32,434 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:15:32,434 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:15:32,434 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:15:32,435 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:15:32,435 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:15:32,435 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:15:32,435 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:15:32,464 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:15:34,811 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:15:34,811 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:15:34,812 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1337f60d0>
+2024-09-05 14:15:56,680 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:15:56,680 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:15:56,680 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:15:56,680 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:15:57,431 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:15:58,888 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:15:58,889 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:15:58,889 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:15:58,889 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:15:58,913 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:15:59,918 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:15:59,919 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:15:59,919 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:15:59,919 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:15:59,919 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:15:59,919 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:15:59,919 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:15:59,920 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:15:59,939 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:16:02,059 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:16:02,060 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:16:02,060 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x126094040>
+2024-09-05 14:16:57,380 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:16:57,380 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:16:57,380 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:16:57,381 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:16:57,794 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:16:59,714 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:16:59,714 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:16:59,715 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:16:59,715 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:16:59,738 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:17:00,813 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:17:00,814 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:17:00,814 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:17:00,814 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:17:00,814 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:17:00,814 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:17:00,814 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:17:00,815 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:17:00,836 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:17:02,272 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:17:03,700 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/8a1008dc19ea4ee8ad911d0d5c18559d.mp3
+2024-09-05 14:17:04,475 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x12e96a310>
+2024-09-05 14:17:04,482 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:17:04,483 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x12e96a310>
+2024-09-05 14:17:20,459 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:17:20,459 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:17:20,459 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:17:20,459 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:17:21,180 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:17:22,792 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:17:22,793 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:17:22,793 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:17:22,793 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:17:22,809 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:17:23,880 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:17:23,881 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:17:23,881 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:17:23,881 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:17:23,881 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:17:23,881 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:17:23,881 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:17:23,881 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:17:23,892 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:17:26,164 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:17:28,106 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/e1bdf035455d4910a3bad6557bd9197e.mp3
+2024-09-05 14:17:28,290 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x1227602e0>
+2024-09-05 14:17:28,299 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:17:28,299 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x1227602e0>
+2024-09-05 14:21:31,825 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:21:31,825 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:21:31,825 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:21:31,825 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:21:32,583 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:21:34,271 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:21:34,272 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:21:34,272 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:21:34,272 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:21:34,296 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:21:35,394 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:21:35,394 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:21:35,394 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:21:35,394 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:21:35,395 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:21:35,395 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:21:35,395 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:21:35,395 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:21:35,412 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:21:38,146 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:21:40,686 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/d8d61c23cf7a430bb194b00ec0742d69.mp3
+2024-09-05 14:21:40,880 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x120a231f0>
+2024-09-05 14:21:40,887 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:21:40,887 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x120a231f0>
+2024-09-05 14:21:55,306 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:21:55,306 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:21:55,306 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:21:55,306 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:21:55,984 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:21:57,448 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:21:57,448 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:21:57,448 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:21:57,448 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:21:57,458 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:21:58,627 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:21:58,627 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:21:58,627 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:21:58,627 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:21:58,628 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:21:58,628 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:21:58,628 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:21:58,628 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:21:58,643 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:22:00,980 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:22:00,981 - robot.Conversation - Conversation.py - say - line 353 - INFO - 命中缓存，播放缓存语音
+2024-09-05 14:22:01,158 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x10fe54e80>
+2024-09-05 14:22:01,164 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:22:01,164 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x10fe54e80>
+2024-09-05 14:22:11,489 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:22:11,489 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:22:11,489 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:22:11,489 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:22:12,102 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:22:22,116 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:22:22,116 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:22:22,117 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:22:22,117 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:22:22,796 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:22:24,334 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:22:24,334 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:22:24,334 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:22:24,335 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:22:24,350 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:22:25,565 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:22:25,566 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:22:25,566 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:22:25,566 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:22:25,566 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:22:25,566 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:22:25,566 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:22:25,566 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:22:25,577 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:22:26,934 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:22:26,935 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:22:26,935 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x136bf4310>
+2024-09-05 14:22:36,551 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:22:36,551 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:22:36,551 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:22:36,551 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:22:42,426 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:22:43,615 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:22:43,616 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:22:43,616 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:22:43,617 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:22:43,633 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:22:44,719 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:22:44,720 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:22:44,720 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:22:44,720 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:22:44,720 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:22:44,720 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:22:44,720 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:22:44,720 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:22:44,730 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:22:46,907 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:22:46,908 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:22:46,908 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12888daf0>
+2024-09-05 14:23:41,510 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:23:41,511 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:23:41,511 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:23:41,511 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:23:52,281 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:23:52,281 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:23:52,281 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:23:52,281 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:23:52,796 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:23:54,343 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:23:54,343 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:23:54,344 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:23:54,344 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:23:54,360 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:23:55,585 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:23:55,585 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:23:55,585 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:23:55,586 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:23:55,586 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:23:55,586 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:23:55,586 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:23:55,586 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:23:55,598 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:23:57,954 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:23:57,955 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:23:57,955 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12fcab0d0>
+2024-09-05 14:24:14,488 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:24:14,488 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:24:14,488 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:24:14,488 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:24:15,003 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:24:15,947 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:24:15,947 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:24:15,947 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:24:15,947 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:24:15,964 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:24:17,171 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:24:17,172 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:24:17,172 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:24:17,172 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:24:17,172 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:24:17,172 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:24:17,172 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:24:17,172 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:24:17,185 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:24:25,883 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:24:25,884 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:24:25,884 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x126a07d30>
+2024-09-05 14:25:19,544 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:25:19,544 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:25:19,544 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:25:19,544 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:25:20,034 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:25:21,586 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:25:21,586 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:25:21,586 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:25:21,586 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:25:21,597 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:25:22,610 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:25:22,610 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:25:22,610 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:25:22,610 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:25:22,610 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:25:22,610 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:25:22,610 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:25:22,611 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:25:22,622 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:25:25,581 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:25:25,581 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:25:25,582 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11f9a3040>
+2024-09-05 14:26:11,089 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:26:11,089 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:26:11,089 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:26:11,089 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:26:11,570 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:26:13,092 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:26:13,093 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:26:13,093 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:26:13,093 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:26:13,109 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:26:14,226 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:26:14,226 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:26:14,226 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:26:14,226 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:26:14,227 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:26:14,227 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:26:14,227 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:26:14,227 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:26:14,227 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:26:14,227 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:26:14,227 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 14:26:28,662 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:26:28,664 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:26:28,664 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x119e360d0>
+2024-09-05 14:27:25,824 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:27:25,824 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:27:25,824 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:27:25,824 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:27:26,387 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:27:27,972 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:27:27,972 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:27:27,973 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:27:27,973 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:27:27,984 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:27:29,096 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:27:29,096 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:27:29,096 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:27:29,096 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:27:29,096 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:27:29,096 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:27:29,096 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:27:29,096 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:27:29,096 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:27:29,096 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:27:29,096 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 14:27:37,243 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:27:37,243 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:27:37,243 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11fa60f70>
+2024-09-05 14:28:16,295 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:28:16,295 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:28:16,295 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:28:16,295 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:28:16,809 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:28:18,875 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:28:18,876 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:28:18,876 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:28:18,876 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:28:18,895 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:28:19,919 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:28:19,919 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:28:19,920 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:28:19,920 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:28:19,920 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:28:19,920 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:28:19,920 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:28:19,920 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:19,920 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:19,920 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:19,920 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 14:28:23,283 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:28:23,283 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:28:23,283 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11c1e7e50>
+2024-09-05 14:28:47,346 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:28:47,347 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:28:47,347 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:28:47,347 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:28:47,801 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:28:49,980 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:28:49,980 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:28:49,980 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:28:49,980 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:28:49,996 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:28:51,088 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:28:51,090 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:28:51,090 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:28:51,090 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:28:51,090 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:28:51,090 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:28:51,090 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:28:51,090 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:51,090 - robot.opaiFun - opaiFun.py - open_chat - line 29 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:51,090 - robot.opaiFun - opaiFun.py - open_chat - line 31 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:28:51,090 - robot.opaiFun - opaiFun.py - open_chat - line 32 - INFO - 开始
+2024-09-05 14:28:54,736 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:28:54,737 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:28:54,737 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x124d22820>
+2024-09-05 14:28:56,167 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/f2bd09ca35ab413896e1efec6092269b.mp3
+2024-09-05 14:28:56,168 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 为什么书不喜欢和钥匙一起玩？
+2024-09-05 14:28:56,168 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x124ca4330>
+2024-09-05 14:28:56,168 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 为什么书不喜欢和钥匙一起玩？
+2024-09-05 14:28:56,345 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x124cecd30>
+2024-09-05 14:28:56,351 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:28:56,351 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x124cecd30>
+2024-09-05 14:28:57,757 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/07d1b3bd93c846b7a29238c95a0046a0.mp3
+2024-09-05 14:28:57,758 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 因为书怕被钥匙打开！
+2024-09-05 14:28:57,759 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x124ca4330>
+2024-09-05 14:28:57,759 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 因为书怕被钥匙打开！
+2024-09-05 14:28:57,828 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x124cec220>
+2024-09-05 14:28:57,834 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 14:28:57,834 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x124cec220>
+2024-09-05 14:29:19,016 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:29:19,017 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 243 - INFO - 使用 openai 对话机器人
+2024-09-05 14:29:19,017 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:29:19,017 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:29:19,501 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:29:20,988 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:29:20,989 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:29:20,989 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:29:20,989 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:29:21,005 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:29:22,076 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:29:22,078 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:29:22,078 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:29:22,078 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:29:22,078 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:29:22,078 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:29:22,078 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:29:22,078 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:29:22,092 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:29:22,535 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:29:22,536 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:29:22,536 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1202220d0>
+2024-09-05 14:56:36,779 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:56:36,779 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:56:36,779 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:56:36,779 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:56:42,343 - robot.Conversation - Conversation.py - doResponse - line 266 - INFO - 响应指令
+2024-09-05 14:56:44,598 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:56:44,599 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:56:44,599 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:56:44,599 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 14:56:44,624 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 14:56:45,706 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 14:56:45,706 - robot.Conversation - Conversation.py - doResponse - line 272 - INFO - {"type": 404}
+2024-09-05 14:56:45,707 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - 404
+2024-09-05 14:56:45,707 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 14:56:45,707 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 14:56:45,707 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 14:56:45,708 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 14:56:45,708 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 14:56:45,727 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 14:56:46,550 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 14:56:46,550 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 14:56:46,550 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1193da700>
+2024-09-05 14:59:13,999 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:59:13,999 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:59:13,999 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:59:13,999 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:59:23,531 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:59:23,532 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:59:23,532 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:59:23,532 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:59:33,364 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:59:33,365 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:59:33,365 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:59:33,365 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 14:59:50,430 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 14:59:50,430 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 14:59:50,430 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 14:59:50,430 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:00:04,374 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:00:04,375 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 242 - INFO - 使用 openai 对话机器人
+2024-09-05 15:00:04,375 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:00:04,375 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:00:04,875 - robot.Conversation - Conversation.py - doResponse - line 267 - INFO - 响应指令
+2024-09-05 15:00:07,110 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:07,111 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:07,111 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:07,111 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:00:07,133 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 15:00:08,236 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 15:00:08,236 - robot.Conversation - Conversation.py - doResponse - line 273 - INFO - {"type": 404}
+2024-09-05 15:00:08,236 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - 404
+2024-09-05 15:00:08,236 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:00:08,236 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:08,236 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:08,236 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:08,236 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:00:08,258 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:00:08,743 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 15:00:08,743 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:00:08,744 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11b7ae820>
+2024-09-05 15:00:19,389 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:00:19,389 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:00:19,389 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:00:19,389 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:00:20,169 - robot.Conversation - Conversation.py - doResponse - line 267 - INFO - 响应指令
+2024-09-05 15:00:21,858 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:21,859 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:21,859 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:21,859 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:00:21,885 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 15:00:22,999 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 15:00:23,000 - robot.Conversation - Conversation.py - doResponse - line 273 - INFO - {"type": 404}
+2024-09-05 15:00:23,000 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - 404
+2024-09-05 15:00:23,000 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:00:23,000 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:23,001 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:23,001 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:23,001 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:00:23,026 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:00:23,479 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 15:00:23,480 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:00:23,480 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x136dfb040>
+2024-09-05 15:00:45,523 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:00:45,523 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:00:45,523 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:00:45,523 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:00:46,081 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:00:47,719 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:47,719 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:47,719 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:47,719 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:00:47,767 - robot.opaiFun - opaiFun.py - general_chat - line 71 - INFO - 开始
+2024-09-05 15:00:48,899 - robot.opaiFun - opaiFun.py - general_chat - line 81 - INFO - 结束
+2024-09-05 15:00:48,900 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:00:48,900 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:00:48,900 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:00:48,900 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:00:48,901 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:00:48,901 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:00:48,901 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:00:48,928 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:00:49,385 - robot.opaiFun - opaiFun.py - open_chat - line 59 - INFO - 结束
+2024-09-05 15:00:49,385 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:00:49,385 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1380220d0>
+2024-09-05 15:01:17,831 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:01:17,831 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:01:17,831 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:01:17,831 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:02:09,083 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:02:09,083 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:02:09,084 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:02:09,084 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:02:09,540 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:02:11,546 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:02:11,546 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:02:11,546 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:02:11,546 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:02:11,568 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:02:12,634 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:02:12,635 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:02:12,635 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:02:12,635 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:02:12,635 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:02:12,635 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:02:12,635 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:02:12,635 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:02:12,658 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:02:13,088 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:02:13,089 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:02:13,089 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12b786820>
+2024-09-05 15:02:44,713 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:02:44,713 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:02:44,713 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:02:44,713 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:02:45,090 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:02:45,795 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:02:45,795 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:02:45,795 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:02:45,795 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:02:45,815 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:02:47,884 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:02:47,885 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:02:47,885 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:02:47,885 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:02:47,885 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:02:47,885 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:02:47,885 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:02:47,885 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:02:47,910 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:02:50,955 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:02:50,956 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:02:50,956 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x14e8ae0d0>
+2024-09-05 15:03:05,730 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:03:05,730 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:03:05,730 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:03:05,730 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:03:06,397 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:03:08,259 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:03:08,259 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:03:08,260 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:03:08,260 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:03:08,283 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:03:10,413 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:03:10,413 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:03:10,413 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:03:10,413 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:03:10,413 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:03:10,413 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:03:10,414 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:03:10,414 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:03:10,435 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:03:13,168 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:03:13,169 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:03:13,169 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12ff2d8b0>
+2024-09-05 15:11:04,930 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:11:04,930 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:11:04,930 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:11:04,930 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:11:05,594 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:11:07,312 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:07,313 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:07,313 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:07,313 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:11:07,336 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:11:08,427 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:11:08,428 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:11:08,428 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:11:08,428 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:11:08,428 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:08,428 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:08,428 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:08,428 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:11:08,451 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:11:11,292 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:11:11,293 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:11:11,293 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x1301630d0>
+2024-09-05 15:11:19,970 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:11:19,971 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:11:19,971 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:11:19,971 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:11:20,423 - robot.Conversation - Conversation.py - doResponse - line 268 - INFO - 响应指令
+2024-09-05 15:11:21,471 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:21,471 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:21,471 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:21,472 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:11:21,496 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:11:22,524 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:11:22,525 - robot.Conversation - Conversation.py - doResponse - line 274 - INFO - {"type": 404}
+2024-09-05 15:11:22,525 - robot.Conversation - Conversation.py - doResponse - line 276 - INFO - 404
+2024-09-05 15:11:22,525 - robot.Conversation - Conversation.py - doResponse - line 278 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:11:22,525 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:22,525 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:22,525 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:22,525 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:11:22,552 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:11:22,994 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:11:22,995 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:11:22,995 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x127622160>
+2024-09-05 15:11:34,639 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:11:34,639 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 241 - INFO - 使用 openai 对话机器人
+2024-09-05 15:11:34,639 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:11:34,639 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:11:35,017 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 响应指令
+2024-09-05 15:11:36,683 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:36,684 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:36,684 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:36,684 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:11:36,708 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:11:37,817 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:11:37,818 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - {"type": 404}
+2024-09-05 15:11:37,818 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 404
+2024-09-05 15:11:37,818 - robot.Conversation - Conversation.py - doResponse - line 279 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:11:37,818 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:11:37,818 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:11:37,818 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:11:37,818 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:11:37,842 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:11:38,300 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:11:38,300 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:11:38,300 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12e322040>
+2024-09-05 15:12:19,767 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:12:19,767 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 239 - INFO - 使用 openai 对话机器人
+2024-09-05 15:12:19,767 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:12:19,767 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:12:20,343 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 响应指令
+2024-09-05 15:12:22,047 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:12:22,047 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:12:22,047 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:12:22,047 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:12:22,071 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:12:23,283 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:12:23,285 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - {"type": 404}
+2024-09-05 15:12:23,285 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 404
+2024-09-05 15:12:23,285 - robot.Conversation - Conversation.py - doResponse - line 279 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:12:23,285 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:12:23,285 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:12:23,285 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:12:23,285 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:12:23,311 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:12:23,689 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:12:23,689 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:12:23,689 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x12e566040>
+2024-09-05 15:12:25,605 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/173c85cf508f40248105287716a2aaf5.mp3
+2024-09-05 15:12:25,606 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 当然可以，这里有一个简短的笑话供您欣赏：
+2024-09-05 15:12:25,607 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x12e37c390>
+2024-09-05 15:12:25,607 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 当然可以，这里有一个简短的笑话供您欣赏：
+2024-09-05 15:12:26,986 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x12e37cd00>
+2024-09-05 15:12:26,993 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:12:26,994 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x12e37cd00>
+2024-09-05 15:12:28,829 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/7d335d890295459ab2b6838ea0f8e3f4.mp3
+2024-09-05 15:12:28,831 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 有一天，一只乌龟走进了一个警察局，告诉警察它刚刚在公园里被抢了。警察问：“那发生了什么事？
+2024-09-05 15:12:28,831 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x12e37c390>
+2024-09-05 15:12:28,831 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 有一天，一只乌龟走进了一个警察局，告诉警察它刚刚在公园里被抢了。警察问：“那发生了什么事？
+2024-09-05 15:12:28,931 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x12e37cbb0>
+2024-09-05 15:12:28,935 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:12:28,936 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x12e37cbb0>
+2024-09-05 15:12:30,431 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/fea73bfb156d476b8f1e6ee4f8546b4b.mp3
+2024-09-05 15:12:30,435 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第2段TTS合成成功。msg: ” 
+乌龟回答说：“我不知道，事情发生得太快了！”
+2024-09-05 15:12:30,435 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x12e37c390>
+2024-09-05 15:12:30,435 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第2段TTS。msg: ” 
+乌龟回答说：“我不知道，事情发生得太快了！”
+2024-09-05 15:12:30,537 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x12e52c520>
+2024-09-05 15:12:30,542 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:12:30,543 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x12e52c520>
+2024-09-05 15:12:46,571 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:12:46,571 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 239 - INFO - 使用 openai 对话机器人
+2024-09-05 15:12:46,571 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:12:46,572 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:12:47,223 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 响应指令
+2024-09-05 15:12:48,882 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:12:48,883 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:12:48,883 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:12:48,883 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:12:48,905 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:12:49,976 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:12:49,977 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - {"type": 404}
+2024-09-05 15:12:49,977 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 404
+2024-09-05 15:12:49,977 - robot.Conversation - Conversation.py - doResponse - line 279 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:12:49,977 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:12:49,977 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:12:49,977 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:12:49,977 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:12:50,002 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:12:50,481 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:12:50,482 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:12:50,482 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x13797e040>
+2024-09-05 15:12:52,268 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/ab3451c2e7b746378da9bc6abad44210.mp3
+2024-09-05 15:12:52,272 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 当然可以，这里有一个简短的笑话供您欣赏：
+2024-09-05 15:12:52,272 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x1379002a0>
+2024-09-05 15:12:52,272 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 当然可以，这里有一个简短的笑话供您欣赏：
+2024-09-05 15:12:52,442 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x137900a30>
+2024-09-05 15:12:52,449 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:12:52,449 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x137900a30>
+2024-09-05 15:12:54,206 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/265f8ae199954dac8c67b125c2e84142.mp3
+2024-09-05 15:12:54,207 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 有一天，一只乌龟走进了警察局，告诉警察它的家被一群蜗牛抢劫了。警察问：“发生了什么事？” 
+乌龟回答说：“我不知道，事情发生得太快了！
+2024-09-05 15:12:54,207 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x1379002a0>
+2024-09-05 15:12:54,207 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 有一天，一只乌龟走进了警察局，告诉警察它的家被一群蜗牛抢劫了。警察问：“发生了什么事？” 
+乌龟回答说：“我不知道，事情发生得太快了！
+2024-09-05 15:12:54,310 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x137900e80>
+2024-09-05 15:12:54,314 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:12:54,315 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x137900e80>
+2024-09-05 15:13:27,502 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:13:27,502 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 239 - INFO - 使用 openai 对话机器人
+2024-09-05 15:13:27,502 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:13:27,502 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:13:28,275 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 响应指令
+2024-09-05 15:13:30,043 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:13:30,043 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:13:30,043 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:13:30,043 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:13:30,067 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:13:31,170 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:13:31,170 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - {"type": 404}
+2024-09-05 15:13:31,170 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 404
+2024-09-05 15:13:31,170 - robot.Conversation - Conversation.py - doResponse - line 279 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:13:31,170 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:13:31,171 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:13:31,171 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:13:31,171 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:13:31,191 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:13:31,676 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:13:31,678 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:13:31,678 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x127b2d040>
+2024-09-05 15:13:32,856 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/f2047ee36e2f42a49f0f5af1358801f2.mp3
+2024-09-05 15:13:32,859 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 当然可以！
+2024-09-05 15:13:32,859 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x125da42a0>
+2024-09-05 15:13:32,859 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 当然可以！
+2024-09-05 15:13:33,068 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x125da4100>
+2024-09-05 15:13:33,075 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:13:33,076 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x125da4100>
+2024-09-05 15:13:34,476 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/33b697fbec6f4c49b0a8e29843fae9b2.mp3
+2024-09-05 15:13:34,478 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 这里有一个简短的笑话供您欣赏：
+2024-09-05 15:13:34,478 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x125da42a0>
+2024-09-05 15:13:34,478 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 这里有一个简短的笑话供您欣赏：
+2024-09-05 15:13:34,571 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x125da4a30>
+2024-09-05 15:13:34,576 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:13:34,576 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x125da4a30>
+2024-09-05 15:13:35,888 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/d5bd1ea86c7640c2816d754cdb5bd1b2.mp3
+2024-09-05 15:13:35,892 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第2段TTS合成成功。msg: 有一天，一只乌龟走进了警察局，告诉警察它的家被一群蜗牛抢劫了。警察问：“发生了什么事？” 
+乌龟回答说：“我不知道，事情发生得太快了！
+2024-09-05 15:13:35,892 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x125da42a0>
+2024-09-05 15:13:35,892 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第2段TTS。msg: 有一天，一只乌龟走进了警察局，告诉警察它的家被一群蜗牛抢劫了。警察问：“发生了什么事？” 
+乌龟回答说：“我不知道，事情发生得太快了！
+2024-09-05 15:13:35,992 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x125da44c0>
+2024-09-05 15:13:35,997 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:13:35,997 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x125da44c0>
+2024-09-05 15:15:03,298 - robot.ASR - ASR.py - get_engine_by_slug - line 106 - INFO - 使用 fun-asr ASR 引擎
+2024-09-05 15:15:03,298 - robot.chatGpt - chatGpt.py - get_robot_by_slug - line 239 - INFO - 使用 openai 对话机器人
+2024-09-05 15:15:03,298 - robot.TTS - TTS.py - get_engine_by_slug - line 166 - INFO - 使用 edge-tts TTS 引擎
+2024-09-05 15:15:03,298 - robot.NLU - NLU.py - get_engine_by_slug - line 222 - INFO - 使用 unit NLU 引擎
+2024-09-05 15:15:03,978 - robot.Conversation - Conversation.py - doResponse - line 269 - INFO - 响应指令
+2024-09-05 15:15:05,405 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:15:05,406 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:15:05,406 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:15:05,406 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - []
+2024-09-05 15:15:05,431 - robot.opaiFun - opaiFun.py - general_chat - line 72 - INFO - 开始
+2024-09-05 15:15:06,528 - robot.opaiFun - opaiFun.py - general_chat - line 82 - INFO - 结束
+2024-09-05 15:15:06,528 - robot.Conversation - Conversation.py - doResponse - line 275 - INFO - {"type": 404}
+2024-09-05 15:15:06,529 - robot.Conversation - Conversation.py - doResponse - line 277 - INFO - 404
+2024-09-05 15:15:06,529 - robot.Conversation - Conversation.py - doResponse - line 279 - INFO - 正常使用chatGPT回答就可以了
+2024-09-05 15:15:06,529 - robot.chatGpt - chatGpt.py - stream_chat - line 103 - INFO - msg: 讲一个笑话
+2024-09-05 15:15:06,529 - robot.chatGpt - chatGpt.py - stream_chat - line 118 - INFO - 使用模型：gpt-3.5-turbo-1106，开始流式请求
+2024-09-05 15:15:06,529 - robot.chatGpt - chatGpt.py - stream_chat - line 120 - INFO - https://free.gpt.ge/v1/completions
+2024-09-05 15:15:06,529 - robot.chatGpt - chatGpt.py - stream_chat - line 132 - INFO - [{'role': 'user', 'content': '讲一个笑话'}]
+2024-09-05 15:15:06,553 - robot.opaiFun - opaiFun.py - open_chat - line 48 - INFO - 开始
+2024-09-05 15:15:06,994 - robot.opaiFun - opaiFun.py - open_chat - line 60 - INFO - 结束
+2024-09-05 15:15:06,995 - robot.Conversation - Conversation.py - stream_say - line 149 - INFO - 进入流成声语音
+2024-09-05 15:15:06,995 - robot.Conversation - Conversation.py - stream_say - line 150 - INFO - <function OPENAIRobot.stream_chat.<locals>.generate at 0x11d813040>
+2024-09-05 15:15:08,357 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/6f38844a498a442a8fbfd3be083fd56c.mp3
+2024-09-05 15:15:08,357 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第0段TTS合成成功。msg: 当然可以！
+2024-09-05 15:15:08,358 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x11ba88330>
+2024-09-05 15:15:08,358 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第0段TTS。msg: 当然可以！
+2024-09-05 15:15:08,534 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x11ba889d0>
+2024-09-05 15:15:08,539 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:15:08,540 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x11ba889d0>
+2024-09-05 15:15:09,780 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/89ac5ca9f03643b495f8fa6534370478.mp3
+2024-09-05 15:15:09,783 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第1段TTS合成成功。msg: 这里有一个简短的笑话供您欣赏：
+2024-09-05 15:15:09,783 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x11ba88330>
+2024-09-05 15:15:09,783 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第1段TTS。msg: 这里有一个简短的笑话供您欣赏：
+2024-09-05 15:15:09,874 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x11d7dd550>
+2024-09-05 15:15:09,878 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:15:09,879 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x11d7dd550>
+2024-09-05 15:15:11,566 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/2160b9bb4a4341babd52d120441ec703.mp3
+2024-09-05 15:15:11,569 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第2段TTS合成成功。msg: 有一天，一只乌龟走进了警察局，想要报案。它告诉警察：“昨天，我在公园里被抢了！
+2024-09-05 15:15:11,570 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x11ba88330>
+2024-09-05 15:15:11,570 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第2段TTS。msg: 有一天，一只乌龟走进了警察局，想要报案。它告诉警察：“昨天，我在公园里被抢了！
+2024-09-05 15:15:11,668 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x11d7dd340>
+2024-09-05 15:15:11,673 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:15:11,673 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x11d7dd340>
+2024-09-05 15:15:13,981 - robot.TTS - TTS.py - async_get_speech - line 62 - INFO - edge-tts 语音合成成功，合成路径：/Users/shenglei/ls/ls-robot/temp/fb1907453c1f466ca6221a18e2905c98.mp3
+2024-09-05 15:15:13,984 - robot.Conversation - Conversation.py - _ttsAction - line 92 - INFO - 第3段TTS合成成功。msg: ” 
+警察问：“哦，真的吗？请描述一下嫌疑人的样子。” 
+乌龟回答：“我不记得他的样子了，事情发生得太快了！”
+2024-09-05 15:15:13,984 - robot.Conversation - Conversation.py - _ttsAction - line 93 - INFO - <unlocked _thread.lock object at 0x11ba88330>
+2024-09-05 15:15:13,984 - robot.Conversation - Conversation.py - _ttsAction - line 98 - INFO - 即将播放第3段TTS。msg: ” 
+警察问：“哦，真的吗？请描述一下嫌疑人的样子。” 
+乌龟回答：“我不记得他的样子了，事情发生得太快了！”
+2024-09-05 15:15:14,077 - robot.Player - Player.py - playLoop - line 81 - INFO - 开始播放音频：<pydub.audio_segment.AudioSegment object at 0x11d873dc0>
+2024-09-05 15:15:14,083 - robot.Player - Player.py - doPlay - line 104 - INFO - =================
+2024-09-05 15:15:14,083 - robot.Player - Player.py - doPlay - line 107 - INFO - 播放完成：<pydub.audio_segment.AudioSegment object at 0x11d873dc0>
